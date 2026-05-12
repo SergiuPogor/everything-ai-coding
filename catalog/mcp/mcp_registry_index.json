@@ -136232,6 +136232,38 @@
     "website_url": "https://github.com/LarsCowe/queue-pilot#readme"
   },
   {
+    "id": "io-github-larshiensch99-priceparse-011e4175",
+    "name": "io.github.Larshiensch99/priceparse",
+    "type": "mcp",
+    "description": "Extract structured pricing tiers and addons from any SaaS pricing page URL. Built for AI agents.",
+    "source_url": "https://github.com/Larshiensch99/priceparse",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://api.priceparse.com/mcp/"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-12",
+    "version": "0.1.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-12T05:00:05.103814Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://api.priceparse.com/mcp/"
+      }
+    ],
+    "website_url": "https://priceparse.com"
+  },
+  {
     "id": "io-github-las-team-lastest-2a45e090",
     "name": "io.github.las-team/lastest",
     "type": "mcp",
