@@ -19628,7 +19628,7 @@
     "id": "com-babyblueviper-invinoveritas-dedc4b70",
     "name": "com.babyblueviper/invinoveritas",
     "type": "mcp",
-    "description": "Pay-per-call MCP for multi-agent fleets: a2a bus, sandbox, inference, review. Lightning-metered.",
+    "description": "Capital-scale-aware /review (Sentinel mode) + sandbox + inference for agent fleets. Lightning-paid.",
     "source_url": "https://github.com/babyblueviper1/invinoveritas-sdk",
     "stars": null,
     "category": "tooling",
@@ -19645,9 +19645,9 @@
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-18",
-    "version": "1.6.8",
+    "version": "1.6.9",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-18T05:13:12.285434Z",
+    "mcp_registry_published_at": "2026-05-18T06:54:54.671048Z",
     "mcp_remotes": [
       {
         "type": "streamable-http",
@@ -58020,8 +58020,8 @@
       "config": {
         "registry_type": "npm",
         "identifier": "crypto-quant-signal-mcp",
-        "version": "1.11.1",
-        "command": "npx -y crypto-quant-signal-mcp@1.11.1"
+        "version": "1.14.0",
+        "command": "npx -y crypto-quant-signal-mcp@1.14.0"
       },
       "remotes": [
         {
@@ -58032,9 +58032,9 @@
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-18",
-    "version": "1.11.1",
+    "version": "1.14.0",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-15T16:37:43.365332Z",
+    "mcp_registry_published_at": "2026-05-18T06:58:36.989896Z",
     "mcp_remotes": [
       {
         "type": "streamable-http",
@@ -75424,16 +75424,16 @@
       "config": {
         "registry_type": "npm",
         "identifier": "brilliant-directories-mcp",
-        "version": "6.49.18",
-        "command": "npx -y brilliant-directories-mcp@6.49.18"
+        "version": "6.49.23",
+        "command": "npx -y brilliant-directories-mcp@6.49.23"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-18",
-    "version": "6.49.18",
+    "version": "6.49.23",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-18T06:30:52.860009Z",
+    "mcp_registry_published_at": "2026-05-18T07:11:55.148071Z",
     "mcp_remotes": []
   },
   {
@@ -197942,16 +197942,16 @@
       "config": {
         "registry_type": "npm",
         "identifier": "@insightsentry/mcp",
-        "version": "1.4.27",
-        "command": "npx -y @insightsentry/mcp@1.4.27"
+        "version": "1.4.28",
+        "command": "npx -y @insightsentry/mcp@1.4.28"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-18",
-    "version": "1.4.27",
+    "version": "1.4.28",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-16T16:19:50.446595Z",
+    "mcp_registry_published_at": "2026-05-18T06:35:21.008126Z",
     "mcp_remotes": []
   },
   {
@@ -214614,6 +214614,33 @@
         "url": "https://top-gun-mcp-server.vercel.app/api/mcp"
       }
     ]
+  },
+  {
+    "id": "io-github-spacetime-technology-safehold-2637f4d8",
+    "name": "io.github.Spacetime-Technology/safehold",
+    "type": "mcp",
+    "description": "Local, encrypted MCP vault for passports, IDs, visas and photos. You control access.",
+    "source_url": "https://github.com/Spacetime-Technology/safehold",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "config": {
+        "registry_type": "npm",
+        "identifier": "safehold",
+        "version": "1.0.3",
+        "command": "npx -y safehold@1.0.3"
+      },
+      "remotes": []
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-18",
+    "version": "1.0.3",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-18T07:10:39.38628Z",
+    "mcp_remotes": []
   },
   {
     "id": "io-github-spark1security-n0s1-mcp-9ed0a9b0",
