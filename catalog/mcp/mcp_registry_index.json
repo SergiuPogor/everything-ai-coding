@@ -21455,6 +21455,37 @@
     "mcp_remotes": []
   },
   {
+    "id": "com-clauxel-a2adependencyinspector-a2adependencyinspector-mcp-27b3845d",
+    "name": "com.clauxel.a2adependencyinspector/a2adependencyinspector-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for A2A dependency inspector MCP, structured receipts, audit logs, and reviewer-ready evi",
+    "source_url": "https://github.com/clauxel/a2a-dependency-inspector-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://a2adependencyinspector.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T12:22:51.10522Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://a2adependencyinspector.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
     "id": "com-clauxel-a2aidentitytoll-a2aidentitytoll-mcp-838b07f2",
     "name": "com.clauxel.a2aidentitytoll/a2aidentitytoll-mcp",
     "type": "mcp",
@@ -21482,6 +21513,37 @@
       {
         "type": "streamable-http",
         "url": "https://a2aidentitytoll.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
+    "id": "com-clauxel-a2areplayreceipt-a2areplayreceipt-mcp-9375918d",
+    "name": "com.clauxel.a2areplayreceipt/a2areplayreceipt-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for A2A failure replay MCP, structured receipts, audit logs, and reviewer-ready evidence.",
+    "source_url": "https://github.com/clauxel/a2a-replay-receipt-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://a2areplayreceipt.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T12:29:08.259947Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://a2areplayreceipt.clauxel.com/mcp"
       }
     ]
   },
@@ -21579,6 +21641,37 @@
     ]
   },
   {
+    "id": "com-clauxel-aistudioandroidreleasegate-aistudioandroidreleasegate-mcp-3daab2a0",
+    "name": "com.clauxel.aistudioandroidreleasegate/aistudioandroidreleasegate-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for AI Studio Android release gate MCP, structured receipts, audit logs, and reviewer-rea",
+    "source_url": "https://github.com/clauxel/ai-studio-android-release-gate-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://aistudioandroidreleasegate.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T12:21:48.756669Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://aistudioandroidreleasegate.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
     "id": "com-clauxel-aiwaiverdesk-aiwaiverdesk-mcp-53a9cd12",
     "name": "com.clauxel.aiwaiverdesk/aiwaiverdesk-mcp",
     "type": "mcp",
@@ -21606,6 +21699,68 @@
       {
         "type": "streamable-http",
         "url": "https://aiwaiverdesk.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
+    "id": "com-clauxel-androidcliagentgate-androidcliagentgate-mcp-3ef72928",
+    "name": "com.clauxel.androidcliagentgate/androidcliagentgate-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for Android CLI agent build gate, structured receipts, audit logs, and reviewer-ready evi",
+    "source_url": "https://github.com/clauxel/android-cli-agent-gate-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://androidcliagentgate.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T12:25:37.400446Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://androidcliagentgate.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
+    "id": "com-clauxel-antigravityrunledger-antigravityrunledger-mcp-8aebbcec",
+    "name": "com.clauxel.antigravityrunledger/antigravityrunledger-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for Antigravity agent run receipt MCP, structured receipts, audit logs, and reviewer-read",
+    "source_url": "https://github.com/clauxel/antigravity-run-ledger-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://antigravityrunledger.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T12:25:08.015985Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://antigravityrunledger.clauxel.com/mcp"
       }
     ]
   },
@@ -21641,6 +21796,68 @@
     ]
   },
   {
+    "id": "com-clauxel-c2padisclosure-c2padisclosure-mcp-5376d0bc",
+    "name": "com.clauxel.c2padisclosure/c2padisclosure-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for C2PA disclosure policy MCP, structured receipts, audit logs, and reviewer-ready evide",
+    "source_url": "https://github.com/clauxel/c2pa-disclosure-drift-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://c2padisclosure.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T12:30:32.333699Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://c2padisclosure.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
+    "id": "com-clauxel-c2paintake-c2paintake-mcp-970e7022",
+    "name": "com.clauxel.c2paintake/c2paintake-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for C2PA intake verifier MCP, structured receipts, audit logs, and reviewer-ready evidenc",
+    "source_url": "https://github.com/clauxel/c2pa-intake-verifier-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://c2paintake.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T12:23:24.217527Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://c2paintake.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
     "id": "com-clauxel-codexrunledger-codexrunledger-mcp-15238ec7",
     "name": "com.clauxel.codexrunledger/codexrunledger-mcp",
     "type": "mcp",
@@ -21668,6 +21885,37 @@
       {
         "type": "streamable-http",
         "url": "https://codexrunledger.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
+    "id": "com-clauxel-copilotcliswitchgate-copilotcliswitchgate-mcp-771ee3e1",
+    "name": "com.clauxel.copilotcliswitchgate/copilotcliswitchgate-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for Copilot CLI switch gate MCP, structured receipts, audit logs, and reviewer-ready evid",
+    "source_url": "https://github.com/clauxel/copilot-cli-switch-gate-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://copilotcliswitchgate.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T12:23:58.91269Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://copilotcliswitchgate.clauxel.com/mcp"
       }
     ]
   },
@@ -21733,6 +21981,37 @@
       }
     ],
     "website_url": "https://dbqueryguard.clauxel.com/"
+  },
+  {
+    "id": "com-clauxel-geminiomnirights-geminiomnirights-mcp-e3993cf9",
+    "name": "com.clauxel.geminiomnirights/geminiomnirights-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for Gemini Omni commercial rights receipt MCP, structured receipts, audit logs, and revie",
+    "source_url": "https://github.com/clauxel/gemini-omni-rights-receipt-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://geminiomnirights.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T12:31:13.641059Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://geminiomnirights.clauxel.com/mcp"
+      }
+    ]
   },
   {
     "id": "com-clauxel-geminiupgradeqa-geminiupgradeqa-mcp-7e0612fe",
@@ -21828,6 +22107,37 @@
     ]
   },
   {
+    "id": "com-clauxel-mcpdeprecation-mcpdeprecation-mcp-a97057aa",
+    "name": "com.clauxel.mcpdeprecation/mcpdeprecation-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for MCP tool deprecation receipt, structured receipts, audit logs, and reviewer-ready evi",
+    "source_url": "https://github.com/clauxel/mcp-deprecation-gate-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcpdeprecation.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T12:29:49.60219Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcpdeprecation.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
     "id": "com-clauxel-mcpoauthscopegate-mcpoauthscopegate-mcp-29d98df6",
     "name": "com.clauxel.mcpoauthscopegate/mcpoauthscopegate-mcp",
     "type": "mcp",
@@ -21889,6 +22199,37 @@
       }
     ],
     "website_url": "https://mcpriskledger.clauxel.com/"
+  },
+  {
+    "id": "com-clauxel-mcpscopeconsent-mcpscopeconsent-mcp-aea92575",
+    "name": "com.clauxel.mcpscopeconsent/mcpscopeconsent-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for MCP consent scope receipt, structured receipts, audit logs, and reviewer-ready eviden",
+    "source_url": "https://github.com/clauxel/mcp-scope-consent-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcpscopeconsent.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T12:22:19.399568Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcpscopeconsent.clauxel.com/mcp"
+      }
+    ]
   },
   {
     "id": "com-clauxel-mcptoollicense-mcptoollicense-mcp-0a12f361",
@@ -22136,6 +22477,37 @@
       {
         "type": "streamable-http",
         "url": "https://tracepiishield.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
+    "id": "com-clauxel-universalcartmerchantgate-universalcartmerchantgate-mcp-6d61051b",
+    "name": "com.clauxel.universalcartmerchantgate/universalcartmerchantgate-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for Universal Cart merchant readiness MCP, structured receipts, audit logs, and reviewer-",
+    "source_url": "https://github.com/clauxel/universal-cart-merchant-gate-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://universalcartmerchantgate.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T12:24:36.175424Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://universalcartmerchantgate.clauxel.com/mcp"
       }
     ]
   },
@@ -39066,9 +39438,9 @@
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.8.2",
+    "version": "1.8.3",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-20T00:55:20.432781Z",
+    "mcp_registry_published_at": "2026-05-20T11:14:11.478447Z",
     "mcp_remotes": [
       {
         "type": "streamable-http",
@@ -58556,6 +58928,37 @@
     "mcp_remotes": []
   },
   {
+    "id": "io-github-ai-gaoqian-agentmart-aaf99cd9",
+    "name": "io.github.ai-gaoqian/agentmart",
+    "type": "mcp",
+    "description": "First AI Agent e-commerce marketplace with 74+ AI products, MCP protocol, and Alipay payments",
+    "source_url": "https://github.com/ai-gaoqian/agentmart-mcp-server",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://api.ai-gaoqian.xyz/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T11:12:35.46953Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://api.ai-gaoqian.xyz/mcp"
+      }
+    ]
+  },
+  {
     "id": "io-github-ai-human-andalusia-hrevn-mcp-server-7003e996",
     "name": "io.github.ai-human-andalusia/hrevn-mcp-server",
     "type": "mcp",
@@ -59152,6 +59555,27 @@
       }
     ],
     "website_url": "https://cathedral-ai.com"
+  },
+  {
+    "id": "io-github-aimino-tech-fast-html-mcp-5bcb2c60",
+    "name": "Fast HTML MCP",
+    "type": "mcp",
+    "description": "Lightning-fast HTML generation from AI agents with 12 tools, 15 components, and 10 templates.",
+    "source_url": "https://registry.modelcontextprotocol.io/v0/servers/io.github.Aimino-Tech%2Ffast-html-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": []
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "0.1.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T10:06:36.048194Z",
+    "mcp_remotes": []
   },
   {
     "id": "io-github-aimiten-hilma-mcp-cfc7aea3",
@@ -89093,16 +89517,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "coreason-ecosystem",
-        "version": "0.46.0",
-        "command": "pipx run coreason-ecosystem==0.46.0"
+        "version": "0.47.0",
+        "command": "pipx run coreason-ecosystem==0.47.0"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.46.0",
+    "version": "0.47.0",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T19:53:21.880788Z",
+    "mcp_registry_published_at": "2026-05-20T11:48:19.700887Z",
     "mcp_remotes": []
   },
   {
@@ -115672,7 +116096,7 @@
     "id": "io-github-felixgeelhaar-scout-8e71c4c7",
     "name": "Scout",
     "type": "mcp",
-    "description": "Browser automation MCP server with 66 tools. Pure CDP, DOM diffing, vision hybrid.",
+    "description": "Browser automation MCP server with 77 tools. Pure CDP, DOM diffing, vision hybrid.",
     "source_url": "https://github.com/felixgeelhaar/scout",
     "stars": null,
     "category": "tooling",
@@ -115682,17 +116106,17 @@
       "method": "manual",
       "config": {
         "registry_type": "oci",
-        "identifier": "ghcr.io/felixgeelhaar/scout:1.6.1",
+        "identifier": "ghcr.io/felixgeelhaar/scout:1.7.0",
         "version": "",
-        "command": "docker run ghcr.io/felixgeelhaar/scout:1.6.1"
+        "command": "docker run ghcr.io/felixgeelhaar/scout:1.7.0"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.6.1",
+    "version": "1.7.0",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-10T09:49:05.035981Z",
+    "mcp_registry_published_at": "2026-05-20T11:53:19.591455Z",
     "mcp_remotes": []
   },
   {
@@ -121113,16 +121537,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "haiku-rag",
-        "version": "0.47.0",
-        "command": "pipx run haiku-rag==0.47.0"
+        "version": "0.48.0",
+        "command": "pipx run haiku-rag==0.48.0"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.47.0",
+    "version": "0.48.0",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-14T13:05:17.576663Z",
+    "mcp_registry_published_at": "2026-05-20T11:42:22.296894Z",
     "mcp_remotes": []
   },
   {
@@ -125804,6 +126228,37 @@
     "mcp_remotes": []
   },
   {
+    "id": "io-github-heisencodex-jpg-github-repo-intel-mcp-c2952efe",
+    "name": "GitHub Repository Intelligence",
+    "type": "mcp",
+    "description": "Repo intel for AI coding agents: overview, PRs, contributors, hot files, CI, deps. Remote MCP.",
+    "source_url": "https://github.com/heisencodex-jpg/github-repo-intel-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://cg-nguyen--github-repo-intel-mcp.apify.actor/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "0.3.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T12:07:19.928177Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://cg-nguyen--github-repo-intel-mcp.apify.actor/mcp"
+      }
+    ]
+  },
+  {
     "id": "io-github-heliosarchitect-wems-5b37e128",
     "name": "io.github.heliosarchitect/wems",
     "type": "mcp",
@@ -130468,17 +130923,17 @@
       "method": "manual",
       "config": {
         "registry_type": "oci",
-        "identifier": "ghcr.io/cap-of-tea/gdd:1.4.7",
+        "identifier": "ghcr.io/cap-of-tea/gdd:1.5.0",
         "version": "",
-        "command": "docker run ghcr.io/cap-of-tea/gdd:1.4.7"
+        "command": "docker run ghcr.io/cap-of-tea/gdd:1.5.0"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.4.7",
+    "version": "1.5.0",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T06:03:01.552735Z",
+    "mcp_registry_published_at": "2026-05-20T10:54:04.677471Z",
     "mcp_remotes": [],
     "website_url": "https://github.com/Cap-of-tea/GDD"
   },
@@ -137635,9 +138090,9 @@
       "method": "manual",
       "config": {
         "registry_type": "mcpb",
-        "identifier": "https://github.com/jmrplens/gitlab-mcp-server/releases/download/v2.0.2/gitlab-mcp-server-linux-amd64",
-        "version": "2.0.2",
-        "command": "mcpb: https://github.com/jmrplens/gitlab-mcp-server/releases/download/v2.0.2/gitlab-mcp-server-linux-amd64@2.0.2"
+        "identifier": "https://github.com/jmrplens/gitlab-mcp-server/releases/download/v2.0.3/gitlab-mcp-server-linux-amd64",
+        "version": "2.0.3",
+        "command": "mcpb: https://github.com/jmrplens/gitlab-mcp-server/releases/download/v2.0.3/gitlab-mcp-server-linux-amd64@2.0.3"
       },
       "remotes": [
         {
@@ -137652,9 +138107,9 @@
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T14:59:47.956074Z",
+    "mcp_registry_published_at": "2026-05-20T10:37:05.936374Z",
     "mcp_remotes": [
       {
         "type": "streamable-http",
@@ -148353,16 +148808,16 @@
       "config": {
         "registry_type": "npm",
         "identifier": "@lazyants/hetzner-mcp-server",
-        "version": "2.0.0",
-        "command": "npx -y @lazyants/hetzner-mcp-server@2.0.0"
+        "version": "2.0.1",
+        "command": "npx -y @lazyants/hetzner-mcp-server@2.0.1"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-06T16:51:12.327427Z",
+    "mcp_registry_published_at": "2026-05-20T11:00:07.89728Z",
     "mcp_remotes": []
   },
   {
@@ -151578,9 +152033,9 @@
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-20T09:57:02.867328Z",
+    "mcp_registry_published_at": "2026-05-20T10:26:41.909264Z",
     "mcp_remotes": [
       {
         "type": "streamable-http",
@@ -170146,16 +170601,16 @@
       "config": {
         "registry_type": "npm",
         "identifier": "@useclypt/mcp-server",
-        "version": "0.1.3",
-        "command": "npx -y @useclypt/mcp-server@0.1.3"
+        "version": "0.1.5",
+        "command": "npx -y @useclypt/mcp-server@0.1.5"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.1.3",
+    "version": "0.1.5",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T09:13:19.635998Z",
+    "mcp_registry_published_at": "2026-05-20T10:32:39.517932Z",
     "mcp_remotes": []
   },
   {
@@ -205866,6 +206321,33 @@
     "mcp_remotes": []
   },
   {
+    "id": "io-github-redoxnet-lsopenapi-e8c6e03d",
+    "name": "io.github.redoxnet/lsopenapi",
+    "type": "mcp",
+    "description": "LS Securities OpenAPI MCP server: Korean stock data, charts, screeners, and a local portfolio.",
+    "source_url": "https://github.com/redoxnet/mcp-lsopenapi",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "config": {
+        "registry_type": "nuget",
+        "identifier": "RedoxNet.Mcp.LsOpenApi",
+        "version": "0.10.1",
+        "command": "nuget: RedoxNet.Mcp.LsOpenApi@0.10.1"
+      },
+      "remotes": []
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "0.10.1",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T11:00:30.424177Z",
+    "mcp_remotes": []
+  },
+  {
     "id": "io-github-ref-tools-ref-tools-mcp-05e5abd2",
     "name": "io.github.ref-tools/ref-tools-mcp",
     "type": "mcp",
@@ -215537,7 +216019,7 @@
     "id": "io-github-saybanet-sayba-platform-fd540472",
     "name": "Sayba Platform",
     "type": "mcp",
-    "description": "AI Agent social platform - post, comment, vote, tasks, goals, memory, XC tokens, skill market",
+    "description": "AI Agent social platform — post, comment, vote, tasks, goals, memory, XC tokens, skill market",
     "source_url": "https://github.com/saybanet/sayba-platform-mcp-server",
     "stars": null,
     "category": "tooling",
@@ -215560,9 +216042,9 @@
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-20T10:04:42.551974Z",
+    "mcp_registry_published_at": "2026-05-20T11:49:40.478727Z",
     "mcp_remotes": [
       {
         "type": "sse",
@@ -223636,16 +224118,16 @@
       "config": {
         "registry_type": "npm",
         "identifier": "chia-explorer",
-        "version": "0.1.6",
-        "command": "npx -y chia-explorer@0.1.6"
+        "version": "0.2.0",
+        "command": "npx -y chia-explorer@0.2.0"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.1.6",
+    "version": "0.2.0",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T07:31:54.600852Z",
+    "mcp_registry_published_at": "2026-05-20T10:44:00.80796Z",
     "mcp_remotes": []
   },
   {
@@ -248022,16 +248504,16 @@
       "config": {
         "registry_type": "npm",
         "identifier": "@respira/wordpress-mcp-server",
-        "version": "6.16.0",
-        "command": "npx -y @respira/wordpress-mcp-server@6.16.0"
+        "version": "6.17.1",
+        "command": "npx -y @respira/wordpress-mcp-server@6.17.1"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "6.16.0",
+    "version": "6.17.1",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T16:12:55.99997Z",
+    "mcp_registry_published_at": "2026-05-20T11:12:41.627978Z",
     "mcp_remotes": [],
     "website_url": "https://respira.press"
   },
@@ -255146,6 +255628,33 @@
     "mcp_remotes": []
   },
   {
+    "id": "io-github-yubinkim444-repo-memory-4047c78f",
+    "name": "Repo Memory",
+    "type": "mcp",
+    "description": "Shared, git-tracked working memory for AI agents on the same codebase.",
+    "source_url": "https://github.com/yubinkim444/repo-memory",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "config": {
+        "registry_type": "pypi",
+        "identifier": "repo-memory-mcp",
+        "version": "0.2.0",
+        "command": "pipx run repo-memory-mcp==0.2.0"
+      },
+      "remotes": []
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "0.2.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T10:25:57.466382Z",
+    "mcp_remotes": []
+  },
+  {
     "id": "io-github-yugui923-db-connect-mcp-b5f97604",
     "name": "DB Connect MCP",
     "type": "mcp",
@@ -256218,16 +256727,16 @@
       "config": {
         "registry_type": "npm",
         "identifier": "@zereight/mcp-gitlab",
-        "version": "2.1.12",
-        "command": "npx -y @zereight/mcp-gitlab@2.1.12"
+        "version": "2.1.13",
+        "command": "npx -y @zereight/mcp-gitlab@2.1.13"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "2.1.12",
+    "version": "2.1.13",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-17T15:45:43.629418Z",
+    "mcp_registry_published_at": "2026-05-20T12:28:35.388744Z",
     "mcp_remotes": []
   },
   {
@@ -267892,19 +268401,19 @@
       "remotes": [
         {
           "type": "streamable-http",
-          "url": "https://profile.shopfront.cloud/mcp"
+          "url": "https://locations.shopfront.se/mcp"
         }
       ]
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-18T19:59:28.13511Z",
+    "mcp_registry_published_at": "2026-05-20T11:07:40.653189Z",
     "mcp_remotes": [
       {
         "type": "streamable-http",
-        "url": "https://profile.shopfront.cloud/mcp"
+        "url": "https://locations.shopfront.se/mcp"
       }
     ],
     "website_url": "https://shopfront.se"
