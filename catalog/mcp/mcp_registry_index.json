@@ -1534,6 +1534,38 @@
     "website_url": "https://byteray.ai"
   },
   {
+    "id": "ai-calendarmcp-server-147602a3",
+    "name": "CalendarMCP",
+    "type": "mcp",
+    "description": "Hosted Google Calendar MCP server for AI agents. No self-hosting or Google Cloud setup.",
+    "source_url": "https://github.com/Full-Vibe/calendarmcp-public",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://calendarmcp.ai/api/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T07:09:04.298867Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://calendarmcp.ai/api/mcp"
+      }
+    ],
+    "website_url": "https://calendarmcp.ai"
+  },
+  {
     "id": "ai-childadhd-library-06194e28",
     "name": "ai.childadhd/library",
     "type": "mcp",
@@ -17387,6 +17419,46 @@
     ]
   },
   {
+    "id": "co-curie-commerce-4fd69e1e",
+    "name": "Curie Commerce",
+    "type": "mcp",
+    "description": "Search, compare in 3D, and buy products from 5.6M+ Shopify stores. Free tier; Pro adds checkout.",
+    "source_url": "https://github.com/curievision/curie-shopify-app",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "sse",
+          "url": "https://chat.curie.app/api/mcp/global"
+        },
+        {
+          "type": "sse",
+          "url": "https://chat.curie.app/api/mcp/{shop_id}"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T06:10:54.531321Z",
+    "mcp_remotes": [
+      {
+        "type": "sse",
+        "url": "https://chat.curie.app/api/mcp/global"
+      },
+      {
+        "type": "sse",
+        "url": "https://chat.curie.app/api/mcp/{shop_id}"
+      }
+    ],
+    "website_url": "https://chat.curie.app"
+  },
+  {
     "id": "co-dockai-mcp-a388f9d3",
     "name": "Dock AI",
     "type": "mcp",
@@ -19633,6 +19705,38 @@
     "mcp_remotes": []
   },
   {
+    "id": "com-arcasos-arcasos-rentals-ea9b5e0b",
+    "name": "com.arcasos/arcasos-rentals",
+    "type": "mcp",
+    "description": "Korean premium short-term rental search: natural language or structured filters (SHV engine).",
+    "source_url": "https://registry.modelcontextprotocol.io/v0/servers/com.arcasos%2Farcasos-rentals",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.arcasos.com"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.1.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T08:12:52.962218Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.arcasos.com"
+      }
+    ],
+    "website_url": "https://arcasos.com"
+  },
+  {
     "id": "com-arcjet-mcp-88c1ab8b",
     "name": "Arcjet",
     "type": "mcp",
@@ -21351,6 +21455,37 @@
     "mcp_remotes": []
   },
   {
+    "id": "com-clauxel-a2aidentitytoll-a2aidentitytoll-mcp-838b07f2",
+    "name": "com.clauxel.a2aidentitytoll/a2aidentitytoll-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for A2A caller identity, scope policy, verdict receipts, and audit history.",
+    "source_url": "https://github.com/clauxel/a2a-identity-toll-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://a2aidentitytoll.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T08:00:30.445666Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://a2aidentitytoll.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
     "id": "com-clauxel-agentdataboundary-agentdataboundary-mcp-67b16e3d",
     "name": "com.clauxel.agentdataboundary/agentdataboundary-mcp",
     "type": "mcp",
@@ -21440,6 +21575,37 @@
       {
         "type": "streamable-http",
         "url": "https://agentmonitorrelay.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
+    "id": "com-clauxel-aiwaiverdesk-aiwaiverdesk-mcp-53a9cd12",
+    "name": "com.clauxel.aiwaiverdesk/aiwaiverdesk-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for AI waiver checks, exception approvals, expiry review, and audit receipts.",
+    "source_url": "https://github.com/clauxel/ai-governance-waiver-desk-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://aiwaiverdesk.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T08:02:54.362402Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://aiwaiverdesk.clauxel.com/mcp"
       }
     ]
   },
@@ -21569,6 +21735,99 @@
     "website_url": "https://dbqueryguard.clauxel.com/"
   },
   {
+    "id": "com-clauxel-geminiupgradeqa-geminiupgradeqa-mcp-7e0612fe",
+    "name": "com.clauxel.geminiupgradeqa/geminiupgradeqa-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for Gemini upgrade evals, prompt regressions, output diffs, and eval receipts.",
+    "source_url": "https://github.com/clauxel/gemini-upgrade-qa-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://geminiupgradeqa.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T08:03:31.086117Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://geminiupgradeqa.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
+    "id": "com-clauxel-genaispanmapper-genaispanmapper-mcp-eaa54f19",
+    "name": "com.clauxel.genaispanmapper/genaispanmapper-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for GenAI span mapping, provider normalization, dashboard schemas, and receipts.",
+    "source_url": "https://github.com/clauxel/genai-span-mapper-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://genaispanmapper.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T08:02:13.375495Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://genaispanmapper.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
+    "id": "com-clauxel-kirowebreleasebinder-kirowebreleasebinder-mcp-7fd00a9e",
+    "name": "com.clauxel.kirowebreleasebinder/kirowebreleasebinder-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for Kiro release readiness, evidence binders, signoff, and CI approval receipts.",
+    "source_url": "https://github.com/clauxel/kiro-web-release-binder-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://kirowebreleasebinder.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T08:01:05.035823Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://kirowebreleasebinder.clauxel.com/mcp"
+      }
+    ]
+  },
+  {
     "id": "com-clauxel-mcpoauthscopegate-mcpoauthscopegate-mcp-29d98df6",
     "name": "com.clauxel.mcpoauthscopegate/mcpoauthscopegate-mcp",
     "type": "mcp",
@@ -21630,6 +21889,37 @@
       }
     ],
     "website_url": "https://mcpriskledger.clauxel.com/"
+  },
+  {
+    "id": "com-clauxel-mcptoollicense-mcptoollicense-mcp-0a12f361",
+    "name": "com.clauxel.mcptoollicense/mcptoollicense-mcp",
+    "type": "mcp",
+    "description": "Remote MCP for tool license checks, vendor policy review, alternatives, and license receipts.",
+    "source_url": "https://github.com/clauxel/mcp-tool-license-gate",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcptoollicense.clauxel.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T08:01:38.542982Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcptoollicense.clauxel.com/mcp"
+      }
+    ]
   },
   {
     "id": "com-clauxel-mcpuptimeledger-mcpuptimeledger-mcp-0cf85a4d",
@@ -32494,9 +32784,9 @@
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "26.518.131132",
+    "version": "26.520.53249",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-18T13:24:15.429033Z",
+    "mcp_registry_published_at": "2026-05-20T06:14:01.184695Z",
     "mcp_remotes": [
       {
         "type": "streamable-http",
@@ -51179,8 +51469,8 @@
     "id": "io-bitquery-mcp-42e5d1f0",
     "name": "Bitquery MCP",
     "type": "mcp",
-    "description": "Hosted Bitquery Trading Data MCP: multi-chain DEX, OHLC & token metrics for AI agents.",
-    "source_url": "https://registry.modelcontextprotocol.io/v0/servers/io.bitquery%2Fmcp",
+    "description": "Real-time Blockchain Trading intelligence - Token prices, trades, marketcap, Traders, Charts",
+    "source_url": "https://github.com/bitquery/mcp-server",
     "stars": null,
     "category": "tooling",
     "tags": [],
@@ -51196,15 +51486,16 @@
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-12T13:43:17.342954Z",
+    "mcp_registry_published_at": "2026-05-20T06:50:28.527454Z",
     "mcp_remotes": [
       {
         "type": "streamable-http",
         "url": "https://mcp.bitquery.io"
       }
-    ]
+    ],
+    "website_url": "https://docs.bitquery.io/docs/mcp/trading/overview/"
   },
   {
     "id": "io-carbone-carbone-mcp-d5cf539e",
@@ -83559,6 +83850,28 @@
     "mcp_remotes": []
   },
   {
+    "id": "io-github-cisco-open-network-sketcher-1462d1b5",
+    "name": "Network Sketcher (Local MCP)",
+    "type": "mcp",
+    "description": "AI-native MCP server to design and manage Cisco network diagrams (L1/L2/L3, PPT/SVG) from LLMs.",
+    "source_url": "https://github.com/cisco-open/network-sketcher/tree/HEAD/network-sketcher_local_mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": []
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "3.1.2",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T08:35:26.886264Z",
+    "mcp_remotes": [],
+    "website_url": "https://github.com/cisco-open/network-sketcher#installation-local-mcp"
+  },
+  {
     "id": "io-github-citrix-netscaler-console-mcp-server-cf8e74ca",
     "name": "NetScaler Console MCP Server",
     "type": "mcp",
@@ -96457,8 +96770,8 @@
       "config": {
         "registry_type": "npm",
         "identifier": "france-data-mcp",
-        "version": "0.10.8",
-        "command": "npx -y france-data-mcp@0.10.8"
+        "version": "0.11.0",
+        "command": "npx -y france-data-mcp@0.11.0"
       },
       "remotes": [
         {
@@ -96469,9 +96782,9 @@
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.10.8",
+    "version": "0.11.0",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-16T15:07:36.951927Z",
+    "mcp_registry_published_at": "2026-05-20T06:12:08.361267Z",
     "mcp_remotes": [
       {
         "type": "streamable-http",
@@ -117979,16 +118292,16 @@
       "config": {
         "registry_type": "nuget",
         "identifier": "funplay.unity.mcp",
-        "version": "0.3.2",
-        "command": "nuget: funplay.unity.mcp@0.3.2"
+        "version": "0.3.3",
+        "command": "nuget: funplay.unity.mcp@0.3.3"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T04:10:13.253352Z",
+    "mcp_registry_published_at": "2026-05-20T09:53:15.682004Z",
     "mcp_remotes": []
   },
   {
@@ -126443,16 +126756,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "intervals-icu-mcp",
-        "version": "2.0.0",
-        "command": "pipx run intervals-icu-mcp==2.0.0"
+        "version": "3.0.0",
+        "command": "pipx run intervals-icu-mcp==3.0.0"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-04-29T13:08:27.361439Z",
+    "mcp_registry_published_at": "2026-05-20T06:35:35.722195Z",
     "mcp_remotes": []
   },
   {
@@ -127023,9 +127336,9 @@
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.0.5",
+    "version": "1.1.1",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-20T04:43:47.934291Z",
+    "mcp_registry_published_at": "2026-05-20T09:53:00.258324Z",
     "mcp_remotes": [
       {
         "type": "streamable-http",
@@ -144476,7 +144789,7 @@
     "id": "io-github-kivanccakmak-yaver-92df7771",
     "name": "Yaver",
     "type": "mcp",
-    "description": "P2P dev-machine MCP for phone-driven coding agents: hot reload, builds, deploys.",
+    "description": "Phone-first local dev MCP for Claude Code and Codex: install Yaver, pair mobile, run, build, deploy.",
     "source_url": "https://github.com/kivanccakmak/yaver.io",
     "stars": null,
     "category": "tooling",
@@ -144487,16 +144800,16 @@
       "config": {
         "registry_type": "npm",
         "identifier": "yaver-cli",
-        "version": "1.99.219",
-        "command": "npx -y yaver-cli@1.99.219"
+        "version": "1.99.221",
+        "command": "npx -y yaver-cli@1.99.221"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.99.219",
+    "version": "1.99.221",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T20:34:06.919997Z",
+    "mcp_registry_published_at": "2026-05-20T06:44:42.317994Z",
     "mcp_remotes": [],
     "website_url": "https://yaver.io/docs/mcp"
   },
@@ -151248,7 +151561,7 @@
     "id": "io-github-lineofflight-frankfurter-7e75518a",
     "name": "Frankfurter",
     "type": "mcp",
-    "description": "Blended exchange rates from 50+ institutions. Tools: get_rates, convert, list_providers.",
+    "description": "Blended FX rates from 50+ institutions. Tools: get_rates, convert, list_currencies, list_providers.",
     "source_url": "https://github.com/lineofflight/frankfurter-mcp",
     "stars": null,
     "category": "tooling",
@@ -151265,9 +151578,9 @@
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T09:14:14.624296Z",
+    "mcp_registry_published_at": "2026-05-20T09:57:02.867328Z",
     "mcp_remotes": [
       {
         "type": "streamable-http",
@@ -158733,16 +159046,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "ln-church-agent",
-        "version": "1.9.7",
-        "command": "pipx run ln-church-agent==1.9.7"
+        "version": "1.10.0",
+        "command": "pipx run ln-church-agent==1.10.0"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.9.7",
+    "version": "1.10.0",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T13:21:38.955691Z",
+    "mcp_registry_published_at": "2026-05-20T06:56:26.016609Z",
     "mcp_remotes": []
   },
   {
@@ -162200,46 +162513,6 @@
     "mcp_registry_status": "active",
     "mcp_registry_published_at": "2026-01-24T23:00:03.627792Z",
     "mcp_remotes": []
-  },
-  {
-    "id": "io-github-michaelagustin-curie-commerce-7760e309",
-    "name": "Curie Commerce",
-    "type": "mcp",
-    "description": "Search, compare in 3D, and buy products from 5.6M+ Shopify stores. Free tier; Pro adds checkout.",
-    "source_url": "https://github.com/michaelagustin/curie-commerce",
-    "stars": null,
-    "category": "tooling",
-    "tags": [],
-    "tech_stack": [],
-    "install": {
-      "method": "manual",
-      "remotes": [
-        {
-          "type": "sse",
-          "url": "https://chat.curie.app/api/mcp/global"
-        },
-        {
-          "type": "sse",
-          "url": "https://chat.curie.app/api/mcp/{shop_id}"
-        }
-      ]
-    },
-    "source": "registry.modelcontextprotocol.io",
-    "last_synced": "2026-05-20",
-    "version": "1.0.0",
-    "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-18T03:16:27.930793Z",
-    "mcp_remotes": [
-      {
-        "type": "sse",
-        "url": "https://chat.curie.app/api/mcp/global"
-      },
-      {
-        "type": "sse",
-        "url": "https://chat.curie.app/api/mcp/{shop_id}"
-      }
-    ],
-    "website_url": "https://chat.curie.app"
   },
   {
     "id": "io-github-michaeljiangmingfeng-debug-quanttogo-mcp-cae7ddd7",
@@ -166538,16 +166811,16 @@
       "config": {
         "registry_type": "npm",
         "identifier": "agentcanary-mcp",
-        "version": "1.4.0",
-        "command": "npx -y agentcanary-mcp@1.4.0"
+        "version": "1.4.1",
+        "command": "npx -y agentcanary-mcp@1.4.1"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T20:03:49.911332Z",
+    "mcp_registry_published_at": "2026-05-20T06:21:41.077572Z",
     "mcp_remotes": [],
     "website_url": "https://agentcanary.ai"
   },
@@ -170320,6 +170593,38 @@
       }
     ],
     "website_url": "https://www.netdata.cloud"
+  },
+  {
+    "id": "io-github-netifymarketplace-bt-reseller-fa81af0b",
+    "name": "io.github.netifymarketplace/bt-reseller",
+    "type": "mcp",
+    "description": "MCP server for the Netify Reseller Programme: eligibility, commission, application URL builder.",
+    "source_url": "https://github.com/netifymarketplace/bt-reseller-mcp",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://www.netify.co.uk/resell/bt-business-services/mcp/"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T09:52:20.69741Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://www.netify.co.uk/resell/bt-business-services/mcp/"
+      }
+    ],
+    "website_url": "https://www.netify.co.uk/resell/bt-business-services/"
   },
   {
     "id": "io-github-neuledge-context-335ef798",
@@ -178431,16 +178736,16 @@
       "config": {
         "registry_type": "npm",
         "identifier": "@orygn/opa-mcp",
-        "version": "0.1.1",
-        "command": "npx -y @orygn/opa-mcp@0.1.1"
+        "version": "0.1.3",
+        "command": "npx -y @orygn/opa-mcp@0.1.3"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.1.1",
+    "version": "0.1.3",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-10T15:59:48.78097Z",
+    "mcp_registry_published_at": "2026-05-20T06:29:34.806493Z",
     "mcp_remotes": [],
     "website_url": "https://orygn.tech"
   },
@@ -179249,7 +179554,7 @@
     "id": "io-github-packrift-packrift-mcp-d166b049",
     "name": "Packrift MCP",
     "type": "mcp",
-    "description": "Exact-spec Packrift packaging search with live price, stock, shipping, cart handoff, and no-match.",
+    "description": "Hosted no-auth MCP for exact-spec packaging search, live price, stock, cart handoff, and no-match.",
     "source_url": "https://github.com/Packrift/packrift-mcp",
     "stars": null,
     "category": "tooling",
@@ -179257,12 +179562,6 @@
     "tech_stack": [],
     "install": {
       "method": "manual",
-      "config": {
-        "registry_type": "oci",
-        "identifier": "ghcr.io/packrift/packrift-mcp:latest",
-        "version": "",
-        "command": "docker run ghcr.io/packrift/packrift-mcp:latest"
-      },
       "remotes": [
         {
           "type": "streamable-http",
@@ -179272,16 +179571,16 @@
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.2.10",
+    "version": "0.2.12",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-18T17:36:49.805598Z",
+    "mcp_registry_published_at": "2026-05-20T07:20:26.422203Z",
     "mcp_remotes": [
       {
         "type": "streamable-http",
         "url": "https://mcp.packrift.com/mcp"
       }
     ],
-    "website_url": "https://packrift.com/pages/agents"
+    "website_url": "https://packrift.com/pages/packrift-ai-agent-instructions"
   },
   {
     "id": "io-github-pagecrawl-pagecrawl-mcp-85d60739",
@@ -202129,16 +202428,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "build123d-mcp",
-        "version": "0.3.23",
-        "command": "pipx run build123d-mcp==0.3.23"
+        "version": "0.3.25",
+        "command": "pipx run build123d-mcp==0.3.25"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.3.23",
+    "version": "0.3.25",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T17:51:47.516728Z",
+    "mcp_registry_published_at": "2026-05-20T07:08:11.666165Z",
     "mcp_remotes": []
   },
   {
@@ -206942,6 +207241,27 @@
     "mcp_remotes": []
   },
   {
+    "id": "io-github-rileycraig14-nexus-financial-e352e89c",
+    "name": "io.github.RileyCraig14/nexus-financial",
+    "type": "mcp",
+    "description": "Crypto signals, Kalshi prediction markets, wallet AML. x402 USDC on Base.",
+    "source_url": "https://registry.modelcontextprotocol.io/v0/servers/io.github.RileyCraig14%2Fnexus-financial",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": []
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T09:05:56.342467Z",
+    "mcp_remotes": []
+  },
+  {
     "id": "io-github-rillcoin-rill-d86c2d09",
     "name": "RillCoin",
     "type": "mcp",
@@ -206972,7 +207292,7 @@
     "id": "io-github-riponcm-projectmem-5435afdc",
     "name": "io.github.riponcm/projectmem",
     "type": "mcp",
-    "description": "Local-first memory layer for AI coding agents with pre-commit warnings.",
+    "description": "Local-first memory + judgment layer for AI coding agents — warns before repeating failed fixes.",
     "source_url": "https://github.com/riponcm/projectmem",
     "stars": null,
     "category": "tooling",
@@ -206983,16 +207303,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "projectmem",
-        "version": "0.1.2",
-        "command": "pipx run projectmem==0.1.2"
+        "version": "0.1.3",
+        "command": "pipx run projectmem==0.1.3"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T21:23:39.110306Z",
+    "mcp_registry_published_at": "2026-05-20T06:30:04.334715Z",
     "mcp_remotes": []
   },
   {
@@ -214623,16 +214943,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "world-model-mcp",
-        "version": "0.7.1",
-        "command": "pipx run world-model-mcp==0.7.1"
+        "version": "0.7.2",
+        "command": "pipx run world-model-mcp==0.7.2"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.7.1",
+    "version": "0.7.2",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T17:39:41.752519Z",
+    "mcp_registry_published_at": "2026-05-20T05:15:00.877862Z",
     "mcp_remotes": []
   },
   {
@@ -215214,6 +215534,72 @@
     "mcp_remotes": []
   },
   {
+    "id": "io-github-saybanet-sayba-platform-fd540472",
+    "name": "Sayba Platform",
+    "type": "mcp",
+    "description": "AI Agent social platform - post, comment, vote, tasks, goals, memory, XC tokens, skill market",
+    "source_url": "https://github.com/saybanet/sayba-platform-mcp-server",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "config": {
+        "registry_type": "npm",
+        "identifier": "sayba-platform",
+        "version": "1.0.1",
+        "command": "npx -y sayba-platform@1.0.1"
+      },
+      "remotes": [
+        {
+          "type": "sse",
+          "url": "https://mcp.sayba.com/sse"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.2",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T10:04:42.551974Z",
+    "mcp_remotes": [
+      {
+        "type": "sse",
+        "url": "https://mcp.sayba.com/sse"
+      }
+    ],
+    "website_url": "https://ai.sayba.com"
+  },
+  {
+    "id": "io-github-saybanet-sayba-skill-market-2d84093c",
+    "name": "Sayba Skill Market",
+    "type": "mcp",
+    "description": "Discover, invoke, publish, and rate AI Agent skills on Sayba platform",
+    "source_url": "https://github.com/saybanet/sayba-skill-mcp-server",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "config": {
+        "registry_type": "npm",
+        "identifier": "sayba-skill-market",
+        "version": "1.0.1",
+        "command": "npx -y sayba-skill-market@1.0.1"
+      },
+      "remotes": []
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "1.0.1",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T09:32:22.078792Z",
+    "mcp_remotes": [],
+    "website_url": "https://ai.sayba.com"
+  },
+  {
     "id": "io-github-sbroenne-mcp-server-excel-ea2b118c",
     "name": "MCP Server for Excel",
     "type": "mcp",
@@ -215228,16 +215614,16 @@
       "config": {
         "registry_type": "nuget",
         "identifier": "Sbroenne.ExcelMcp.McpServer",
-        "version": "1.8.62",
-        "command": "nuget: Sbroenne.ExcelMcp.McpServer@1.8.62"
+        "version": "1.8.63",
+        "command": "nuget: Sbroenne.ExcelMcp.McpServer@1.8.63"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.8.62",
+    "version": "1.8.63",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-18T10:11:13.965484Z",
+    "mcp_registry_published_at": "2026-05-20T08:49:34.145228Z",
     "mcp_remotes": []
   },
   {
@@ -216285,6 +216671,44 @@
     "mcp_registry_status": "active",
     "mcp_registry_published_at": "2026-02-25T22:41:36.162964Z",
     "mcp_remotes": []
+  },
+  {
+    "id": "io-github-sebastiengal-emile-wine-b7b6080a",
+    "name": "Émile",
+    "type": "mcp",
+    "description": "MCP server for the Émile wine cellar — list, add, recommend, scan and search 100k+ wines.",
+    "source_url": "https://registry.modelcontextprotocol.io/v0/servers/io.github.SebastienGal%2Femile-wine",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "config": {
+        "registry_type": "npm",
+        "identifier": "@emile-wine/mcp-server",
+        "version": "0.2.5",
+        "command": "npx -y @emile-wine/mcp-server@0.2.5"
+      },
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://mcp.emile.wine/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "0.2.5",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T09:21:08.05522Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://mcp.emile.wine/mcp"
+      }
+    ],
+    "website_url": "https://emile.wine/mcp/"
   },
   {
     "id": "io-github-sebbsssss-clude-36fa454f",
@@ -221449,9 +221873,9 @@
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.33.0",
+    "version": "0.33.1",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T18:36:30.289355Z",
+    "mcp_registry_published_at": "2026-05-20T07:33:58.936543Z",
     "mcp_remotes": []
   },
   {
@@ -229868,16 +230292,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "symbols-mcp",
-        "version": "3.14.135",
-        "command": "pipx run symbols-mcp==3.14.135"
+        "version": "3.14.142",
+        "command": "pipx run symbols-mcp==3.14.142"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "3.14.135",
+    "version": "3.14.142",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-20T02:55:47.047251Z",
+    "mcp_registry_published_at": "2026-05-20T07:05:19.96693Z",
     "mcp_remotes": []
   },
   {
@@ -236415,16 +236839,16 @@
       "config": {
         "registry_type": "npm",
         "identifier": "@thunderbit/mcp-server",
-        "version": "1.0.2",
-        "command": "npx -y @thunderbit/mcp-server@1.0.2"
+        "version": "1.0.3",
+        "command": "npx -y @thunderbit/mcp-server@1.0.3"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-09T07:30:07.411002Z",
+    "mcp_registry_published_at": "2026-05-20T09:04:01.82534Z",
     "mcp_remotes": []
   },
   {
@@ -240406,16 +240830,16 @@
       "config": {
         "registry_type": "npm",
         "identifier": "@uarlouski/testrail-mcp-server",
-        "version": "1.9.0",
-        "command": "npx -y @uarlouski/testrail-mcp-server@1.9.0"
+        "version": "1.10.0",
+        "command": "npx -y @uarlouski/testrail-mcp-server@1.10.0"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.9.0",
+    "version": "1.10.0",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-15T16:21:13.978348Z",
+    "mcp_registry_published_at": "2026-05-20T07:45:57.80051Z",
     "mcp_remotes": []
   },
   {
@@ -240743,6 +241167,37 @@
     "mcp_registry_status": "active",
     "mcp_registry_published_at": "2026-03-18T18:34:44.482718Z",
     "mcp_remotes": []
+  },
+  {
+    "id": "io-github-un3x-ai-success-story-0efe1997",
+    "name": "AI Success Story",
+    "type": "mcp",
+    "description": "First-person AI war-stories from coding sessions, searchable via MCP for prior-art consultation.",
+    "source_url": "https://github.com/Un3x/ai-success-story",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "remotes": [
+        {
+          "type": "streamable-http",
+          "url": "https://ai-success-story-20f19ed7769b.herokuapp.com/mcp"
+        }
+      ]
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "0.1.0",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T08:58:31.782379Z",
+    "mcp_remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://ai-success-story-20f19ed7769b.herokuapp.com/mcp"
+      }
+    ]
   },
   {
     "id": "io-github-uncfreak1255-code-hostaway-9e66fa51",
@@ -242297,6 +242752,33 @@
     "version": "2.7.5",
     "mcp_registry_status": "active",
     "mcp_registry_published_at": "2026-02-17T21:40:59.633015Z",
+    "mcp_remotes": []
+  },
+  {
+    "id": "io-github-vassiliylakhonin-agenda-intelligence-md-8e4c4680",
+    "name": "Agenda Intelligence",
+    "type": "mcp",
+    "description": "Auditable strategic-risk memos for AI agents: sanctions, regulatory, geopolitics, trade.",
+    "source_url": "https://github.com/vassiliylakhonin/agenda-intelligence-md",
+    "stars": null,
+    "category": "tooling",
+    "tags": [],
+    "tech_stack": [],
+    "install": {
+      "method": "manual",
+      "config": {
+        "registry_type": "pypi",
+        "identifier": "agenda-intelligence-md",
+        "version": "0.8.2",
+        "command": "pipx run agenda-intelligence-md==0.8.2"
+      },
+      "remotes": []
+    },
+    "source": "registry.modelcontextprotocol.io",
+    "last_synced": "2026-05-20",
+    "version": "0.8.2",
+    "mcp_registry_status": "active",
+    "mcp_registry_published_at": "2026-05-20T09:38:45.663726Z",
     "mcp_remotes": []
   },
   {
@@ -252829,16 +253311,16 @@
       "config": {
         "registry_type": "npm",
         "identifier": "@xu-c0/cybersec-mcp",
-        "version": "0.1.1",
-        "command": "npx -y @xu-c0/cybersec-mcp@0.1.1"
+        "version": "0.1.2",
+        "command": "npx -y @xu-c0/cybersec-mcp@0.1.2"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-15T09:41:33.596747Z",
+    "mcp_registry_published_at": "2026-05-20T06:13:34.749353Z",
     "mcp_remotes": []
   },
   {
@@ -256912,16 +257394,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "vmware-aiops",
-        "version": "1.5.24",
-        "command": "pipx run vmware-aiops==1.5.24"
+        "version": "1.5.28",
+        "command": "pipx run vmware-aiops==1.5.28"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.5.24",
+    "version": "1.5.28",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T12:21:45.182418Z",
+    "mcp_registry_published_at": "2026-05-20T10:01:35.225341Z",
     "mcp_remotes": []
   },
   {
@@ -256939,16 +257421,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "vmware-aria",
-        "version": "1.5.23",
-        "command": "pipx run vmware-aria==1.5.23"
+        "version": "1.5.28",
+        "command": "pipx run vmware-aria==1.5.28"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.5.23",
+    "version": "1.5.28",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T02:57:41.743583Z",
+    "mcp_registry_published_at": "2026-05-20T10:01:39.754262Z",
     "mcp_remotes": []
   },
   {
@@ -256966,16 +257448,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "vmware-avi",
-        "version": "1.5.23",
-        "command": "pipx run vmware-avi==1.5.23"
+        "version": "1.5.28",
+        "command": "pipx run vmware-avi==1.5.28"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.5.23",
+    "version": "1.5.28",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T02:57:42.874869Z",
+    "mcp_registry_published_at": "2026-05-20T10:01:40.575575Z",
     "mcp_remotes": []
   },
   {
@@ -256993,16 +257475,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "vmware-harden",
-        "version": "1.5.23",
-        "command": "pipx run vmware-harden==1.5.23"
+        "version": "1.5.28",
+        "command": "pipx run vmware-harden==1.5.28"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.5.23",
+    "version": "1.5.28",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T02:57:43.97414Z",
+    "mcp_registry_published_at": "2026-05-20T10:01:41.356405Z",
     "mcp_remotes": []
   },
   {
@@ -257020,16 +257502,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "vmware-monitor",
-        "version": "1.5.24",
-        "command": "pipx run vmware-monitor==1.5.24"
+        "version": "1.5.28",
+        "command": "pipx run vmware-monitor==1.5.28"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.5.24",
+    "version": "1.5.28",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T12:22:12.330792Z",
+    "mcp_registry_published_at": "2026-05-20T10:01:36.023512Z",
     "mcp_remotes": []
   },
   {
@@ -257047,16 +257529,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "vmware-nsx-mgmt",
-        "version": "1.5.23",
-        "command": "pipx run vmware-nsx-mgmt==1.5.23"
+        "version": "1.5.28",
+        "command": "pipx run vmware-nsx-mgmt==1.5.28"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.5.23",
+    "version": "1.5.28",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T02:57:39.68858Z",
+    "mcp_registry_published_at": "2026-05-20T10:01:37.533772Z",
     "mcp_remotes": []
   },
   {
@@ -257074,16 +257556,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "vmware-nsx-security",
-        "version": "1.5.23",
-        "command": "pipx run vmware-nsx-security==1.5.23"
+        "version": "1.5.28",
+        "command": "pipx run vmware-nsx-security==1.5.28"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.5.23",
+    "version": "1.5.28",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T02:57:40.730857Z",
+    "mcp_registry_published_at": "2026-05-20T10:01:38.241287Z",
     "mcp_remotes": []
   },
   {
@@ -257101,16 +257583,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "vmware-storage",
-        "version": "1.5.23",
-        "command": "pipx run vmware-storage==1.5.23"
+        "version": "1.5.28",
+        "command": "pipx run vmware-storage==1.5.28"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.5.23",
+    "version": "1.5.28",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T02:57:36.835029Z",
+    "mcp_registry_published_at": "2026-05-20T10:01:36.831231Z",
     "mcp_remotes": []
   },
   {
@@ -257128,16 +257610,16 @@
       "config": {
         "registry_type": "pypi",
         "identifier": "vmware-vks",
-        "version": "1.5.23",
-        "command": "pipx run vmware-vks==1.5.23"
+        "version": "1.5.28",
+        "command": "pipx run vmware-vks==1.5.28"
       },
       "remotes": []
     },
     "source": "registry.modelcontextprotocol.io",
     "last_synced": "2026-05-20",
-    "version": "1.5.23",
+    "version": "1.5.28",
     "mcp_registry_status": "active",
-    "mcp_registry_published_at": "2026-05-19T02:57:38.523235Z",
+    "mcp_registry_published_at": "2026-05-20T10:01:39.031031Z",
     "mcp_remotes": []
   },
   {
