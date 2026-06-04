@@ -189661,7 +189661,8 @@
       "freshness_label": "active",
       "signals": {}
     },
-    "verified": true
+    "verified": true,
+    "prune_content": false
   },
   {
     "id": "cospowers-requirements",
@@ -189721,7 +189722,8 @@
       "freshness_label": "active",
       "signals": {}
     },
-    "verified": true
+    "verified": true,
+    "prune_content": false
   },
   {
     "id": "cospowers-solution-design",
@@ -189784,7 +189786,8 @@
       "freshness_label": "active",
       "signals": {}
     },
-    "verified": true
+    "verified": true,
+    "prune_content": false
   },
   {
     "id": "cospowers-task-planning",
@@ -189844,7 +189847,8 @@
       "freshness_label": "active",
       "signals": {}
     },
-    "verified": true
+    "verified": true,
+    "prune_content": false
   },
   {
     "id": "cospowers-tdd-development",
@@ -189907,7 +189911,8 @@
       "freshness_label": "active",
       "signals": {}
     },
-    "verified": true
+    "verified": true,
+    "prune_content": false
   },
   {
     "id": "cospowers-test-generation",
@@ -189968,7 +189973,8 @@
       "freshness_label": "active",
       "signals": {}
     },
-    "verified": true
+    "verified": true,
+    "prune_content": false
   },
   {
     "id": "cost-optimization-agskill",
