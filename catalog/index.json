@@ -1,990 +1,5 @@
 [
   {
-    "id": "cospowers-integration-verification",
-    "name": "cospowers-integration-verification",
-    "type": "plugin",
-    "description": "AI-driven integration verification plugin for coding workflows, covering compliance, testing, debugging, and git operations.",
-    "source_url": "https://github.com/costrict-plugins-repo/cospowers-integration-verification/tree/main/",
-    "category": "ai-ml",
-    "tags": [
-      "integration-verification",
-      "code-compliance",
-      "git-workflow",
-      "ai-coding",
-      "testing"
-    ],
-    "tech_stack": [
-      "Python",
-      "Go",
-      "Bash",
-      "Git",
-      "GitLab",
-      "Lint",
-      "JSON"
-    ],
-    "source": "csc-plugins",
-    "source_priority": 1000,
-    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-integration-verification",
-    "platforms": [
-      "claude-code"
-    ],
-    "install": {
-      "method": "plugin_marketplace",
-      "plugin_name": "cospowers-integration-verification",
-      "marketplace_repo": "costrict-plugins-repo/cospowers-integration-verification",
-      "marketplace_name": "ai-workers-integration-verification",
-      "marketplace_verified": true,
-      "marketplace": "costrict-plugins-repo/cospowers-integration-verification"
-    },
-    "bundle": {
-      "skills_count": 15,
-      "commands_count": 0,
-      "agents_count": 1,
-      "mcp_servers_count": 0,
-      "skills_namespaces": [
-        "cospowers-integration-verification:code-compliance-check",
-        "cospowers-integration-verification:contract-verification",
-        "cospowers-integration-verification:doc-quality-evaluator",
-        "cospowers-integration-verification:e2e-verification",
-        "cospowers-integration-verification:finishing-a-development-branch",
-        "cospowers-integration-verification:integration-test-runner",
-        "cospowers-integration-verification:integration-verification",
-        "cospowers-integration-verification:regression-verification",
-        "cospowers-integration-verification:release-readiness-check",
-        "cospowers-integration-verification:requesting-code-review",
-        "cospowers-integration-verification:session-context",
-        "cospowers-integration-verification:spec-commit",
-        "cospowers-integration-verification:systematic-debugging",
-        "cospowers-integration-verification:using-integration-verification-plugin",
-        "cospowers-integration-verification:verification-before-completion"
-      ],
-      "hooks_count": 0,
-      "hook_events": [],
-      "mcp_server_names": [],
-      "is_marketplace_repo": false,
-      "bundled_skill_ids": [
-        null,
-        null,
-        null,
-        null,
-        "finishing-a-development-branch-agskill",
-        null,
-        null,
-        null,
-        null,
-        "requesting-code-review-agskill",
-        null,
-        null,
-        "systematic-debugging-agskill",
-        null,
-        "verification-before-completion-agskill"
-      ]
-    },
-    "manifest_completeness": 1.0,
-    "last_synced": "2026-06-08",
-    "stars": 0,
-    "pushed_at": "2026-06-05T07:33:34Z",
-    "version": "0.0.1",
-    "final_score": 88,
-    "health": {
-      "score": 46,
-      "freshness_label": "active",
-      "last_commit": "2026-06-05T07:33:34Z",
-      "signals": {
-        "freshness": 99,
-        "popularity": 0,
-        "source_trust": 40,
-        "install_popularity": 0
-      }
-    },
-    "verified": true,
-    "prune_content": false,
-    "evaluation": {
-      "coding_relevance": 5,
-      "desc_accuracy": 5,
-      "doc_completeness": 4,
-      "specificity": 5,
-      "writing_quality": 4,
-      "final_score": 88,
-      "decision": "accept",
-      "model_id": "mimo-v2.5-pro",
-      "rubric_version": "2.85974ec3",
-      "evaluated_at": "2026-06-08T08:51:23.025679Z"
-    },
-    "decision": "accept",
-    "weak_dims": [],
-    "freshness_label": "active",
-    "description_zh": "AI驱动的集成验证插件，涵盖合规、测试、调试和Git操作。",
-    "search_terms": [
-      "AI integration verification",
-      "集成验证插件",
-      "code compliance check",
-      "代码合规检查",
-      "systematic debugging"
-    ],
-    "highlights": [
-      "支持Python/Go代码合规检查",
-      "集成Git提交和MR创建流程",
-      "系统化调试和验证流程"
-    ],
-    "description_original": "AI 驱动的集成验证插件：执行集成测试、回归验证、契约验证、发布前检查和分支收尾。",
-    "security": {
-      "risk_level": "medium",
-      "verdict": "caution",
-      "red_flags": [
-        "代码合规检查可读取项目源代码文件进行差异分析",
-        "提交流程中引用外部 KB 服务（DAEDALUS_URL）进行合规检查",
-        "提交流程可读取 GitLab token（~/.qianliu/config.json）用于创建 MR",
-        "流程中执行多种 shell 命令（git、lint 工具、python 检测等）",
-        "向外部 KB 端点发送差异内容和代码进行合规分析"
-      ],
-      "permissions": {
-        "files": [
-          "docs/agent-rules/spec_developer/output/compliance-cache.json",
-          "cospowers.config.json",
-          "rules/coding-standards/",
-          "pyproject.toml",
-          "setup.py",
-          "*.py",
-          "*.go",
-          "*.vue",
-          "*.ts",
-          "*.js",
-          "~/.qianliu/config.json"
-        ],
-        "network": [
-          "DAEDALUS_URL（远程知识库 API，用户提供）",
-          "GitLab API（创建 MR，用户提供 token）"
-        ],
-        "commands": [
-          "git diff",
-          "git commit",
-          "git push",
-          "git branch",
-          "git merge-base",
-          "git merge",
-          "git rev-parse",
-          "grep",
-          "head",
-          "find",
-          "wc",
-          "mkdir",
-          "gofmt",
-          "autopep8",
-          "ruff",
-          "flake8",
-          "npm test",
-          "cargo test",
-          "pytest",
-          "go test"
-        ]
-      },
-      "summary": "插件为集成验证工具包，功能覆盖编码合规检查、lint 自动修复、git 提交及 MR 创建。会读取项目源码、执行 shell 命令、可选连接远程 KB 和 GitLab API，风险点在于外部通信和 token 读取，但用途合理且需用户配置。",
-      "recommendations": [
-        "使用前确认 cospowers.config.json 中的 DAEDALUS_URL 和 token 配置均为可信端点",
-        "建议仅在信任的项目仓库中启用此插件，避免在含敏感数据的仓库中运行",
-        "确保 GitLab token 权限范围最小化，仅授予创建 MR 所需权限",
-        "远程 KB 模式下，了解发送的代码差异内容范围，避免在机密代码仓库中使用"
-      ],
-      "scan_model": "mimo-v2.5-pro",
-      "rubric_version": "2.bd55efd5",
-      "content_hash": "f05f457a56dd5e96a5337b21b9caa49f62991ead6304258aaaa15aed5435b2a5",
-      "scanned_at": "2026-06-08T10:35:41.038999Z"
-    }
-  },
-  {
-    "id": "cospowers-requirements",
-    "name": "cospowers-requirements",
-    "type": "plugin",
-    "description": "An AI plugin for structuring raw requirements into formal user/system requirement documents with quality evaluation.",
-    "source_url": "https://github.com/costrict-plugins-repo/cospowers-requirements/tree/main/",
-    "category": "ai-ml",
-    "tags": [
-      "requirement-analysis",
-      "system-requirements",
-      "quality-evaluation",
-      "documentation-generation",
-      "enterprise-software"
-    ],
-    "tech_stack": [
-      "markdown",
-      "json",
-      "yaml"
-    ],
-    "source": "csc-plugins",
-    "source_priority": 1000,
-    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-requirements",
-    "platforms": [
-      "claude-code"
-    ],
-    "install": {
-      "method": "plugin_marketplace",
-      "plugin_name": "cospowers-requirements",
-      "marketplace_repo": "costrict-plugins-repo/cospowers-requirements",
-      "marketplace_name": "ai-workers-requirements",
-      "marketplace_verified": true,
-      "marketplace": "costrict-plugins-repo/cospowers-requirements"
-    },
-    "bundle": {
-      "skills_count": 9,
-      "commands_count": 0,
-      "agents_count": 0,
-      "mcp_servers_count": 0,
-      "skills_namespaces": [
-        "cospowers-requirements:aireq-evaluator",
-        "cospowers-requirements:requirement-analysis",
-        "cospowers-requirements:requirements-change-analysis",
-        "cospowers-requirements:requirements-intake",
-        "cospowers-requirements:requirements-review",
-        "cospowers-requirements:session-context",
-        "cospowers-requirements:sysreq-evaluator",
-        "cospowers-requirements:system-requirement-analysis",
-        "cospowers-requirements:using-requirements-plugin"
-      ],
-      "hooks_count": 0,
-      "hook_events": [],
-      "mcp_server_names": [],
-      "is_marketplace_repo": false,
-      "bundled_skill_ids": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    "manifest_completeness": 1.0,
-    "last_synced": "2026-06-08",
-    "stars": 0,
-    "pushed_at": "2026-06-05T07:33:34Z",
-    "version": "0.0.1",
-    "final_score": 62,
-    "health": {
-      "score": 46,
-      "freshness_label": "active",
-      "last_commit": "2026-06-05T07:33:34Z",
-      "signals": {
-        "freshness": 99,
-        "popularity": 0,
-        "source_trust": 40,
-        "install_popularity": 0
-      }
-    },
-    "verified": true,
-    "prune_content": false,
-    "evaluation": {
-      "coding_relevance": 3,
-      "desc_accuracy": 4,
-      "doc_completeness": 2,
-      "specificity": 4,
-      "writing_quality": 3,
-      "final_score": 62,
-      "decision": "review",
-      "model_id": "mimo-v2.5-pro",
-      "rubric_version": "2.85974ec3",
-      "evaluated_at": "2026-06-08T08:51:30.076497Z"
-    },
-    "decision": "review",
-    "weak_dims": [
-      "doc_completeness"
-    ],
-    "freshness_label": "active",
-    "description_zh": "AI 驱动的需求插件，将原始想法转化为结构化用户/系统需求文档并进行质量评估。",
-    "search_terms": [
-      "requirement analysis",
-      "需求梳理",
-      "system requirement specification",
-      "系统需求文档",
-      "quality gate"
-    ],
-    "highlights": [
-      "将原始想法转化为结构化需求文档",
-      "内置 75 条质量检查规则",
-      "支持用户需求到系统需求的全流程"
-    ],
-    "description_original": "AI 驱动的需求梳理插件：将原始想法、PRD、issue、需求变更转化为结构化需求和系统需求。",
-    "security": {
-      "risk_level": "clean",
-      "verdict": "safe",
-      "red_flags": [],
-      "permissions": {
-        "files": [
-          "templates/",
-          "rules/",
-          "skills/",
-          "cospowers.config.json",
-          "docs/agent-rules/1-ai-requirements/",
-          "docs/requirements/"
-        ],
-        "network": [],
-        "commands": []
-      },
-      "summary": "纯文档分析与评估插件，所有 skill 均为需求文档的结构化梳理、质量评估和报告生成，仅在本地工作目录读写 Markdown 文件，不执行任何外部命令、不访问网络、不传输用户数据，无安全风险。",
-      "recommendations": [],
-      "scan_model": "mimo-v2.5-pro",
-      "rubric_version": "2.bd55efd5",
-      "content_hash": "5f5a1490487c46f828c1f32dc7d50b1ac3ce973ad4f24d3af1f02cd4bd524946",
-      "scanned_at": "2026-06-08T10:35:32.356994Z"
-    }
-  },
-  {
-    "id": "cospowers-solution-design",
-    "name": "cospowers-solution-design",
-    "type": "plugin",
-    "description": "AI-driven plugin for generating system design, subsystem design, and API contracts from requirements or PRD.",
-    "source_url": "https://github.com/costrict-plugins-repo/cospowers-solution-design/tree/main/",
-    "category": "ai-ml",
-    "tags": [
-      "solution-design",
-      "system-architecture",
-      "openapi",
-      "design-evaluation",
-      "ai-assisted"
-    ],
-    "tech_stack": [
-      "markdown",
-      "yaml",
-      "openapi",
-      "mermaid"
-    ],
-    "source": "csc-plugins",
-    "source_priority": 1000,
-    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-solution-design",
-    "platforms": [
-      "claude-code"
-    ],
-    "install": {
-      "method": "plugin_marketplace",
-      "plugin_name": "cospowers-solution-design",
-      "marketplace_repo": "costrict-plugins-repo/cospowers-solution-design",
-      "marketplace_name": "ai-workers-design",
-      "marketplace_verified": true,
-      "marketplace": "costrict-plugins-repo/cospowers-solution-design"
-    },
-    "bundle": {
-      "skills_count": 12,
-      "commands_count": 0,
-      "agents_count": 0,
-      "mcp_servers_count": 0,
-      "skills_namespaces": [
-        "cospowers-solution-design:api-contract-design",
-        "cospowers-solution-design:architecture-review",
-        "cospowers-solution-design:design-change-analysis",
-        "cospowers-solution-design:design-spec",
-        "cospowers-solution-design:doc-consistency-check",
-        "cospowers-solution-design:doc-quality-evaluator",
-        "cospowers-solution-design:session-context",
-        "cospowers-solution-design:solution-design",
-        "cospowers-solution-design:subsystem-design-spec",
-        "cospowers-solution-design:subsystem-evaluator",
-        "cospowers-solution-design:sysdesign-evaluator",
-        "cospowers-solution-design:using-solution-design-plugin"
-      ],
-      "hooks_count": 0,
-      "hook_events": [],
-      "mcp_server_names": [],
-      "is_marketplace_repo": false,
-      "bundled_skill_ids": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    "manifest_completeness": 1.0,
-    "last_synced": "2026-06-08",
-    "stars": 0,
-    "pushed_at": "2026-06-05T07:33:34Z",
-    "version": "0.0.1",
-    "final_score": 87,
-    "health": {
-      "score": 46,
-      "freshness_label": "active",
-      "last_commit": "2026-06-05T07:33:34Z",
-      "signals": {
-        "freshness": 99,
-        "popularity": 0,
-        "source_trust": 40,
-        "install_popularity": 0
-      }
-    },
-    "verified": true,
-    "prune_content": false,
-    "evaluation": {
-      "coding_relevance": 4,
-      "desc_accuracy": 5,
-      "doc_completeness": 4,
-      "specificity": 5,
-      "writing_quality": 5,
-      "final_score": 87,
-      "decision": "accept",
-      "model_id": "mimo-v2.5-pro",
-      "rubric_version": "2.85974ec3",
-      "evaluated_at": "2026-06-08T08:51:16.599189Z"
-    },
-    "decision": "accept",
-    "weak_dims": [],
-    "freshness_label": "active",
-    "description_zh": "AI驱动的方案设计插件，从需求、PRD或现有系统上下文生成系统设计、子系统设计和API契约。",
-    "search_terms": [
-      "AI solution design",
-      "系统设计生成",
-      "API contract design",
-      "子系统设计",
-      "design evaluation"
-    ],
-    "highlights": [
-      "从需求生成系统设计文档",
-      "自动生成OpenAPI契约",
-      "多阶段质量评估与一致性检查"
-    ],
-    "description_original": "AI 驱动的方案设计插件：从需求、PRD 或现有系统上下文生成系统设计、子系统设计和 API 契约。",
-    "security": {
-      "risk_level": "low",
-      "verdict": "safe",
-      "red_flags": [],
-      "permissions": {
-        "files": [
-          "docs/design/",
-          "docs/agent-rules/",
-          "templates/",
-          "rules/",
-          "cospowers.config.json"
-        ],
-        "network": [],
-        "commands": []
-      },
-      "summary": "纯本地方案设计插件，仅读写项目内文档目录、模板和规则文件，生成设计文档与 OpenAPI 规范，无外部网络请求或危险命令执行。",
-      "recommendations": [
-        "注意 cospowers.config.json 中的 SPEC_DEVELOPER_SERVER_URL 配置项可能指向远程知识库服务器，使用时确认该 URL 的可信度。",
-        "该插件涉及读取用户本地代码路径（§8），建议在使用前确认写入范围限定在 docs/ 目录内。"
-      ],
-      "scan_model": "mimo-v2.5-pro",
-      "rubric_version": "2.bd55efd5",
-      "content_hash": "c45a9ea27726342c9ebb11480a24aa82aacaf9ec3de67c2778fabe5da1f63bbf",
-      "scanned_at": "2026-06-08T10:35:32.792325Z"
-    }
-  },
-  {
-    "id": "cospowers-task-planning",
-    "name": "cospowers-task-planning",
-    "type": "plugin",
-    "description": "An AI-powered plugin for decomposing requirements and designs into structured implementation plans, task graphs, milestones, and execution strategies.",
-    "source_url": "https://github.com/costrict-plugins-repo/cospowers-task-planning/tree/main/",
-    "category": "ai-ml",
-    "tags": [
-      "task-planning",
-      "project-management",
-      "ai-worker-plugin",
-      "implementation-plan",
-      "requirement-decomposition"
-    ],
-    "tech_stack": [
-      "markdown",
-      "yaml",
-      "json"
-    ],
-    "source": "csc-plugins",
-    "source_priority": 1000,
-    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-task-planning",
-    "platforms": [
-      "claude-code"
-    ],
-    "install": {
-      "method": "plugin_marketplace",
-      "plugin_name": "cospowers-task-planning",
-      "marketplace_repo": "costrict-plugins-repo/cospowers-task-planning",
-      "marketplace_name": "ai-workers-plan",
-      "marketplace_verified": true,
-      "marketplace": "costrict-plugins-repo/cospowers-task-planning"
-    },
-    "bundle": {
-      "skills_count": 9,
-      "commands_count": 0,
-      "agents_count": 0,
-      "mcp_servers_count": 0,
-      "skills_namespaces": [
-        "cospowers-task-planning:execution-strategy-selection",
-        "cospowers-task-planning:milestone-planning",
-        "cospowers-task-planning:session-context",
-        "cospowers-task-planning:subagent-dispatch-planning",
-        "cospowers-task-planning:task-graph-generation",
-        "cospowers-task-planning:task-planning",
-        "cospowers-task-planning:using-task-planning-plugin",
-        "cospowers-task-planning:worktree-planning",
-        "cospowers-task-planning:writing-plans"
-      ],
-      "hooks_count": 0,
-      "hook_events": [],
-      "mcp_server_names": [],
-      "is_marketplace_repo": false,
-      "bundled_skill_ids": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        "writing-plans-agskill"
-      ]
-    },
-    "manifest_completeness": 1.0,
-    "last_synced": "2026-06-08",
-    "stars": 0,
-    "pushed_at": "2026-06-05T07:33:34Z",
-    "version": "0.0.1",
-    "final_score": 54,
-    "health": {
-      "score": 46,
-      "freshness_label": "active",
-      "last_commit": "2026-06-05T07:33:34Z",
-      "signals": {
-        "freshness": 99,
-        "popularity": 0,
-        "source_trust": 40,
-        "install_popularity": 0
-      }
-    },
-    "verified": true,
-    "prune_content": false,
-    "evaluation": {
-      "coding_relevance": 3,
-      "desc_accuracy": 4,
-      "doc_completeness": 1,
-      "specificity": 4,
-      "writing_quality": 2,
-      "final_score": 54,
-      "decision": "review",
-      "model_id": "mimo-v2.5-pro",
-      "rubric_version": "2.85974ec3",
-      "evaluated_at": "2026-06-08T08:51:28.327502Z"
-    },
-    "decision": "review",
-    "weak_dims": [
-      "doc_completeness",
-      "writing_quality"
-    ],
-    "freshness_label": "active",
-    "description_zh": "AI驱动的任务拆解插件，将需求或设计分解为实现计划、任务图、里程碑和执行策略。",
-    "search_terms": [
-      "task decomposition plugin",
-      "AI task planning",
-      "implementation plan generator",
-      "任务拆解插件",
-      "需求分解"
-    ],
-    "highlights": [
-      "AI驱动的智能任务分解",
-      "生成结构化实现计划与任务图",
-      "支持里程碑与执行策略规划"
-    ],
-    "description_original": "AI 驱动的任务拆解插件：将需求或设计拆解为实现计划、任务图、里程碑和执行策略。",
-    "security": {
-      "risk_level": "medium",
-      "verdict": "caution",
-      "red_flags": [
-        "session-context skill 要求 AI 在工作目录写入 active-*.md 和 memory/ 文件",
-        "writing-plans skill 指示执行 ls、find、cat 等 shell 命令探查本地文件系统",
-        "多处 skill 要求读取项目源代码、配置文件、OpenAPI 规范等本地文件",
-        "引用 git add/commit 命令示例，暗示在用户仓库执行 git 操作"
-      ],
-      "permissions": {
-        "files": [
-          "docs/plans/*.md",
-          "docs/design/*.md",
-          "docs/design/openapi.yaml",
-          "active-*.md",
-          "memory/**/*.md",
-          "*.py",
-          "*.go",
-          "*.js",
-          "*.ts",
-          "pyproject.toml",
-          "go.mod",
-          "package.json",
-          "Makefile",
-          ".editorconfig",
-          ".pylintrc",
-          ".flake8",
-          ".golangci.yml",
-          ".eslintrc*"
-        ],
-        "network": [],
-        "commands": [
-          "ls",
-          "find",
-          "cat",
-          "git add",
-          "git commit",
-          "pytest"
-        ]
-      },
-      "summary": "该插件主要在本地工作目录读写计划文档和上下文文件，并指示 AI 执行 ls/find 等 shell 命令探查项目结构，无网络外传但会写入用户工作目录文件，风险可控。",
-      "recommendations": [
-        "确认插件仅在 docs/plans/ 和 memory/ 目录写入文件，不会修改业务源码",
-        "审查 session-context skill 的写入路径是否限定在插件自身的存储目录内",
-        "注意 writing-plans skill 中的 shell 命令仅为示例，实际由宿主环境控制执行"
-      ],
-      "scan_model": "mimo-v2.5-pro",
-      "rubric_version": "2.bd55efd5",
-      "content_hash": "17fe1b6a5874af1f7c2f0e21211defef11e3871a7fccccfc9857afe1aaa0e428",
-      "scanned_at": "2026-06-08T10:35:36.345135Z"
-    }
-  },
-  {
-    "id": "cospowers-tdd-development",
-    "name": "cospowers-tdd-development",
-    "type": "plugin",
-    "description": "An AI-driven plugin for TDD-based coding, covering test-first development, debugging, code compliance, and Git workflows.",
-    "source_url": "https://github.com/costrict-plugins-repo/cospowers-tdd-development/tree/main/",
-    "category": "ai-ml",
-    "tags": [
-      "tdd",
-      "ai-coding",
-      "code-compliance",
-      "git-workflow",
-      "debugging"
-    ],
-    "tech_stack": [
-      "git",
-      "python",
-      "go",
-      "bash",
-      "pytest",
-      "go test",
-      "autopep8",
-      "ruff",
-      "flake8",
-      "gofmt"
-    ],
-    "source": "csc-plugins",
-    "source_priority": 1000,
-    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-tdd-development",
-    "platforms": [
-      "claude-code"
-    ],
-    "install": {
-      "method": "plugin_marketplace",
-      "plugin_name": "cospowers-tdd-development",
-      "marketplace_repo": "costrict-plugins-repo/cospowers-tdd-development",
-      "marketplace_name": "ai-workers-tdd",
-      "marketplace_verified": true,
-      "marketplace": "costrict-plugins-repo/cospowers-tdd-development"
-    },
-    "bundle": {
-      "skills_count": 12,
-      "commands_count": 0,
-      "agents_count": 1,
-      "mcp_servers_count": 0,
-      "skills_namespaces": [
-        "cospowers-tdd-development:code-compliance-check",
-        "cospowers-tdd-development:executing-plans",
-        "cospowers-tdd-development:implementation-review",
-        "cospowers-tdd-development:requesting-code-review",
-        "cospowers-tdd-development:session-context",
-        "cospowers-tdd-development:spec-commit",
-        "cospowers-tdd-development:subagent-driven-development",
-        "cospowers-tdd-development:systematic-debugging",
-        "cospowers-tdd-development:tdd-implementation",
-        "cospowers-tdd-development:test-driven-development",
-        "cospowers-tdd-development:using-git-worktrees",
-        "cospowers-tdd-development:using-tdd-development-plugin"
-      ],
-      "hooks_count": 0,
-      "hook_events": [],
-      "mcp_server_names": [],
-      "is_marketplace_repo": false,
-      "bundled_skill_ids": [
-        null,
-        "executing-plans-agskill",
-        null,
-        "requesting-code-review-agskill",
-        null,
-        null,
-        "subagent-driven-development-agskill",
-        "systematic-debugging-agskill",
-        null,
-        "test-driven-development-agskill",
-        "using-git-worktrees-agskill",
-        null
-      ]
-    },
-    "manifest_completeness": 1.0,
-    "last_synced": "2026-06-08",
-    "stars": 0,
-    "pushed_at": "2026-06-05T07:33:34Z",
-    "version": "0.0.1",
-    "final_score": 83,
-    "health": {
-      "score": 46,
-      "freshness_label": "active",
-      "last_commit": "2026-06-05T07:33:34Z",
-      "signals": {
-        "freshness": 99,
-        "popularity": 0,
-        "source_trust": 40,
-        "install_popularity": 0
-      }
-    },
-    "verified": true,
-    "prune_content": false,
-    "evaluation": {
-      "coding_relevance": 5,
-      "desc_accuracy": 4,
-      "doc_completeness": 4,
-      "specificity": 4,
-      "writing_quality": 4,
-      "final_score": 83,
-      "decision": "accept",
-      "model_id": "mimo-v2.5-pro",
-      "rubric_version": "2.85974ec3",
-      "evaluated_at": "2026-06-08T08:51:33.220547Z"
-    },
-    "decision": "accept",
-    "weak_dims": [],
-    "freshness_label": "active",
-    "description_zh": "基于TDD的AI驱动编码插件，涵盖测试优先开发、调试、代码合规和Git工作流。",
-    "search_terms": [
-      "AI-driven TDD",
-      "测试驱动开发",
-      "code compliance checking",
-      "Git commit automation",
-      "AI代码审查"
-    ],
-    "highlights": [
-      "支持TDD全流程自动化",
-      "集成代码合规检查和Git提交规范",
-      "AI驱动的调试和代码审查"
-    ],
-    "description_original": "AI 驱动的 TDD 编码插件：基于任务、测试、issue 或 bug 执行测试优先开发、调试、代码检查和提交。",
-    "security": {
-      "risk_level": "medium",
-      "verdict": "caution",
-      "red_flags": [
-        "调用外部知识库 API (DAEDALUS_URL) 传输代码差异内容",
-        "执行 git 操作、shell 命令 (git diff, grep, curl, autopep8, ruff, gofmt 等)",
-        "在仓库中写入文件 (compliance-cache.json, time-stats.log, active-*.md)",
-        "使用 API Key (DAEDALUS_API_KEY, GITLAB_TOKEN) 进行远程认证",
-        "通过 curl 调用远程 KB 端点获取规范文档并发送 diff 数据"
-      ],
-      "permissions": {
-        "files": [
-          "docs/agent-rules/spec_developer/output/compliance-cache.json",
-          "docs/agent-rules/spec_developer/output/time-stats.log",
-          "active-*.md",
-          "memory/*.md",
-          "MEMORY.md",
-          "cospowers.config.json",
-          "rules/coding-standards/*.md",
-          "*.py",
-          "*.go",
-          "*.vue",
-          "*.ts",
-          "*.js"
-        ],
-        "network": [
-          "DAEDALUS_URL (远程知识库 API)",
-          "GitLab API (创建 MR)"
-        ],
-        "commands": [
-          "git diff",
-          "git status",
-          "git branch",
-          "git add",
-          "git commit",
-          "git push",
-          "git rev-parse",
-          "curl",
-          "grep",
-          "find",
-          "head",
-          "mkdir",
-          "echo",
-          "date",
-          "python2",
-          "python3",
-          "autopep8",
-          "ruff",
-          "flake8",
-          "gofmt",
-          "pyproject.toml 检测",
-          "pytest",
-          "go test"
-        ]
-      },
-      "summary": "该 TDD 插件执行 shell 命令、读写仓库文件、调用远程知识库 API 并发送代码差异数据，涉及多个外部服务和 API Key，整体风险中等，需关注数据外传和命令执行范围。",
-      "recommendations": [
-        "确认 DAEDALUS_URL 指向受信任的知识库服务，避免将源代码差异发送到未知端点",
-        "审查 cospowers.config.json 中的 API Key 配置，确保 GITLAB_TOKEN 等凭据安全存储",
-        "关注 shell 命令执行范围，确保仅在项目工作目录内操作",
-        "评估写入的文件路径是否符合预期，防止路径遍历风险",
-        "建议在隔离环境或受限权限下首次运行，观察实际行为"
-      ],
-      "scan_model": "mimo-v2.5-pro",
-      "rubric_version": "2.bd55efd5",
-      "content_hash": "c5b3f589f4a2e72695035f44f569a9041e73f399f9138304eb0fb23e14d966a2",
-      "scanned_at": "2026-06-08T10:35:40.698489Z"
-    }
-  },
-  {
-    "id": "cospowers-test-generation",
-    "name": "cospowers-test-generation",
-    "type": "plugin",
-    "description": "An AI-powered plugin that generates test strategies, cases, and code drafts from requirements, designs, plans, bugs, or existing code.",
-    "source_url": "https://github.com/costrict-plugins-repo/cospowers-test-generation/tree/main/",
-    "category": "testing",
-    "tags": [
-      "test-generation",
-      "ai-plugin",
-      "software-testing",
-      "code-generation",
-      "mcp-server"
-    ],
-    "tech_stack": [
-      "python",
-      "go",
-      "pytest",
-      "go test",
-      "mcp"
-    ],
-    "source": "csc-plugins",
-    "source_priority": 1000,
-    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-test-generation",
-    "platforms": [
-      "claude-code"
-    ],
-    "install": {
-      "method": "plugin_marketplace",
-      "plugin_name": "cospowers-test-generation",
-      "marketplace_repo": "costrict-plugins-repo/cospowers-test-generation",
-      "marketplace_name": "ai-workers-test",
-      "marketplace_verified": true,
-      "marketplace": "costrict-plugins-repo/cospowers-test-generation"
-    },
-    "bundle": {
-      "skills_count": 10,
-      "commands_count": 0,
-      "agents_count": 0,
-      "mcp_servers_count": 0,
-      "skills_namespaces": [
-        "cospowers-test-generation:acceptance-test-generation",
-        "cospowers-test-generation:edge-case-test-generation",
-        "cospowers-test-generation:regression-test-generation",
-        "cospowers-test-generation:session-context",
-        "cospowers-test-generation:test-case-generation",
-        "cospowers-test-generation:test-code-generator",
-        "cospowers-test-generation:test-coverage-review",
-        "cospowers-test-generation:test-generation",
-        "cospowers-test-generation:test-strategy-generation",
-        "cospowers-test-generation:using-test-generation-plugin"
-      ],
-      "hooks_count": 0,
-      "hook_events": [],
-      "mcp_server_names": [],
-      "is_marketplace_repo": false,
-      "bundled_skill_ids": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    "manifest_completeness": 1.0,
-    "last_synced": "2026-06-08",
-    "stars": 0,
-    "pushed_at": "2026-06-05T07:33:34Z",
-    "version": "0.0.1",
-    "final_score": 76,
-    "health": {
-      "score": 46,
-      "freshness_label": "active",
-      "last_commit": "2026-06-05T07:33:34Z",
-      "signals": {
-        "freshness": 99,
-        "popularity": 0,
-        "source_trust": 40,
-        "install_popularity": 0
-      }
-    },
-    "verified": true,
-    "prune_content": false,
-    "evaluation": {
-      "coding_relevance": 5,
-      "desc_accuracy": 5,
-      "doc_completeness": 3,
-      "specificity": 3,
-      "writing_quality": 3,
-      "final_score": 76,
-      "decision": "accept",
-      "model_id": "mimo-v2.5-pro",
-      "rubric_version": "2.85974ec3",
-      "evaluated_at": "2026-06-08T08:51:23.019070Z"
-    },
-    "decision": "accept",
-    "weak_dims": [],
-    "freshness_label": "active",
-    "description_zh": "AI驱动的测试生成插件，可从需求、设计、计划、Bug或代码生成测试策略、用例和代码草稿。",
-    "search_terms": [
-      "AI test generation",
-      "AI测试生成",
-      "自动测试代码",
-      "test case generator",
-      "测试策略生成"
-    ],
-    "highlights": [
-      "从多种软件制品自动生成测试",
-      "支持Go和Python测试代码生成",
-      "内嵌会话上下文管理功能"
-    ],
-    "description_original": "AI 驱动的测试生成插件：从需求、设计、计划、bug 或代码生成测试策略、测试用例和测试代码草稿。",
-    "security": {
-      "risk_level": "low",
-      "verdict": "safe",
-      "red_flags": [],
-      "permissions": {
-        "files": [
-          "docs/tests/",
-          "templates/",
-          "rules/",
-          "skills/",
-          "cospowers.config.json",
-          "active-*.md",
-          "memory/"
-        ],
-        "network": [],
-        "commands": [
-          "ls"
-        ]
-      },
-      "summary": "该插件为纯本地测试生成工具，仅读写项目内测试文档和上下文文件，无网络请求、无敏感数据访问、无危险命令执行，属于低风险本地代码生成辅助插件。",
-      "recommendations": [],
-      "scan_model": "mimo-v2.5-pro",
-      "rubric_version": "2.bd55efd5",
-      "content_hash": "4d40944c3462feca4a4d38e754351ce49a78c5d440cd8574b492bbdbdf6d13c3",
-      "scanned_at": "2026-06-08T10:35:30.959952Z"
-    }
-  },
-  {
     "id": "anthropic-superpowers",
     "name": "superpowers",
     "type": "plugin",
@@ -1016024,5 +1015039,384 @@
       "一键部署到本地Studio站点"
     ],
     "freshness_label": "active"
+  },
+  {
+    "id": "cospowers-integration-verification",
+    "name": "cospowers-integration-verification",
+    "type": "plugin",
+    "description": "AI 驱动的集成验证插件：执行集成测试、回归验证、契约验证、发布前检查和分支收尾。",
+    "source_url": "https://github.com/yhangf/csc-plugins/tree/main/cospowers-integration-verification-plugin",
+    "category": "ai-ml",
+    "tags": [
+      "cospowers",
+      "ai-workers"
+    ],
+    "tech_stack": [],
+    "source": "csc-plugins",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-integration-verification",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cospowers-integration-verification",
+      "marketplace_repo": "costrict-plugins-repo/cospowers-integration-verification",
+      "marketplace_name": "ai-workers-integration-verification",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cospowers-integration-verification"
+    },
+    "bundle": {
+      "skills_count": 15,
+      "commands_count": 0,
+      "agents_count": 1,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cospowers-integration-verification:code-compliance-check",
+        "cospowers-integration-verification:contract-verification",
+        "cospowers-integration-verification:doc-quality-evaluator",
+        "cospowers-integration-verification:e2e-verification",
+        "cospowers-integration-verification:finishing-a-development-branch",
+        "cospowers-integration-verification:integration-test-runner",
+        "cospowers-integration-verification:integration-verification",
+        "cospowers-integration-verification:regression-verification",
+        "cospowers-integration-verification:release-readiness-check",
+        "cospowers-integration-verification:requesting-code-review",
+        "cospowers-integration-verification:session-context",
+        "cospowers-integration-verification:spec-commit",
+        "cospowers-integration-verification:systematic-debugging",
+        "cospowers-integration-verification:using-integration-verification-plugin",
+        "cospowers-integration-verification:verification-before-completion"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-06-09",
+    "stars": 0,
+    "pushed_at": "2026-06-09T02:09:13Z",
+    "version": "0.0.1",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false
+  },
+  {
+    "id": "cospowers-requirements",
+    "name": "cospowers-requirements",
+    "type": "plugin",
+    "description": "AI 驱动的需求梳理插件：将原始想法、PRD、issue、需求变更转化为结构化需求和系统需求。",
+    "source_url": "https://github.com/yhangf/csc-plugins/tree/main/cospowers-requirements-plugin",
+    "category": "ai-ml",
+    "tags": [
+      "cospowers",
+      "ai-workers"
+    ],
+    "tech_stack": [],
+    "source": "csc-plugins",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-requirements",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cospowers-requirements",
+      "marketplace_repo": "costrict-plugins-repo/cospowers-requirements",
+      "marketplace_name": "ai-workers-requirements",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cospowers-requirements"
+    },
+    "bundle": {
+      "skills_count": 9,
+      "commands_count": 0,
+      "agents_count": 0,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cospowers-requirements:aireq-evaluator",
+        "cospowers-requirements:requirement-analysis",
+        "cospowers-requirements:requirements-change-analysis",
+        "cospowers-requirements:requirements-intake",
+        "cospowers-requirements:requirements-review",
+        "cospowers-requirements:session-context",
+        "cospowers-requirements:sysreq-evaluator",
+        "cospowers-requirements:system-requirement-analysis",
+        "cospowers-requirements:using-requirements-plugin"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-06-09",
+    "stars": 0,
+    "pushed_at": "2026-06-09T02:09:13Z",
+    "version": "0.0.1",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false
+  },
+  {
+    "id": "cospowers-solution-design",
+    "name": "cospowers-solution-design",
+    "type": "plugin",
+    "description": "AI 驱动的方案设计插件：从需求、PRD 或现有系统上下文生成系统设计、子系统设计和 API 契约。",
+    "source_url": "https://github.com/yhangf/csc-plugins/tree/main/cospowers-solution-design-plugin",
+    "category": "ai-ml",
+    "tags": [
+      "cospowers",
+      "ai-workers"
+    ],
+    "tech_stack": [],
+    "source": "csc-plugins",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-solution-design",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cospowers-solution-design",
+      "marketplace_repo": "costrict-plugins-repo/cospowers-solution-design",
+      "marketplace_name": "ai-workers-design",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cospowers-solution-design"
+    },
+    "bundle": {
+      "skills_count": 12,
+      "commands_count": 0,
+      "agents_count": 0,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cospowers-solution-design:api-contract-design",
+        "cospowers-solution-design:architecture-review",
+        "cospowers-solution-design:design-change-analysis",
+        "cospowers-solution-design:design-spec",
+        "cospowers-solution-design:doc-consistency-check",
+        "cospowers-solution-design:doc-quality-evaluator",
+        "cospowers-solution-design:session-context",
+        "cospowers-solution-design:solution-design",
+        "cospowers-solution-design:subsystem-design-spec",
+        "cospowers-solution-design:subsystem-evaluator",
+        "cospowers-solution-design:sysdesign-evaluator",
+        "cospowers-solution-design:using-solution-design-plugin"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-06-09",
+    "stars": 0,
+    "pushed_at": "2026-06-09T02:09:13Z",
+    "version": "0.0.1",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false
+  },
+  {
+    "id": "cospowers-task-planning",
+    "name": "cospowers-task-planning",
+    "type": "plugin",
+    "description": "AI 驱动的任务拆解插件：将需求或设计拆解为实现计划、任务图、里程碑和执行策略。",
+    "source_url": "https://github.com/yhangf/csc-plugins/tree/main/cospowers-task-planning-plugin",
+    "category": "ai-ml",
+    "tags": [
+      "cospowers",
+      "ai-workers"
+    ],
+    "tech_stack": [],
+    "source": "csc-plugins",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-task-planning",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cospowers-task-planning",
+      "marketplace_repo": "costrict-plugins-repo/cospowers-task-planning",
+      "marketplace_name": "ai-workers-plan",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cospowers-task-planning"
+    },
+    "bundle": {
+      "skills_count": 9,
+      "commands_count": 0,
+      "agents_count": 0,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cospowers-task-planning:execution-strategy-selection",
+        "cospowers-task-planning:milestone-planning",
+        "cospowers-task-planning:session-context",
+        "cospowers-task-planning:subagent-dispatch-planning",
+        "cospowers-task-planning:task-graph-generation",
+        "cospowers-task-planning:task-planning",
+        "cospowers-task-planning:using-task-planning-plugin",
+        "cospowers-task-planning:worktree-planning",
+        "cospowers-task-planning:writing-plans"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-06-09",
+    "stars": 0,
+    "pushed_at": "2026-06-09T02:09:13Z",
+    "version": "0.0.1",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false
+  },
+  {
+    "id": "cospowers-tdd-development",
+    "name": "cospowers-tdd-development",
+    "type": "plugin",
+    "description": "AI 驱动的 TDD 编码插件：基于任务、测试、issue 或 bug 执行测试优先开发、调试、代码检查和提交。",
+    "source_url": "https://github.com/yhangf/csc-plugins/tree/main/cospowers-tdd-development-plugin",
+    "category": "ai-ml",
+    "tags": [
+      "cospowers",
+      "ai-workers"
+    ],
+    "tech_stack": [],
+    "source": "csc-plugins",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-tdd-development",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cospowers-tdd-development",
+      "marketplace_repo": "costrict-plugins-repo/cospowers-tdd-development",
+      "marketplace_name": "ai-workers-tdd",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cospowers-tdd-development"
+    },
+    "bundle": {
+      "skills_count": 12,
+      "commands_count": 0,
+      "agents_count": 1,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cospowers-tdd-development:code-compliance-check",
+        "cospowers-tdd-development:executing-plans",
+        "cospowers-tdd-development:implementation-review",
+        "cospowers-tdd-development:requesting-code-review",
+        "cospowers-tdd-development:session-context",
+        "cospowers-tdd-development:spec-commit",
+        "cospowers-tdd-development:subagent-driven-development",
+        "cospowers-tdd-development:systematic-debugging",
+        "cospowers-tdd-development:tdd-implementation",
+        "cospowers-tdd-development:test-driven-development",
+        "cospowers-tdd-development:using-git-worktrees",
+        "cospowers-tdd-development:using-tdd-development-plugin"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-06-09",
+    "stars": 0,
+    "pushed_at": "2026-06-09T02:09:13Z",
+    "version": "0.0.1",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false
+  },
+  {
+    "id": "cospowers-test-generation",
+    "name": "cospowers-test-generation",
+    "type": "plugin",
+    "description": "AI 驱动的测试生成插件：从需求、设计、计划、bug 或代码生成测试策略、测试用例和测试代码草稿。",
+    "source_url": "https://github.com/yhangf/csc-plugins/tree/main/cospowers-test-generation-plugin",
+    "category": "testing",
+    "tags": [
+      "cospowers",
+      "ai-workers"
+    ],
+    "tech_stack": [],
+    "source": "csc-plugins",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-test-generation",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cospowers-test-generation",
+      "marketplace_repo": "costrict-plugins-repo/cospowers-test-generation",
+      "marketplace_name": "ai-workers-test",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cospowers-test-generation"
+    },
+    "bundle": {
+      "skills_count": 10,
+      "commands_count": 0,
+      "agents_count": 0,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cospowers-test-generation:acceptance-test-generation",
+        "cospowers-test-generation:edge-case-test-generation",
+        "cospowers-test-generation:regression-test-generation",
+        "cospowers-test-generation:session-context",
+        "cospowers-test-generation:test-case-generation",
+        "cospowers-test-generation:test-code-generator",
+        "cospowers-test-generation:test-coverage-review",
+        "cospowers-test-generation:test-generation",
+        "cospowers-test-generation:test-strategy-generation",
+        "cospowers-test-generation:using-test-generation-plugin"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-06-09",
+    "stars": 0,
+    "pushed_at": "2026-06-09T02:09:13Z",
+    "version": "0.0.1",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false
   }
 ]
