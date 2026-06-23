@@ -1,1669 +1,5 @@
 [
   {
-    "id": "cospowers-integration-verification",
-    "name": "cospowers-integration-verification",
-    "type": "plugin",
-    "description": "AI-driven integration verification plugin for coding workflows, covering compliance, testing, debugging, and git operations.",
-    "source_url": "https://github.com/costrict-plugins-repo/cospowers-integration-verification/tree/main/",
-    "category": "ai-ml",
-    "tags": [
-      "cospowers",
-      "ai-workers"
-    ],
-    "tech_stack": [],
-    "source": "csc-plugins",
-    "source_priority": 1000,
-    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-integration-verification",
-    "platforms": [
-      "claude-code"
-    ],
-    "install": {
-      "method": "plugin_marketplace",
-      "plugin_name": "cospowers-integration-verification",
-      "marketplace_repo": "costrict-plugins-repo/cospowers-integration-verification",
-      "marketplace_name": "ai-workers-integration-verification",
-      "marketplace_verified": true,
-      "marketplace": "costrict-plugins-repo/cospowers-integration-verification"
-    },
-    "bundle": {
-      "skills_count": 15,
-      "commands_count": 0,
-      "agents_count": 1,
-      "evaluators_count": 1,
-      "rules_count": 26,
-      "templates_count": 8,
-      "mcp_servers_count": 0,
-      "skills_namespaces": [
-        "cospowers-integration-verification:code-compliance-check",
-        "cospowers-integration-verification:contract-verification",
-        "cospowers-integration-verification:doc-quality-evaluator",
-        "cospowers-integration-verification:e2e-verification",
-        "cospowers-integration-verification:finishing-a-development-branch",
-        "cospowers-integration-verification:integration-test-runner",
-        "cospowers-integration-verification:integration-verification",
-        "cospowers-integration-verification:regression-verification",
-        "cospowers-integration-verification:release-readiness-check",
-        "cospowers-integration-verification:requesting-code-review",
-        "cospowers-integration-verification:session-context",
-        "cospowers-integration-verification:spec-commit",
-        "cospowers-integration-verification:systematic-debugging",
-        "cospowers-integration-verification:using-integration-verification-plugin",
-        "cospowers-integration-verification:verification-before-completion"
-      ],
-      "hooks_count": 0,
-      "hook_events": [],
-      "mcp_server_names": [],
-      "is_marketplace_repo": false,
-      "skill_paths": [
-        "cospowers-integration-verification-plugin/skills/code-compliance-check/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/contract-verification/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/doc-quality-evaluator/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/e2e-verification/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/finishing-a-development-branch/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/integration-test-runner/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/integration-verification/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/regression-verification/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/release-readiness-check/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/requesting-code-review/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/session-context/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/spec-commit/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/systematic-debugging/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/using-integration-verification-plugin/SKILL.md",
-        "cospowers-integration-verification-plugin/skills/verification-before-completion/SKILL.md"
-      ],
-      "evaluators_namespaces": [
-        "cospowers-integration-verification:doc-quality-evaluator"
-      ],
-      "evaluator_paths": [
-        "cospowers-integration-verification-plugin/evaluators/doc-quality-evaluator/SKILL.md"
-      ],
-      "commands_namespaces": [],
-      "command_paths": [],
-      "agents_namespaces": [
-        "cospowers-integration-verification:code-reviewer"
-      ],
-      "agent_paths": [
-        "cospowers-integration-verification-plugin/agents/code-reviewer.md"
-      ],
-      "rules_namespaces": [
-        "cospowers-integration-verification:code-review-rules/README",
-        "cospowers-integration-verification:coding-standards/code-review-checklist",
-        "cospowers-integration-verification:coding-standards/code-review-error-rules",
-        "cospowers-integration-verification:coding-standards/go-checklist",
-        "cospowers-integration-verification:coding-standards/python-checklist-py2-总规范",
-        "cospowers-integration-verification:coding-standards/python-checklist-py3-总规范",
-        "cospowers-integration-verification:coding-standards/shell_checklist",
-        "cospowers-integration-verification:coding-standards/通用编码checklist",
-        "cospowers-integration-verification:commit-standards/README",
-        "cospowers-integration-verification:common/README",
-        "cospowers-integration-verification:design-review/design-01-doc-writing-standards-checklist",
-        "cospowers-integration-verification:design-review/design-02-tech-requirements-design-checklist",
-        "cospowers-integration-verification:design-review/design-03-overall-design-checklist",
-        "cospowers-integration-verification:design-review/design-04-high-level-design-checklist",
-        "cospowers-integration-verification:design-review/design-05-i18n-design-checklist",
-        "cospowers-integration-verification:design-review/design-06-never-again-principles-checklist",
-        "cospowers-integration-verification:design-review/模块设计规范",
-        "cospowers-integration-verification:dfx/安全",
-        "cospowers-integration-verification:dfx/安全需求识别检视表",
-        "cospowers-integration-verification:dfx/性能",
-        "cospowers-integration-verification:process/iteration-entry-checklist",
-        "cospowers-integration-verification:process/iteration-exit-checklist",
-        "cospowers-integration-verification:testing-standards/Go单元测试规范",
-        "cospowers-integration-verification:testing-standards/Python单元测试规范",
-        "cospowers-integration-verification:testing-standards/单元测试规范",
-        "cospowers-integration-verification:testing-standards/高级代码分析规则"
-      ],
-      "rule_paths": [
-        "cospowers-integration-verification-plugin/rules/code-review-rules/README.md",
-        "cospowers-integration-verification-plugin/rules/coding-standards/code-review-checklist.md",
-        "cospowers-integration-verification-plugin/rules/coding-standards/code-review-error-rules.md",
-        "cospowers-integration-verification-plugin/rules/coding-standards/go-checklist.md",
-        "cospowers-integration-verification-plugin/rules/coding-standards/python-checklist-py2-总规范.md",
-        "cospowers-integration-verification-plugin/rules/coding-standards/python-checklist-py3-总规范.md",
-        "cospowers-integration-verification-plugin/rules/coding-standards/shell_checklist.md",
-        "cospowers-integration-verification-plugin/rules/coding-standards/通用编码checklist.md",
-        "cospowers-integration-verification-plugin/rules/commit-standards/README.md",
-        "cospowers-integration-verification-plugin/rules/common/README.md",
-        "cospowers-integration-verification-plugin/rules/design-review/design-01-doc-writing-standards-checklist.md",
-        "cospowers-integration-verification-plugin/rules/design-review/design-02-tech-requirements-design-checklist.md",
-        "cospowers-integration-verification-plugin/rules/design-review/design-03-overall-design-checklist.md",
-        "cospowers-integration-verification-plugin/rules/design-review/design-04-high-level-design-checklist.md",
-        "cospowers-integration-verification-plugin/rules/design-review/design-05-i18n-design-checklist.md",
-        "cospowers-integration-verification-plugin/rules/design-review/design-06-never-again-principles-checklist.md",
-        "cospowers-integration-verification-plugin/rules/design-review/模块设计规范.md",
-        "cospowers-integration-verification-plugin/rules/dfx/安全.md",
-        "cospowers-integration-verification-plugin/rules/dfx/安全需求识别检视表.md",
-        "cospowers-integration-verification-plugin/rules/dfx/性能.md",
-        "cospowers-integration-verification-plugin/rules/process/iteration-entry-checklist.md",
-        "cospowers-integration-verification-plugin/rules/process/iteration-exit-checklist.md",
-        "cospowers-integration-verification-plugin/rules/testing-standards/Go单元测试规范.md",
-        "cospowers-integration-verification-plugin/rules/testing-standards/Python单元测试规范.md",
-        "cospowers-integration-verification-plugin/rules/testing-standards/单元测试规范.md",
-        "cospowers-integration-verification-plugin/rules/testing-standards/高级代码分析规则.md"
-      ],
-      "templates_namespaces": [
-        "cospowers-integration-verification:branch-finish-template",
-        "cospowers-integration-verification:commit-message-examples",
-        "cospowers-integration-verification:commit-message-template",
-        "cospowers-integration-verification:contract-verification-report-template",
-        "cospowers-integration-verification:integration-test-report-template",
-        "cospowers-integration-verification:regression-report-template",
-        "cospowers-integration-verification:release-readiness-template",
-        "cospowers-integration-verification:verification-report-template"
-      ],
-      "template_paths": [
-        "cospowers-integration-verification-plugin/templates/branch-finish-template.md",
-        "cospowers-integration-verification-plugin/templates/commit-message-examples.md",
-        "cospowers-integration-verification-plugin/templates/commit-message-template.md",
-        "cospowers-integration-verification-plugin/templates/contract-verification-report-template.md",
-        "cospowers-integration-verification-plugin/templates/integration-test-report-template.md",
-        "cospowers-integration-verification-plugin/templates/regression-report-template.md",
-        "cospowers-integration-verification-plugin/templates/release-readiness-template.md",
-        "cospowers-integration-verification-plugin/templates/verification-report-template.md"
-      ],
-      "source_repo": "yhangf/csc-plugins",
-      "source_ref": "main",
-      "plugin_root": "cospowers-integration-verification-plugin",
-      "bundled_skill_ids": [
-        "cospowers-integration-verification-code-compliance-check",
-        "cospowers-integration-verification-contract-verification",
-        "cospowers-integration-verification-doc-quality-evaluator",
-        "cospowers-integration-verification-e2e-verification",
-        "finishing-a-development-branch-agskill",
-        "cospowers-integration-verification-integration-test-runner",
-        "cospowers-integration-verification-integration-verification",
-        "cospowers-integration-verification-regression-verification",
-        "cospowers-integration-verification-release-readiness-check",
-        "requesting-code-review-agskill",
-        "cospowers-integration-verification-session-context",
-        "cospowers-integration-verification-spec-commit",
-        "systematic-debugging-agskill",
-        "cospowers-integration-verification-using-integration-verification-plugin",
-        "verification-before-completion-agskill"
-      ],
-      "bundled_evaluator_ids": [
-        "cospowers-integration-verification-evaluator-doc-quality-evaluator"
-      ],
-      "bundled_agent_ids": [
-        "cospowers-integration-verification-agent-code-reviewer"
-      ],
-      "bundled_rule_ids": [
-        "cospowers-integration-verification-rule-code-review-rulesreadme",
-        "cospowers-integration-verification-rule-coding-standardscode-review-checklist",
-        "cospowers-integration-verification-rule-coding-standardscode-review-error-rules",
-        "cospowers-integration-verification-rule-coding-standardsgo-checklist",
-        "cospowers-integration-verification-rule-coding-standardspython-checklist-py2-总规范",
-        "cospowers-integration-verification-rule-coding-standardspython-checklist-py3-总规范",
-        "cospowers-integration-verification-rule-coding-standardsshell-checklist",
-        "cospowers-integration-verification-rule-coding-standards通用编码checklist",
-        "cospowers-integration-verification-rule-commit-standardsreadme",
-        "cospowers-integration-verification-rule-commonreadme",
-        "cospowers-integration-verification-rule-design-reviewdesign-01-doc-writing-standards-checklist",
-        "cospowers-integration-verification-rule-design-reviewdesign-02-tech-requirements-design-checklist",
-        "cospowers-integration-verification-rule-design-reviewdesign-03-overall-design-checklist",
-        "cospowers-integration-verification-rule-design-reviewdesign-04-high-level-design-checklist",
-        "cospowers-integration-verification-rule-design-reviewdesign-05-i18n-design-checklist",
-        "cospowers-integration-verification-rule-design-reviewdesign-06-never-again-principles-checklist",
-        "cospowers-integration-verification-rule-design-review模块设计规范",
-        "cospowers-integration-verification-rule-dfx安全",
-        "cospowers-integration-verification-rule-dfx安全需求识别检视表",
-        "cospowers-integration-verification-rule-dfx性能",
-        "cospowers-integration-verification-rule-processiteration-entry-checklist",
-        "cospowers-integration-verification-rule-processiteration-exit-checklist",
-        "cospowers-integration-verification-rule-testing-standardsgo单元测试规范",
-        "cospowers-integration-verification-rule-testing-standardspython单元测试规范",
-        "cospowers-integration-verification-rule-testing-standards单元测试规范",
-        "cospowers-integration-verification-rule-testing-standards高级代码分析规则"
-      ],
-      "bundled_template_ids": [
-        "cospowers-integration-verification-template-branch-finish-template",
-        "cospowers-integration-verification-template-commit-message-examples",
-        "cospowers-integration-verification-template-commit-message-template",
-        "cospowers-integration-verification-template-contract-verification-report-template",
-        "cospowers-integration-verification-template-integration-test-report-template",
-        "cospowers-integration-verification-template-regression-report-template",
-        "cospowers-integration-verification-template-release-readiness-template",
-        "cospowers-integration-verification-template-verification-report-template"
-      ]
-    },
-    "manifest_completeness": 1.0,
-    "last_synced": "2026-06-22",
-    "stars": 0,
-    "pushed_at": "2026-06-09T02:09:13Z",
-    "version": "0.0.1",
-    "final_score": 88,
-    "health": {
-      "score": 46,
-      "effective_score": 74,
-      "excluded_signals": [
-        "popularity"
-      ],
-      "freshness_label": "active",
-      "last_commit": "2026-06-09T02:09:13Z",
-      "signals": {
-        "freshness": 99,
-        "popularity": 0,
-        "source_trust": 40,
-        "install_popularity": 0,
-        "manifest_completeness": 100
-      }
-    },
-    "verified": true,
-    "prune_content": false,
-    "evaluation": {
-      "coding_relevance": 5,
-      "desc_accuracy": 5,
-      "doc_completeness": 4,
-      "specificity": 5,
-      "writing_quality": 4,
-      "final_score": 88,
-      "decision": "accept",
-      "model_id": "__cached__",
-      "rubric_version": "2.85974ec3",
-      "evaluated_at": "2026-06-08T08:51:23.025679Z",
-      "content_quality": 91
-    },
-    "security": {
-      "risk_level": "medium",
-      "verdict": "caution",
-      "red_flags": [
-        "代码合规检查可读取项目源代码文件进行差异分析",
-        "提交流程中引用外部 KB 服务（DAEDALUS_URL）进行合规检查",
-        "提交流程可读取 GitLab token（~/.qianliu/config.json）用于创建 MR",
-        "流程中执行多种 shell 命令（git、lint 工具、python 检测等）",
-        "向外部 KB 端点发送差异内容和代码进行合规分析"
-      ],
-      "permissions": {
-        "files": [
-          "docs/agent-rules/spec_developer/output/compliance-cache.json",
-          "cospowers.config.json",
-          "rules/coding-standards/",
-          "pyproject.toml",
-          "setup.py",
-          "*.py",
-          "*.go",
-          "*.vue",
-          "*.ts",
-          "*.js",
-          "~/.qianliu/config.json"
-        ],
-        "network": [
-          "DAEDALUS_URL（远程知识库 API，用户提供）",
-          "GitLab API（创建 MR，用户提供 token）"
-        ],
-        "commands": [
-          "git diff",
-          "git commit",
-          "git push",
-          "git branch",
-          "git merge-base",
-          "git merge",
-          "git rev-parse",
-          "grep",
-          "head",
-          "find",
-          "wc",
-          "mkdir",
-          "gofmt",
-          "autopep8",
-          "ruff",
-          "flake8",
-          "npm test",
-          "cargo test",
-          "pytest",
-          "go test"
-        ]
-      },
-      "summary": "插件为集成验证工具包，功能覆盖编码合规检查、lint 自动修复、git 提交及 MR 创建。会读取项目源码、执行 shell 命令、可选连接远程 KB 和 GitLab API，风险点在于外部通信和 token 读取，但用途合理且需用户配置。",
-      "recommendations": [
-        "使用前确认 cospowers.config.json 中的 DAEDALUS_URL 和 token 配置均为可信端点",
-        "建议仅在信任的项目仓库中启用此插件，避免在含敏感数据的仓库中运行",
-        "确保 GitLab token 权限范围最小化，仅授予创建 MR 所需权限",
-        "远程 KB 模式下，了解发送的代码差异内容范围，避免在机密代码仓库中使用"
-      ],
-      "scan_model": "__cached__",
-      "rubric_version": "2.bd55efd5",
-      "content_hash": "f05f457a56dd5e96a5337b21b9caa49f62991ead6304258aaaa15aed5435b2a5",
-      "scanned_at": "2026-06-08T10:35:41.038999Z"
-    },
-    "decision": "accept",
-    "weak_dims": [],
-    "freshness_label": "active",
-    "description_zh": "AI驱动的集成验证插件，涵盖合规、测试、调试和Git操作。",
-    "description_original": "AI 驱动的集成验证插件：执行集成测试、回归验证、契约验证、发布前检查和分支收尾。",
-    "search_terms": [
-      "AI integration verification",
-      "集成验证插件",
-      "code compliance check",
-      "代码合规检查",
-      "systematic debugging"
-    ],
-    "highlights": [
-      "支持Python/Go代码合规检查",
-      "集成Git提交和MR创建流程",
-      "系统化调试和验证流程"
-    ]
-  },
-  {
-    "id": "cospowers-requirements",
-    "name": "cospowers-requirements",
-    "type": "plugin",
-    "description": "An AI-driven plugin that transforms raw ideas, PRDs, and issues into structured requirement documents with quality evaluation.",
-    "source_url": "https://github.com/costrict-plugins-repo/cospowers-requirements/tree/main/",
-    "category": "ai-ml",
-    "tags": [
-      "cospowers",
-      "ai-workers"
-    ],
-    "tech_stack": [],
-    "source": "csc-plugins",
-    "source_priority": 1000,
-    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-requirements",
-    "platforms": [
-      "claude-code"
-    ],
-    "install": {
-      "method": "plugin_marketplace",
-      "plugin_name": "cospowers-requirements",
-      "marketplace_repo": "costrict-plugins-repo/cospowers-requirements",
-      "marketplace_name": "ai-workers-requirements",
-      "marketplace_verified": true,
-      "marketplace": "costrict-plugins-repo/cospowers-requirements"
-    },
-    "bundle": {
-      "skills_count": 9,
-      "commands_count": 0,
-      "agents_count": 0,
-      "evaluators_count": 2,
-      "rules_count": 9,
-      "templates_count": 6,
-      "mcp_servers_count": 0,
-      "skills_namespaces": [
-        "cospowers-requirements:aireq-evaluator",
-        "cospowers-requirements:requirement-analysis",
-        "cospowers-requirements:requirements-change-analysis",
-        "cospowers-requirements:requirements-intake",
-        "cospowers-requirements:requirements-review",
-        "cospowers-requirements:session-context",
-        "cospowers-requirements:sysreq-evaluator",
-        "cospowers-requirements:system-requirement-analysis",
-        "cospowers-requirements:using-requirements-plugin"
-      ],
-      "hooks_count": 0,
-      "hook_events": [],
-      "mcp_server_names": [],
-      "is_marketplace_repo": false,
-      "skill_paths": [
-        "cospowers-requirements-plugin/skills/aireq-evaluator/SKILL.md",
-        "cospowers-requirements-plugin/skills/requirement-analysis/SKILL.md",
-        "cospowers-requirements-plugin/skills/requirements-change-analysis/SKILL.md",
-        "cospowers-requirements-plugin/skills/requirements-intake/SKILL.md",
-        "cospowers-requirements-plugin/skills/requirements-review/SKILL.md",
-        "cospowers-requirements-plugin/skills/session-context/SKILL.md",
-        "cospowers-requirements-plugin/skills/sysreq-evaluator/SKILL.md",
-        "cospowers-requirements-plugin/skills/system-requirement-analysis/SKILL.md",
-        "cospowers-requirements-plugin/skills/using-requirements-plugin/SKILL.md"
-      ],
-      "evaluators_namespaces": [
-        "cospowers-requirements:aireq-evaluator",
-        "cospowers-requirements:sysreq-evaluator"
-      ],
-      "evaluator_paths": [
-        "cospowers-requirements-plugin/evaluators/aireq-evaluator/SKILL.md",
-        "cospowers-requirements-plugin/evaluators/sysreq-evaluator/SKILL.md"
-      ],
-      "commands_namespaces": [],
-      "command_paths": [],
-      "agents_namespaces": [],
-      "agent_paths": [],
-      "rules_namespaces": [
-        "cospowers-requirements:common/README",
-        "cospowers-requirements:dfx/安全",
-        "cospowers-requirements:dfx/安全需求识别检视表",
-        "cospowers-requirements:dfx/性能",
-        "cospowers-requirements:requirement-checklists/ai-native-doc-adaptation-checklist",
-        "cospowers-requirements:requirement-checklists/user-requirement-dfx-baseline-checklist",
-        "cospowers-requirements:requirement-checklists/user-requirement-experience-guide-checklist",
-        "cospowers-requirements:requirement-checklists/user-requirement-planning-principles-checklist",
-        "cospowers-requirements:requirement-checklists/user-requirement-quality-standard-checklist"
-      ],
-      "rule_paths": [
-        "cospowers-requirements-plugin/rules/common/README.md",
-        "cospowers-requirements-plugin/rules/dfx/安全.md",
-        "cospowers-requirements-plugin/rules/dfx/安全需求识别检视表.md",
-        "cospowers-requirements-plugin/rules/dfx/性能.md",
-        "cospowers-requirements-plugin/rules/requirement-checklists/ai-native-doc-adaptation-checklist.md",
-        "cospowers-requirements-plugin/rules/requirement-checklists/user-requirement-dfx-baseline-checklist.md",
-        "cospowers-requirements-plugin/rules/requirement-checklists/user-requirement-experience-guide-checklist.md",
-        "cospowers-requirements-plugin/rules/requirement-checklists/user-requirement-planning-principles-checklist.md",
-        "cospowers-requirements-plugin/rules/requirement-checklists/user-requirement-quality-standard-checklist.md"
-      ],
-      "templates_namespaces": [
-        "cospowers-requirements:init-aireq-template",
-        "cospowers-requirements:init-sysreq-template",
-        "cospowers-requirements:requirements-change-impact-template",
-        "cospowers-requirements:requirements-review-template",
-        "cospowers-requirements:system-requirement-template",
-        "cospowers-requirements:user-requirement-template"
-      ],
-      "template_paths": [
-        "cospowers-requirements-plugin/templates/init-aireq-template.md",
-        "cospowers-requirements-plugin/templates/init-sysreq-template.md",
-        "cospowers-requirements-plugin/templates/requirements-change-impact-template.md",
-        "cospowers-requirements-plugin/templates/requirements-review-template.md",
-        "cospowers-requirements-plugin/templates/system-requirement-template.md",
-        "cospowers-requirements-plugin/templates/user-requirement-template.md"
-      ],
-      "source_repo": "yhangf/csc-plugins",
-      "source_ref": "main",
-      "plugin_root": "cospowers-requirements-plugin",
-      "bundled_skill_ids": [
-        "cospowers-requirements-aireq-evaluator",
-        "cospowers-requirements-requirement-analysis",
-        "cospowers-requirements-requirements-change-analysis",
-        "cospowers-requirements-requirements-intake",
-        "cospowers-requirements-requirements-review",
-        "cospowers-requirements-session-context",
-        "cospowers-requirements-sysreq-evaluator",
-        "cospowers-requirements-system-requirement-analysis",
-        "cospowers-requirements-using-requirements-plugin"
-      ],
-      "bundled_evaluator_ids": [
-        "cospowers-requirements-evaluator-aireq-evaluator",
-        "cospowers-requirements-evaluator-sysreq-evaluator"
-      ],
-      "bundled_rule_ids": [
-        "cospowers-requirements-rule-commonreadme",
-        "cospowers-requirements-rule-dfx安全",
-        "cospowers-requirements-rule-dfx安全需求识别检视表",
-        "cospowers-requirements-rule-dfx性能",
-        "cospowers-requirements-rule-requirement-checklistsai-native-doc-adaptation-checklist",
-        "cospowers-requirements-rule-requirement-checklistsuser-requirement-dfx-baseline-checklist",
-        "cospowers-requirements-rule-requirement-checklistsuser-requirement-experience-guide-checklist",
-        "cospowers-requirements-rule-requirement-checklistsuser-requirement-planning-principles-checklist",
-        "cospowers-requirements-rule-requirement-checklistsuser-requirement-quality-standard-checklist"
-      ],
-      "bundled_template_ids": [
-        "cospowers-requirements-template-init-aireq-template",
-        "cospowers-requirements-template-init-sysreq-template",
-        "cospowers-requirements-template-requirements-change-impact-template",
-        "cospowers-requirements-template-requirements-review-template",
-        "cospowers-requirements-template-system-requirement-template",
-        "cospowers-requirements-template-user-requirement-template"
-      ]
-    },
-    "manifest_completeness": 1.0,
-    "last_synced": "2026-06-22",
-    "stars": 0,
-    "pushed_at": "2026-06-09T02:09:13Z",
-    "version": "0.0.1",
-    "final_score": 85,
-    "health": {
-      "score": 46,
-      "effective_score": 74,
-      "excluded_signals": [
-        "popularity"
-      ],
-      "freshness_label": "active",
-      "last_commit": "2026-06-09T02:09:13Z",
-      "signals": {
-        "freshness": 99,
-        "popularity": 0,
-        "source_trust": 40,
-        "install_popularity": 0,
-        "manifest_completeness": 100
-      }
-    },
-    "verified": true,
-    "prune_content": false,
-    "evaluation": {
-      "coding_relevance": 3,
-      "desc_accuracy": 5,
-      "doc_completeness": 5,
-      "specificity": 4,
-      "writing_quality": 5,
-      "final_score": 85,
-      "decision": "accept",
-      "model_id": "mimo-v2.5-pro",
-      "rubric_version": "2.85974ec3",
-      "evaluated_at": "2026-06-11T06:37:54.943368Z",
-      "content_quality": 87
-    },
-    "security": {
-      "risk_level": "medium",
-      "verdict": "caution",
-      "red_flags": [
-        "插件在用户机器上执行 Glob/ls/Grep/Read 等文件系统操作扫描项目目录",
-        "插件指导写入文件到 docs/agent-rules/1-ai-requirements/output/ 目录",
-        "插件引用外部知识库服务器 URL（SPEC_DEVELOPER_SERVER_URL）进行网络请求"
-      ],
-      "permissions": {
-        "files": [
-          "docs/agent-rules/1-ai-requirements/**",
-          "docs/requirements/**",
-          "docs/kb/**",
-          "templates/**",
-          "rules/**",
-          "*.md"
-        ],
-        "network": [
-          "SPEC_DEVELOPER_SERVER_URL（外部知识库服务器，需配置）"
-        ],
-        "commands": [
-          "Glob",
-          "Grep",
-          "Read",
-          "Write（写入需求文档和评估报告到本地目录）"
-        ]
-      },
-      "summary": "该插件为需求文档分析工具，会读写项目本地文件、调用外部知识库服务、生成评估报告到工作目录内，功能合理但涉及文件系统扫描和潜在外部网络请求。",
-      "recommendations": [
-        "确认 cospowers.config.json 中 SPEC_DEVELOPER_SERVER_URL 指向可信服务器",
-        "审查插件写入的文件路径是否仅限于预期的 docs/ 目录",
-        "安装前了解插件对项目目录的扫描范围，避免在敏感仓库中使用"
-      ],
-      "scan_model": "__cached__",
-      "rubric_version": "2.bd55efd5",
-      "content_hash": "ab7eb1b8f90d47e1c1d8d3e4d16d19a6599e7d3014aa9d27ffa78283ff4bcfbc",
-      "scanned_at": "2026-06-11T13:10:58.368995Z"
-    },
-    "decision": "accept",
-    "weak_dims": [],
-    "freshness_label": "active",
-    "description_zh": "AI驱动的需求梳理插件，将原始想法、PRD、issue转化为结构化需求文档并进行质量评估。",
-    "description_original": "AI 驱动的需求梳理插件：将原始想法、PRD、issue、需求变更转化为结构化需求和系统需求。",
-    "search_terms": [
-      "requirement analysis plugin",
-      "需求分析插件",
-      "AI requirements structuring",
-      "需求质量评估"
-    ],
-    "highlights": [
-      "支持原始想法到结构化需求的自动转化",
-      "提供75项系统需求质量评估",
-      "集成知识库进行需求完整性推理"
-    ]
-  },
-  {
-    "id": "cospowers-solution-design",
-    "name": "cospowers-solution-design",
-    "type": "plugin",
-    "description": "AI-driven plugin for generating system design, subsystem design, and API contracts from requirements or PRD.",
-    "source_url": "https://github.com/costrict-plugins-repo/cospowers-solution-design/tree/main/",
-    "category": "ai-ml",
-    "tags": [
-      "cospowers",
-      "ai-workers"
-    ],
-    "tech_stack": [],
-    "source": "csc-plugins",
-    "source_priority": 1000,
-    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-solution-design",
-    "platforms": [
-      "claude-code"
-    ],
-    "install": {
-      "method": "plugin_marketplace",
-      "plugin_name": "cospowers-solution-design",
-      "marketplace_repo": "costrict-plugins-repo/cospowers-solution-design",
-      "marketplace_name": "ai-workers-design",
-      "marketplace_verified": true,
-      "marketplace": "costrict-plugins-repo/cospowers-solution-design"
-    },
-    "bundle": {
-      "skills_count": 12,
-      "commands_count": 0,
-      "agents_count": 0,
-      "evaluators_count": 3,
-      "rules_count": 18,
-      "templates_count": 28,
-      "mcp_servers_count": 0,
-      "skills_namespaces": [
-        "cospowers-solution-design:api-contract-design",
-        "cospowers-solution-design:architecture-review",
-        "cospowers-solution-design:design-change-analysis",
-        "cospowers-solution-design:design-spec",
-        "cospowers-solution-design:doc-consistency-check",
-        "cospowers-solution-design:doc-quality-evaluator",
-        "cospowers-solution-design:session-context",
-        "cospowers-solution-design:solution-design",
-        "cospowers-solution-design:subsystem-design-spec",
-        "cospowers-solution-design:subsystem-evaluator",
-        "cospowers-solution-design:sysdesign-evaluator",
-        "cospowers-solution-design:using-solution-design-plugin"
-      ],
-      "hooks_count": 0,
-      "hook_events": [],
-      "mcp_server_names": [],
-      "is_marketplace_repo": false,
-      "skill_paths": [
-        "cospowers-solution-design-plugin/skills/api-contract-design/SKILL.md",
-        "cospowers-solution-design-plugin/skills/architecture-review/SKILL.md",
-        "cospowers-solution-design-plugin/skills/design-change-analysis/SKILL.md",
-        "cospowers-solution-design-plugin/skills/design-spec/SKILL.md",
-        "cospowers-solution-design-plugin/skills/doc-consistency-check/SKILL.md",
-        "cospowers-solution-design-plugin/skills/doc-quality-evaluator/SKILL.md",
-        "cospowers-solution-design-plugin/skills/session-context/SKILL.md",
-        "cospowers-solution-design-plugin/skills/solution-design/SKILL.md",
-        "cospowers-solution-design-plugin/skills/subsystem-design-spec/SKILL.md",
-        "cospowers-solution-design-plugin/skills/subsystem-evaluator/SKILL.md",
-        "cospowers-solution-design-plugin/skills/sysdesign-evaluator/SKILL.md",
-        "cospowers-solution-design-plugin/skills/using-solution-design-plugin/SKILL.md"
-      ],
-      "evaluators_namespaces": [
-        "cospowers-solution-design:doc-quality-evaluator",
-        "cospowers-solution-design:subsystem-evaluator",
-        "cospowers-solution-design:sysdesign-evaluator"
-      ],
-      "evaluator_paths": [
-        "cospowers-solution-design-plugin/evaluators/doc-quality-evaluator/SKILL.md",
-        "cospowers-solution-design-plugin/evaluators/subsystem-evaluator/SKILL.md",
-        "cospowers-solution-design-plugin/evaluators/sysdesign-evaluator/SKILL.md"
-      ],
-      "commands_namespaces": [],
-      "command_paths": [],
-      "agents_namespaces": [],
-      "agent_paths": [],
-      "rules_namespaces": [
-        "cospowers-solution-design:business/01-OPENAPI开发规范",
-        "cospowers-solution-design:business/02-MySQL开发规范",
-        "cospowers-solution-design:business/API开发规范",
-        "cospowers-solution-design:business/I18N_规范",
-        "cospowers-solution-design:business/日志规范",
-        "cospowers-solution-design:business/错误码规范",
-        "cospowers-solution-design:common/README",
-        "cospowers-solution-design:design-methods/RESTful_API格式规范v3.0",
-        "cospowers-solution-design:design-review/design-01-doc-writing-standards-checklist",
-        "cospowers-solution-design:design-review/design-02-tech-requirements-design-checklist",
-        "cospowers-solution-design:design-review/design-03-overall-design-checklist",
-        "cospowers-solution-design:design-review/design-04-high-level-design-checklist",
-        "cospowers-solution-design:design-review/design-05-i18n-design-checklist",
-        "cospowers-solution-design:design-review/design-06-never-again-principles-checklist",
-        "cospowers-solution-design:design-review/模块设计规范",
-        "cospowers-solution-design:dfx/安全",
-        "cospowers-solution-design:dfx/安全需求识别检视表",
-        "cospowers-solution-design:dfx/性能"
-      ],
-      "rule_paths": [
-        "cospowers-solution-design-plugin/rules/business/01-OPENAPI开发规范.md",
-        "cospowers-solution-design-plugin/rules/business/02-MySQL开发规范.md",
-        "cospowers-solution-design-plugin/rules/business/API开发规范.md",
-        "cospowers-solution-design-plugin/rules/business/I18N_规范.md",
-        "cospowers-solution-design-plugin/rules/business/日志规范.md",
-        "cospowers-solution-design-plugin/rules/business/错误码规范.md",
-        "cospowers-solution-design-plugin/rules/common/README.md",
-        "cospowers-solution-design-plugin/rules/design-methods/RESTful_API格式规范v3.0.md",
-        "cospowers-solution-design-plugin/rules/design-review/design-01-doc-writing-standards-checklist.md",
-        "cospowers-solution-design-plugin/rules/design-review/design-02-tech-requirements-design-checklist.md",
-        "cospowers-solution-design-plugin/rules/design-review/design-03-overall-design-checklist.md",
-        "cospowers-solution-design-plugin/rules/design-review/design-04-high-level-design-checklist.md",
-        "cospowers-solution-design-plugin/rules/design-review/design-05-i18n-design-checklist.md",
-        "cospowers-solution-design-plugin/rules/design-review/design-06-never-again-principles-checklist.md",
-        "cospowers-solution-design-plugin/rules/design-review/模块设计规范.md",
-        "cospowers-solution-design-plugin/rules/dfx/安全.md",
-        "cospowers-solution-design-plugin/rules/dfx/安全需求识别检视表.md",
-        "cospowers-solution-design-plugin/rules/dfx/性能.md"
-      ],
-      "templates_namespaces": [
-        "cospowers-solution-design:architecture-review-template",
-        "cospowers-solution-design:design-change-impact-template",
-        "cospowers-solution-design:design/subsystem-design/ch02-responsibilities",
-        "cospowers-solution-design:design/subsystem-design/ch03-interfaces",
-        "cospowers-solution-design:design/subsystem-design/ch04-internal-design",
-        "cospowers-solution-design:design/subsystem-design/ch05-exceptions",
-        "cospowers-solution-design:design/subsystem-design/ch06-test-design",
-        "cospowers-solution-design:design/subsystem-design/ch07-dfx",
-        "cospowers-solution-design:design/subsystem-design/ch08-code-standards",
-        "cospowers-solution-design:design/subsystem-design/ch09-deployment",
-        "cospowers-solution-design:design/subsystem-design/ch10-summary",
-        "cospowers-solution-design:design/subsystem-design/ch11-appendix",
-        "cospowers-solution-design:design/subsystem-design/ch12-revision-history",
-        "cospowers-solution-design:design/system-design/ch02-system-architecture",
-        "cospowers-solution-design:design/system-design/ch03-working-principles",
-        "cospowers-solution-design:design/system-design/ch04-design-spec",
-        "cospowers-solution-design:design/system-design/ch05-dfx",
-        "cospowers-solution-design:design/system-design/ch06-architecture-impact",
-        "cospowers-solution-design:design/system-design/ch07-risk",
-        "cospowers-solution-design:design/system-design/ch08-deployment",
-        "cospowers-solution-design:design/system-design/ch09-summary",
-        "cospowers-solution-design:design/system-design/ch10-revision-history",
-        "cospowers-solution-design:fmea-template",
-        "cospowers-solution-design:init-subsystem-template",
-        "cospowers-solution-design:init-sysdesign-template",
-        "cospowers-solution-design:micro-design-template",
-        "cospowers-solution-design:subsystem-design-template",
-        "cospowers-solution-design:system-design-template"
-      ],
-      "template_paths": [
-        "cospowers-solution-design-plugin/templates/architecture-review-template.md",
-        "cospowers-solution-design-plugin/templates/design-change-impact-template.md",
-        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch02-responsibilities.md",
-        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch03-interfaces.md",
-        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch04-internal-design.md",
-        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch05-exceptions.md",
-        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch06-test-design.md",
-        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch07-dfx.md",
-        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch08-code-standards.md",
-        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch09-deployment.md",
-        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch10-summary.md",
-        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch11-appendix.md",
-        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch12-revision-history.md",
-        "cospowers-solution-design-plugin/templates/design/system-design/ch02-system-architecture.md",
-        "cospowers-solution-design-plugin/templates/design/system-design/ch03-working-principles.md",
-        "cospowers-solution-design-plugin/templates/design/system-design/ch04-design-spec.md",
-        "cospowers-solution-design-plugin/templates/design/system-design/ch05-dfx.md",
-        "cospowers-solution-design-plugin/templates/design/system-design/ch06-architecture-impact.md",
-        "cospowers-solution-design-plugin/templates/design/system-design/ch07-risk.md",
-        "cospowers-solution-design-plugin/templates/design/system-design/ch08-deployment.md",
-        "cospowers-solution-design-plugin/templates/design/system-design/ch09-summary.md",
-        "cospowers-solution-design-plugin/templates/design/system-design/ch10-revision-history.md",
-        "cospowers-solution-design-plugin/templates/fmea-template.md",
-        "cospowers-solution-design-plugin/templates/init-subsystem-template.md",
-        "cospowers-solution-design-plugin/templates/init-sysdesign-template.md",
-        "cospowers-solution-design-plugin/templates/micro-design-template.md",
-        "cospowers-solution-design-plugin/templates/subsystem-design-template.md",
-        "cospowers-solution-design-plugin/templates/system-design-template.md"
-      ],
-      "source_repo": "yhangf/csc-plugins",
-      "source_ref": "main",
-      "plugin_root": "cospowers-solution-design-plugin",
-      "bundled_skill_ids": [
-        "cospowers-solution-design-api-contract-design",
-        "cospowers-solution-design-architecture-review",
-        "cospowers-solution-design-design-change-analysis",
-        "cospowers-solution-design-design-spec",
-        "cospowers-solution-design-doc-consistency-check",
-        "cospowers-solution-design-doc-quality-evaluator",
-        "cospowers-solution-design-session-context",
-        "cospowers-solution-design-solution-design",
-        "cospowers-solution-design-subsystem-design-spec",
-        "cospowers-solution-design-subsystem-evaluator",
-        "cospowers-solution-design-sysdesign-evaluator",
-        "cospowers-solution-design-using-solution-design-plugin"
-      ],
-      "bundled_evaluator_ids": [
-        "cospowers-solution-design-evaluator-doc-quality-evaluator",
-        "cospowers-solution-design-evaluator-subsystem-evaluator",
-        "cospowers-solution-design-evaluator-sysdesign-evaluator"
-      ],
-      "bundled_rule_ids": [
-        "cospowers-solution-design-rule-business01-openapi开发规范",
-        "cospowers-solution-design-rule-business02-mysql开发规范",
-        "cospowers-solution-design-rule-businessapi开发规范",
-        "cospowers-solution-design-rule-businessi18n-规范",
-        "cospowers-solution-design-rule-business日志规范",
-        "cospowers-solution-design-rule-business错误码规范",
-        "cospowers-solution-design-rule-commonreadme",
-        "cospowers-solution-design-rule-design-methodsrestful-api格式规范v30",
-        "cospowers-solution-design-rule-design-reviewdesign-01-doc-writing-standards-checklist",
-        "cospowers-solution-design-rule-design-reviewdesign-02-tech-requirements-design-checklist",
-        "cospowers-solution-design-rule-design-reviewdesign-03-overall-design-checklist",
-        "cospowers-solution-design-rule-design-reviewdesign-04-high-level-design-checklist",
-        "cospowers-solution-design-rule-design-reviewdesign-05-i18n-design-checklist",
-        "cospowers-solution-design-rule-design-reviewdesign-06-never-again-principles-checklist",
-        "cospowers-solution-design-rule-design-review模块设计规范",
-        "cospowers-solution-design-rule-dfx安全",
-        "cospowers-solution-design-rule-dfx安全需求识别检视表",
-        "cospowers-solution-design-rule-dfx性能"
-      ],
-      "bundled_template_ids": [
-        "cospowers-solution-design-template-architecture-review-template",
-        "cospowers-solution-design-template-design-change-impact-template",
-        "cospowers-solution-design-template-designsubsystem-designch02-responsibilities",
-        "cospowers-solution-design-template-designsubsystem-designch03-interfaces",
-        "cospowers-solution-design-template-designsubsystem-designch04-internal-design",
-        "cospowers-solution-design-template-designsubsystem-designch05-exceptions",
-        "cospowers-solution-design-template-designsubsystem-designch06-test-design",
-        "cospowers-solution-design-template-designsubsystem-designch07-dfx",
-        "cospowers-solution-design-template-designsubsystem-designch08-code-standards",
-        "cospowers-solution-design-template-designsubsystem-designch09-deployment",
-        "cospowers-solution-design-template-designsubsystem-designch10-summary",
-        "cospowers-solution-design-template-designsubsystem-designch11-appendix",
-        "cospowers-solution-design-template-designsubsystem-designch12-revision-history",
-        "cospowers-solution-design-template-designsystem-designch02-system-architecture",
-        "cospowers-solution-design-template-designsystem-designch03-working-principles",
-        "cospowers-solution-design-template-designsystem-designch04-design-spec",
-        "cospowers-solution-design-template-designsystem-designch05-dfx",
-        "cospowers-solution-design-template-designsystem-designch06-architecture-impact",
-        "cospowers-solution-design-template-designsystem-designch07-risk",
-        "cospowers-solution-design-template-designsystem-designch08-deployment",
-        "cospowers-solution-design-template-designsystem-designch09-summary",
-        "cospowers-solution-design-template-designsystem-designch10-revision-history",
-        "cospowers-solution-design-template-fmea-template",
-        "cospowers-solution-design-template-init-subsystem-template",
-        "cospowers-solution-design-template-init-sysdesign-template",
-        "cospowers-solution-design-template-micro-design-template",
-        "cospowers-solution-design-template-subsystem-design-template",
-        "cospowers-solution-design-template-system-design-template"
-      ]
-    },
-    "manifest_completeness": 1.0,
-    "last_synced": "2026-06-22",
-    "stars": 0,
-    "pushed_at": "2026-06-09T02:09:13Z",
-    "version": "0.0.1",
-    "final_score": 87,
-    "health": {
-      "score": 46,
-      "effective_score": 74,
-      "excluded_signals": [
-        "popularity"
-      ],
-      "freshness_label": "active",
-      "last_commit": "2026-06-09T02:09:13Z",
-      "signals": {
-        "freshness": 99,
-        "popularity": 0,
-        "source_trust": 40,
-        "install_popularity": 0,
-        "manifest_completeness": 100
-      }
-    },
-    "verified": true,
-    "prune_content": false,
-    "evaluation": {
-      "coding_relevance": 4,
-      "desc_accuracy": 5,
-      "doc_completeness": 4,
-      "specificity": 5,
-      "writing_quality": 5,
-      "final_score": 87,
-      "decision": "accept",
-      "model_id": "__cached__",
-      "rubric_version": "2.85974ec3",
-      "evaluated_at": "2026-06-08T08:51:16.599189Z",
-      "content_quality": 89
-    },
-    "security": {
-      "risk_level": "low",
-      "verdict": "safe",
-      "red_flags": [],
-      "permissions": {
-        "files": [
-          "docs/design/",
-          "docs/agent-rules/",
-          "templates/",
-          "rules/",
-          "cospowers.config.json"
-        ],
-        "network": [],
-        "commands": []
-      },
-      "summary": "纯本地方案设计插件，仅读写项目内文档目录、模板和规则文件，生成设计文档与 OpenAPI 规范，无外部网络请求或危险命令执行。",
-      "recommendations": [
-        "注意 cospowers.config.json 中的 SPEC_DEVELOPER_SERVER_URL 配置项可能指向远程知识库服务器，使用时确认该 URL 的可信度。",
-        "该插件涉及读取用户本地代码路径（§8），建议在使用前确认写入范围限定在 docs/ 目录内。"
-      ],
-      "scan_model": "__cached__",
-      "rubric_version": "2.bd55efd5",
-      "content_hash": "c45a9ea27726342c9ebb11480a24aa82aacaf9ec3de67c2778fabe5da1f63bbf",
-      "scanned_at": "2026-06-08T10:35:32.792325Z"
-    },
-    "decision": "accept",
-    "weak_dims": [],
-    "freshness_label": "active",
-    "description_zh": "AI驱动的方案设计插件，从需求、PRD或现有系统上下文生成系统设计、子系统设计和API契约。",
-    "description_original": "AI 驱动的方案设计插件：从需求、PRD 或现有系统上下文生成系统设计、子系统设计和 API 契约。",
-    "search_terms": [
-      "AI solution design",
-      "系统设计生成",
-      "API contract design",
-      "子系统设计",
-      "design evaluation"
-    ],
-    "highlights": [
-      "从需求生成系统设计文档",
-      "自动生成OpenAPI契约",
-      "多阶段质量评估与一致性检查"
-    ]
-  },
-  {
-    "id": "cospowers-task-planning",
-    "name": "cospowers-task-planning",
-    "type": "plugin",
-    "description": "An AI-powered plugin for decomposing requirements and designs into structured implementation plans, task graphs, milestones, and execution strategies.",
-    "source_url": "https://github.com/costrict-plugins-repo/cospowers-task-planning/tree/main/",
-    "category": "ai-ml",
-    "tags": [
-      "cospowers",
-      "ai-workers"
-    ],
-    "tech_stack": [],
-    "source": "csc-plugins",
-    "source_priority": 1000,
-    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-task-planning",
-    "platforms": [
-      "claude-code"
-    ],
-    "install": {
-      "method": "plugin_marketplace",
-      "plugin_name": "cospowers-task-planning",
-      "marketplace_repo": "costrict-plugins-repo/cospowers-task-planning",
-      "marketplace_name": "ai-workers-plan",
-      "marketplace_verified": true,
-      "marketplace": "costrict-plugins-repo/cospowers-task-planning"
-    },
-    "bundle": {
-      "skills_count": 9,
-      "commands_count": 0,
-      "agents_count": 0,
-      "evaluators_count": 0,
-      "rules_count": 3,
-      "templates_count": 6,
-      "mcp_servers_count": 0,
-      "skills_namespaces": [
-        "cospowers-task-planning:execution-strategy-selection",
-        "cospowers-task-planning:milestone-planning",
-        "cospowers-task-planning:session-context",
-        "cospowers-task-planning:subagent-dispatch-planning",
-        "cospowers-task-planning:task-graph-generation",
-        "cospowers-task-planning:task-planning",
-        "cospowers-task-planning:using-task-planning-plugin",
-        "cospowers-task-planning:worktree-planning",
-        "cospowers-task-planning:writing-plans"
-      ],
-      "hooks_count": 0,
-      "hook_events": [],
-      "mcp_server_names": [],
-      "is_marketplace_repo": false,
-      "skill_paths": [
-        "cospowers-task-planning-plugin/skills/execution-strategy-selection/SKILL.md",
-        "cospowers-task-planning-plugin/skills/milestone-planning/SKILL.md",
-        "cospowers-task-planning-plugin/skills/session-context/SKILL.md",
-        "cospowers-task-planning-plugin/skills/subagent-dispatch-planning/SKILL.md",
-        "cospowers-task-planning-plugin/skills/task-graph-generation/SKILL.md",
-        "cospowers-task-planning-plugin/skills/task-planning/SKILL.md",
-        "cospowers-task-planning-plugin/skills/using-task-planning-plugin/SKILL.md",
-        "cospowers-task-planning-plugin/skills/worktree-planning/SKILL.md",
-        "cospowers-task-planning-plugin/skills/writing-plans/SKILL.md"
-      ],
-      "evaluators_namespaces": [],
-      "evaluator_paths": [],
-      "commands_namespaces": [],
-      "command_paths": [],
-      "agents_namespaces": [],
-      "agent_paths": [],
-      "rules_namespaces": [
-        "cospowers-task-planning:common/README",
-        "cospowers-task-planning:process/iteration-entry-checklist",
-        "cospowers-task-planning:process/iteration-exit-checklist"
-      ],
-      "rule_paths": [
-        "cospowers-task-planning-plugin/rules/common/README.md",
-        "cospowers-task-planning-plugin/rules/process/iteration-entry-checklist.md",
-        "cospowers-task-planning-plugin/rules/process/iteration-exit-checklist.md"
-      ],
-      "templates_namespaces": [
-        "cospowers-task-planning:execution-strategy-template",
-        "cospowers-task-planning:implementation-plan-template",
-        "cospowers-task-planning:milestone-plan-template",
-        "cospowers-task-planning:subagent-task-template",
-        "cospowers-task-planning:task-graph-template",
-        "cospowers-task-planning:worktree-plan-template"
-      ],
-      "template_paths": [
-        "cospowers-task-planning-plugin/templates/execution-strategy-template.md",
-        "cospowers-task-planning-plugin/templates/implementation-plan-template.md",
-        "cospowers-task-planning-plugin/templates/milestone-plan-template.md",
-        "cospowers-task-planning-plugin/templates/subagent-task-template.md",
-        "cospowers-task-planning-plugin/templates/task-graph-template.md",
-        "cospowers-task-planning-plugin/templates/worktree-plan-template.md"
-      ],
-      "source_repo": "yhangf/csc-plugins",
-      "source_ref": "main",
-      "plugin_root": "cospowers-task-planning-plugin",
-      "bundled_skill_ids": [
-        "cospowers-task-planning-execution-strategy-selection",
-        "cospowers-task-planning-milestone-planning",
-        "cospowers-task-planning-session-context",
-        "cospowers-task-planning-subagent-dispatch-planning",
-        "cospowers-task-planning-task-graph-generation",
-        "cospowers-task-planning-task-planning",
-        "cospowers-task-planning-using-task-planning-plugin",
-        "cospowers-task-planning-worktree-planning",
-        "writing-plans-agskill"
-      ],
-      "bundled_rule_ids": [
-        "cospowers-task-planning-rule-commonreadme",
-        "cospowers-task-planning-rule-processiteration-entry-checklist",
-        "cospowers-task-planning-rule-processiteration-exit-checklist"
-      ],
-      "bundled_template_ids": [
-        "cospowers-task-planning-template-execution-strategy-template",
-        "cospowers-task-planning-template-implementation-plan-template",
-        "cospowers-task-planning-template-milestone-plan-template",
-        "cospowers-task-planning-template-subagent-task-template",
-        "cospowers-task-planning-template-task-graph-template",
-        "cospowers-task-planning-template-worktree-plan-template"
-      ]
-    },
-    "manifest_completeness": 1.0,
-    "last_synced": "2026-06-22",
-    "stars": 0,
-    "pushed_at": "2026-06-09T02:09:13Z",
-    "version": "0.0.1",
-    "final_score": 54,
-    "health": {
-      "score": 46,
-      "effective_score": 74,
-      "excluded_signals": [
-        "popularity"
-      ],
-      "freshness_label": "active",
-      "last_commit": "2026-06-09T02:09:13Z",
-      "signals": {
-        "freshness": 99,
-        "popularity": 0,
-        "source_trust": 40,
-        "install_popularity": 0,
-        "manifest_completeness": 100
-      }
-    },
-    "verified": true,
-    "prune_content": false,
-    "evaluation": {
-      "coding_relevance": 3,
-      "desc_accuracy": 4,
-      "doc_completeness": 1,
-      "specificity": 4,
-      "writing_quality": 2,
-      "final_score": 54,
-      "decision": "review",
-      "model_id": "__cached__",
-      "rubric_version": "2.85974ec3",
-      "evaluated_at": "2026-06-08T08:51:28.327502Z",
-      "content_quality": 51
-    },
-    "security": {
-      "risk_level": "medium",
-      "verdict": "caution",
-      "red_flags": [
-        "session-context skill 要求 AI 在工作目录写入 active-*.md 和 memory/ 文件",
-        "writing-plans skill 指示执行 ls、find、cat 等 shell 命令探查本地文件系统",
-        "多处 skill 要求读取项目源代码、配置文件、OpenAPI 规范等本地文件",
-        "引用 git add/commit 命令示例，暗示在用户仓库执行 git 操作"
-      ],
-      "permissions": {
-        "files": [
-          "docs/plans/*.md",
-          "docs/design/*.md",
-          "docs/design/openapi.yaml",
-          "active-*.md",
-          "memory/**/*.md",
-          "*.py",
-          "*.go",
-          "*.js",
-          "*.ts",
-          "pyproject.toml",
-          "go.mod",
-          "package.json",
-          "Makefile",
-          ".editorconfig",
-          ".pylintrc",
-          ".flake8",
-          ".golangci.yml",
-          ".eslintrc*"
-        ],
-        "network": [],
-        "commands": [
-          "ls",
-          "find",
-          "cat",
-          "git add",
-          "git commit",
-          "pytest"
-        ]
-      },
-      "summary": "该插件主要在本地工作目录读写计划文档和上下文文件，并指示 AI 执行 ls/find 等 shell 命令探查项目结构，无网络外传但会写入用户工作目录文件，风险可控。",
-      "recommendations": [
-        "确认插件仅在 docs/plans/ 和 memory/ 目录写入文件，不会修改业务源码",
-        "审查 session-context skill 的写入路径是否限定在插件自身的存储目录内",
-        "注意 writing-plans skill 中的 shell 命令仅为示例，实际由宿主环境控制执行"
-      ],
-      "scan_model": "__cached__",
-      "rubric_version": "2.bd55efd5",
-      "content_hash": "17fe1b6a5874af1f7c2f0e21211defef11e3871a7fccccfc9857afe1aaa0e428",
-      "scanned_at": "2026-06-08T10:35:36.345135Z"
-    },
-    "decision": "review",
-    "weak_dims": [
-      "doc_completeness",
-      "writing_quality"
-    ],
-    "freshness_label": "active",
-    "description_zh": "AI驱动的任务拆解插件，将需求或设计分解为实现计划、任务图、里程碑和执行策略。",
-    "description_original": "AI 驱动的任务拆解插件：将需求或设计拆解为实现计划、任务图、里程碑和执行策略。",
-    "search_terms": [
-      "task decomposition plugin",
-      "AI task planning",
-      "implementation plan generator",
-      "任务拆解插件",
-      "需求分解"
-    ],
-    "highlights": [
-      "AI驱动的智能任务分解",
-      "生成结构化实现计划与任务图",
-      "支持里程碑与执行策略规划"
-    ]
-  },
-  {
-    "id": "cospowers-tdd-development",
-    "name": "cospowers-tdd-development",
-    "type": "plugin",
-    "description": "An AI-driven plugin for TDD-based coding, covering test-first development, debugging, code compliance, and Git workflows.",
-    "source_url": "https://github.com/costrict-plugins-repo/cospowers-tdd-development/tree/main/",
-    "category": "ai-ml",
-    "tags": [
-      "cospowers",
-      "ai-workers"
-    ],
-    "tech_stack": [],
-    "source": "csc-plugins",
-    "source_priority": 1000,
-    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-tdd-development",
-    "platforms": [
-      "claude-code"
-    ],
-    "install": {
-      "method": "plugin_marketplace",
-      "plugin_name": "cospowers-tdd-development",
-      "marketplace_repo": "costrict-plugins-repo/cospowers-tdd-development",
-      "marketplace_name": "ai-workers-tdd",
-      "marketplace_verified": true,
-      "marketplace": "costrict-plugins-repo/cospowers-tdd-development"
-    },
-    "bundle": {
-      "skills_count": 12,
-      "commands_count": 0,
-      "agents_count": 1,
-      "evaluators_count": 0,
-      "rules_count": 16,
-      "templates_count": 6,
-      "mcp_servers_count": 0,
-      "skills_namespaces": [
-        "cospowers-tdd-development:code-compliance-check",
-        "cospowers-tdd-development:executing-plans",
-        "cospowers-tdd-development:implementation-review",
-        "cospowers-tdd-development:requesting-code-review",
-        "cospowers-tdd-development:session-context",
-        "cospowers-tdd-development:spec-commit",
-        "cospowers-tdd-development:subagent-driven-development",
-        "cospowers-tdd-development:systematic-debugging",
-        "cospowers-tdd-development:tdd-implementation",
-        "cospowers-tdd-development:test-driven-development",
-        "cospowers-tdd-development:using-git-worktrees",
-        "cospowers-tdd-development:using-tdd-development-plugin"
-      ],
-      "hooks_count": 0,
-      "hook_events": [],
-      "mcp_server_names": [],
-      "is_marketplace_repo": false,
-      "skill_paths": [
-        "cospowers-tdd-development-plugin/skills/code-compliance-check/SKILL.md",
-        "cospowers-tdd-development-plugin/skills/executing-plans/SKILL.md",
-        "cospowers-tdd-development-plugin/skills/implementation-review/SKILL.md",
-        "cospowers-tdd-development-plugin/skills/requesting-code-review/SKILL.md",
-        "cospowers-tdd-development-plugin/skills/session-context/SKILL.md",
-        "cospowers-tdd-development-plugin/skills/spec-commit/SKILL.md",
-        "cospowers-tdd-development-plugin/skills/subagent-driven-development/SKILL.md",
-        "cospowers-tdd-development-plugin/skills/systematic-debugging/SKILL.md",
-        "cospowers-tdd-development-plugin/skills/tdd-implementation/SKILL.md",
-        "cospowers-tdd-development-plugin/skills/test-driven-development/SKILL.md",
-        "cospowers-tdd-development-plugin/skills/using-git-worktrees/SKILL.md",
-        "cospowers-tdd-development-plugin/skills/using-tdd-development-plugin/SKILL.md"
-      ],
-      "evaluators_namespaces": [],
-      "evaluator_paths": [],
-      "commands_namespaces": [],
-      "command_paths": [],
-      "agents_namespaces": [
-        "cospowers-tdd-development:code-reviewer"
-      ],
-      "agent_paths": [
-        "cospowers-tdd-development-plugin/agents/code-reviewer.md"
-      ],
-      "rules_namespaces": [
-        "cospowers-tdd-development:code-review-rules/README",
-        "cospowers-tdd-development:coding-standards/code-review-checklist",
-        "cospowers-tdd-development:coding-standards/code-review-error-rules",
-        "cospowers-tdd-development:coding-standards/go-checklist",
-        "cospowers-tdd-development:coding-standards/python-checklist-py2-总规范",
-        "cospowers-tdd-development:coding-standards/python-checklist-py3-总规范",
-        "cospowers-tdd-development:coding-standards/shell_checklist",
-        "cospowers-tdd-development:coding-standards/通用编码checklist",
-        "cospowers-tdd-development:commit-standards/README",
-        "cospowers-tdd-development:common/README",
-        "cospowers-tdd-development:process/iteration-entry-checklist",
-        "cospowers-tdd-development:process/iteration-exit-checklist",
-        "cospowers-tdd-development:testing-standards/Go单元测试规范",
-        "cospowers-tdd-development:testing-standards/Python单元测试规范",
-        "cospowers-tdd-development:testing-standards/单元测试规范",
-        "cospowers-tdd-development:testing-standards/高级代码分析规则"
-      ],
-      "rule_paths": [
-        "cospowers-tdd-development-plugin/rules/code-review-rules/README.md",
-        "cospowers-tdd-development-plugin/rules/coding-standards/code-review-checklist.md",
-        "cospowers-tdd-development-plugin/rules/coding-standards/code-review-error-rules.md",
-        "cospowers-tdd-development-plugin/rules/coding-standards/go-checklist.md",
-        "cospowers-tdd-development-plugin/rules/coding-standards/python-checklist-py2-总规范.md",
-        "cospowers-tdd-development-plugin/rules/coding-standards/python-checklist-py3-总规范.md",
-        "cospowers-tdd-development-plugin/rules/coding-standards/shell_checklist.md",
-        "cospowers-tdd-development-plugin/rules/coding-standards/通用编码checklist.md",
-        "cospowers-tdd-development-plugin/rules/commit-standards/README.md",
-        "cospowers-tdd-development-plugin/rules/common/README.md",
-        "cospowers-tdd-development-plugin/rules/process/iteration-entry-checklist.md",
-        "cospowers-tdd-development-plugin/rules/process/iteration-exit-checklist.md",
-        "cospowers-tdd-development-plugin/rules/testing-standards/Go单元测试规范.md",
-        "cospowers-tdd-development-plugin/rules/testing-standards/Python单元测试规范.md",
-        "cospowers-tdd-development-plugin/rules/testing-standards/单元测试规范.md",
-        "cospowers-tdd-development-plugin/rules/testing-standards/高级代码分析规则.md"
-      ],
-      "templates_namespaces": [
-        "cospowers-tdd-development:code-compliance-report-template",
-        "cospowers-tdd-development:code-review-request-template",
-        "cospowers-tdd-development:commit-message-examples",
-        "cospowers-tdd-development:commit-message-template",
-        "cospowers-tdd-development:debugging-report-template",
-        "cospowers-tdd-development:tdd-cycle-template"
-      ],
-      "template_paths": [
-        "cospowers-tdd-development-plugin/templates/code-compliance-report-template.md",
-        "cospowers-tdd-development-plugin/templates/code-review-request-template.md",
-        "cospowers-tdd-development-plugin/templates/commit-message-examples.md",
-        "cospowers-tdd-development-plugin/templates/commit-message-template.md",
-        "cospowers-tdd-development-plugin/templates/debugging-report-template.md",
-        "cospowers-tdd-development-plugin/templates/tdd-cycle-template.md"
-      ],
-      "source_repo": "yhangf/csc-plugins",
-      "source_ref": "main",
-      "plugin_root": "cospowers-tdd-development-plugin",
-      "bundled_skill_ids": [
-        "cospowers-tdd-development-code-compliance-check",
-        "executing-plans-agskill",
-        "cospowers-tdd-development-implementation-review",
-        "requesting-code-review-agskill",
-        "cospowers-tdd-development-session-context",
-        "cospowers-tdd-development-spec-commit",
-        "subagent-driven-development-agskill",
-        "systematic-debugging-agskill",
-        "cospowers-tdd-development-tdd-implementation",
-        "test-driven-development-agskill",
-        "using-git-worktrees-agskill",
-        "cospowers-tdd-development-using-tdd-development-plugin"
-      ],
-      "bundled_agent_ids": [
-        "cospowers-tdd-development-agent-code-reviewer"
-      ],
-      "bundled_rule_ids": [
-        "cospowers-tdd-development-rule-code-review-rulesreadme",
-        "cospowers-tdd-development-rule-coding-standardscode-review-checklist",
-        "cospowers-tdd-development-rule-coding-standardscode-review-error-rules",
-        "cospowers-tdd-development-rule-coding-standardsgo-checklist",
-        "cospowers-tdd-development-rule-coding-standardspython-checklist-py2-总规范",
-        "cospowers-tdd-development-rule-coding-standardspython-checklist-py3-总规范",
-        "cospowers-tdd-development-rule-coding-standardsshell-checklist",
-        "cospowers-tdd-development-rule-coding-standards通用编码checklist",
-        "cospowers-tdd-development-rule-commit-standardsreadme",
-        "cospowers-tdd-development-rule-commonreadme",
-        "cospowers-tdd-development-rule-processiteration-entry-checklist",
-        "cospowers-tdd-development-rule-processiteration-exit-checklist",
-        "cospowers-tdd-development-rule-testing-standardsgo单元测试规范",
-        "cospowers-tdd-development-rule-testing-standardspython单元测试规范",
-        "cospowers-tdd-development-rule-testing-standards单元测试规范",
-        "cospowers-tdd-development-rule-testing-standards高级代码分析规则"
-      ],
-      "bundled_template_ids": [
-        "cospowers-tdd-development-template-code-compliance-report-template",
-        "cospowers-tdd-development-template-code-review-request-template",
-        "cospowers-tdd-development-template-commit-message-examples",
-        "cospowers-tdd-development-template-commit-message-template",
-        "cospowers-tdd-development-template-debugging-report-template",
-        "cospowers-tdd-development-template-tdd-cycle-template"
-      ]
-    },
-    "manifest_completeness": 1.0,
-    "last_synced": "2026-06-22",
-    "stars": 0,
-    "pushed_at": "2026-06-09T02:09:13Z",
-    "version": "0.0.1",
-    "final_score": 83,
-    "health": {
-      "score": 46,
-      "effective_score": 74,
-      "excluded_signals": [
-        "popularity"
-      ],
-      "freshness_label": "active",
-      "last_commit": "2026-06-09T02:09:13Z",
-      "signals": {
-        "freshness": 99,
-        "popularity": 0,
-        "source_trust": 40,
-        "install_popularity": 0,
-        "manifest_completeness": 100
-      }
-    },
-    "verified": true,
-    "prune_content": false,
-    "evaluation": {
-      "coding_relevance": 5,
-      "desc_accuracy": 4,
-      "doc_completeness": 4,
-      "specificity": 4,
-      "writing_quality": 4,
-      "final_score": 83,
-      "decision": "accept",
-      "model_id": "__cached__",
-      "rubric_version": "2.85974ec3",
-      "evaluated_at": "2026-06-08T08:51:33.220547Z",
-      "content_quality": 85
-    },
-    "security": {
-      "risk_level": "medium",
-      "verdict": "caution",
-      "red_flags": [
-        "调用外部知识库 API (DAEDALUS_URL) 传输代码差异内容",
-        "执行 git 操作、shell 命令 (git diff, grep, curl, autopep8, ruff, gofmt 等)",
-        "在仓库中写入文件 (compliance-cache.json, time-stats.log, active-*.md)",
-        "使用 API Key (DAEDALUS_API_KEY, GITLAB_TOKEN) 进行远程认证",
-        "通过 curl 调用远程 KB 端点获取规范文档并发送 diff 数据"
-      ],
-      "permissions": {
-        "files": [
-          "docs/agent-rules/spec_developer/output/compliance-cache.json",
-          "docs/agent-rules/spec_developer/output/time-stats.log",
-          "active-*.md",
-          "memory/*.md",
-          "MEMORY.md",
-          "cospowers.config.json",
-          "rules/coding-standards/*.md",
-          "*.py",
-          "*.go",
-          "*.vue",
-          "*.ts",
-          "*.js"
-        ],
-        "network": [
-          "DAEDALUS_URL (远程知识库 API)",
-          "GitLab API (创建 MR)"
-        ],
-        "commands": [
-          "git diff",
-          "git status",
-          "git branch",
-          "git add",
-          "git commit",
-          "git push",
-          "git rev-parse",
-          "curl",
-          "grep",
-          "find",
-          "head",
-          "mkdir",
-          "echo",
-          "date",
-          "python2",
-          "python3",
-          "autopep8",
-          "ruff",
-          "flake8",
-          "gofmt",
-          "pyproject.toml 检测",
-          "pytest",
-          "go test"
-        ]
-      },
-      "summary": "该 TDD 插件执行 shell 命令、读写仓库文件、调用远程知识库 API 并发送代码差异数据，涉及多个外部服务和 API Key，整体风险中等，需关注数据外传和命令执行范围。",
-      "recommendations": [
-        "确认 DAEDALUS_URL 指向受信任的知识库服务，避免将源代码差异发送到未知端点",
-        "审查 cospowers.config.json 中的 API Key 配置，确保 GITLAB_TOKEN 等凭据安全存储",
-        "关注 shell 命令执行范围，确保仅在项目工作目录内操作",
-        "评估写入的文件路径是否符合预期，防止路径遍历风险",
-        "建议在隔离环境或受限权限下首次运行，观察实际行为"
-      ],
-      "scan_model": "__cached__",
-      "rubric_version": "2.bd55efd5",
-      "content_hash": "c5b3f589f4a2e72695035f44f569a9041e73f399f9138304eb0fb23e14d966a2",
-      "scanned_at": "2026-06-08T10:35:40.698489Z"
-    },
-    "decision": "accept",
-    "weak_dims": [],
-    "freshness_label": "active",
-    "description_zh": "基于TDD的AI驱动编码插件，涵盖测试优先开发、调试、代码合规和Git工作流。",
-    "description_original": "AI 驱动的 TDD 编码插件：基于任务、测试、issue 或 bug 执行测试优先开发、调试、代码检查和提交。",
-    "search_terms": [
-      "AI-driven TDD",
-      "测试驱动开发",
-      "code compliance checking",
-      "Git commit automation",
-      "AI代码审查"
-    ],
-    "highlights": [
-      "支持TDD全流程自动化",
-      "集成代码合规检查和Git提交规范",
-      "AI驱动的调试和代码审查"
-    ]
-  },
-  {
-    "id": "cospowers-test-generation",
-    "name": "cospowers-test-generation",
-    "type": "plugin",
-    "description": "An AI-powered plugin that generates test strategies, cases, and code drafts from requirements, designs, plans, bugs, or existing code.",
-    "source_url": "https://github.com/costrict-plugins-repo/cospowers-test-generation/tree/main/",
-    "category": "testing",
-    "tags": [
-      "cospowers",
-      "ai-workers"
-    ],
-    "tech_stack": [],
-    "source": "csc-plugins",
-    "source_priority": 1000,
-    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-test-generation",
-    "platforms": [
-      "claude-code"
-    ],
-    "install": {
-      "method": "plugin_marketplace",
-      "plugin_name": "cospowers-test-generation",
-      "marketplace_repo": "costrict-plugins-repo/cospowers-test-generation",
-      "marketplace_name": "ai-workers-test",
-      "marketplace_verified": true,
-      "marketplace": "costrict-plugins-repo/cospowers-test-generation"
-    },
-    "bundle": {
-      "skills_count": 10,
-      "commands_count": 0,
-      "agents_count": 0,
-      "evaluators_count": 0,
-      "rules_count": 5,
-      "templates_count": 9,
-      "mcp_servers_count": 0,
-      "skills_namespaces": [
-        "cospowers-test-generation:acceptance-test-generation",
-        "cospowers-test-generation:edge-case-test-generation",
-        "cospowers-test-generation:regression-test-generation",
-        "cospowers-test-generation:session-context",
-        "cospowers-test-generation:test-case-generation",
-        "cospowers-test-generation:test-code-generator",
-        "cospowers-test-generation:test-coverage-review",
-        "cospowers-test-generation:test-generation",
-        "cospowers-test-generation:test-strategy-generation",
-        "cospowers-test-generation:using-test-generation-plugin"
-      ],
-      "hooks_count": 0,
-      "hook_events": [],
-      "mcp_server_names": [],
-      "is_marketplace_repo": false,
-      "skill_paths": [
-        "cospowers-test-generation-plugin/skills/acceptance-test-generation/SKILL.md",
-        "cospowers-test-generation-plugin/skills/edge-case-test-generation/SKILL.md",
-        "cospowers-test-generation-plugin/skills/regression-test-generation/SKILL.md",
-        "cospowers-test-generation-plugin/skills/session-context/SKILL.md",
-        "cospowers-test-generation-plugin/skills/test-case-generation/SKILL.md",
-        "cospowers-test-generation-plugin/skills/test-code-generator/SKILL.md",
-        "cospowers-test-generation-plugin/skills/test-coverage-review/SKILL.md",
-        "cospowers-test-generation-plugin/skills/test-generation/SKILL.md",
-        "cospowers-test-generation-plugin/skills/test-strategy-generation/SKILL.md",
-        "cospowers-test-generation-plugin/skills/using-test-generation-plugin/SKILL.md"
-      ],
-      "evaluators_namespaces": [],
-      "evaluator_paths": [],
-      "commands_namespaces": [],
-      "command_paths": [],
-      "agents_namespaces": [],
-      "agent_paths": [],
-      "rules_namespaces": [
-        "cospowers-test-generation:common/README",
-        "cospowers-test-generation:testing-standards/Go单元测试规范",
-        "cospowers-test-generation:testing-standards/Python单元测试规范",
-        "cospowers-test-generation:testing-standards/单元测试规范",
-        "cospowers-test-generation:testing-standards/高级代码分析规则"
-      ],
-      "rule_paths": [
-        "cospowers-test-generation-plugin/rules/common/README.md",
-        "cospowers-test-generation-plugin/rules/testing-standards/Go单元测试规范.md",
-        "cospowers-test-generation-plugin/rules/testing-standards/Python单元测试规范.md",
-        "cospowers-test-generation-plugin/rules/testing-standards/单元测试规范.md",
-        "cospowers-test-generation-plugin/rules/testing-standards/高级代码分析规则.md"
-      ],
-      "templates_namespaces": [
-        "cospowers-test-generation:contract-test-template",
-        "cospowers-test-generation:grpc_test_template",
-        "cospowers-test-generation:integration-test-template",
-        "cospowers-test-generation:regression-test-template",
-        "cospowers-test-generation:test-case-template",
-        "cospowers-test-generation:test-coverage-review-template",
-        "cospowers-test-generation:test-strategy-template",
-        "cospowers-test-generation:unit-test-template",
-        "cospowers-test-generation:universal_test_template"
-      ],
-      "template_paths": [
-        "cospowers-test-generation-plugin/templates/contract-test-template.md",
-        "cospowers-test-generation-plugin/templates/grpc_test_template.md",
-        "cospowers-test-generation-plugin/templates/integration-test-template.md",
-        "cospowers-test-generation-plugin/templates/regression-test-template.md",
-        "cospowers-test-generation-plugin/templates/test-case-template.md",
-        "cospowers-test-generation-plugin/templates/test-coverage-review-template.md",
-        "cospowers-test-generation-plugin/templates/test-strategy-template.md",
-        "cospowers-test-generation-plugin/templates/unit-test-template.md",
-        "cospowers-test-generation-plugin/templates/universal_test_template.md"
-      ],
-      "source_repo": "yhangf/csc-plugins",
-      "source_ref": "main",
-      "plugin_root": "cospowers-test-generation-plugin",
-      "bundled_skill_ids": [
-        "cospowers-test-generation-acceptance-test-generation",
-        "cospowers-test-generation-edge-case-test-generation",
-        "cospowers-test-generation-regression-test-generation",
-        "cospowers-test-generation-session-context",
-        "cospowers-test-generation-test-case-generation",
-        "cospowers-test-generation-test-code-generator",
-        "cospowers-test-generation-test-coverage-review",
-        "cospowers-test-generation-test-generation",
-        "cospowers-test-generation-test-strategy-generation",
-        "cospowers-test-generation-using-test-generation-plugin"
-      ],
-      "bundled_rule_ids": [
-        "cospowers-test-generation-rule-commonreadme",
-        "cospowers-test-generation-rule-testing-standardsgo单元测试规范",
-        "cospowers-test-generation-rule-testing-standardspython单元测试规范",
-        "cospowers-test-generation-rule-testing-standards单元测试规范",
-        "cospowers-test-generation-rule-testing-standards高级代码分析规则"
-      ],
-      "bundled_template_ids": [
-        "cospowers-test-generation-template-contract-test-template",
-        "cospowers-test-generation-template-grpc-test-template",
-        "cospowers-test-generation-template-integration-test-template",
-        "cospowers-test-generation-template-regression-test-template",
-        "cospowers-test-generation-template-test-case-template",
-        "cospowers-test-generation-template-test-coverage-review-template",
-        "cospowers-test-generation-template-test-strategy-template",
-        "cospowers-test-generation-template-unit-test-template",
-        "cospowers-test-generation-template-universal-test-template"
-      ]
-    },
-    "manifest_completeness": 1.0,
-    "last_synced": "2026-06-22",
-    "stars": 0,
-    "pushed_at": "2026-06-09T02:09:13Z",
-    "version": "0.0.1",
-    "final_score": 76,
-    "health": {
-      "score": 46,
-      "effective_score": 74,
-      "excluded_signals": [
-        "popularity"
-      ],
-      "freshness_label": "active",
-      "last_commit": "2026-06-09T02:09:13Z",
-      "signals": {
-        "freshness": 99,
-        "popularity": 0,
-        "source_trust": 40,
-        "install_popularity": 0,
-        "manifest_completeness": 100
-      }
-    },
-    "verified": true,
-    "prune_content": false,
-    "evaluation": {
-      "coding_relevance": 5,
-      "desc_accuracy": 5,
-      "doc_completeness": 3,
-      "specificity": 3,
-      "writing_quality": 3,
-      "final_score": 76,
-      "decision": "accept",
-      "model_id": "__cached__",
-      "rubric_version": "2.85974ec3",
-      "evaluated_at": "2026-06-08T08:51:23.019070Z",
-      "content_quality": 76
-    },
-    "security": {
-      "risk_level": "low",
-      "verdict": "safe",
-      "red_flags": [],
-      "permissions": {
-        "files": [
-          "docs/tests/",
-          "templates/",
-          "rules/",
-          "skills/",
-          "cospowers.config.json",
-          "active-*.md",
-          "memory/"
-        ],
-        "network": [],
-        "commands": [
-          "ls"
-        ]
-      },
-      "summary": "该插件为纯本地测试生成工具，仅读写项目内测试文档和上下文文件，无网络请求、无敏感数据访问、无危险命令执行，属于低风险本地代码生成辅助插件。",
-      "recommendations": [],
-      "scan_model": "__cached__",
-      "rubric_version": "2.bd55efd5",
-      "content_hash": "4d40944c3462feca4a4d38e754351ce49a78c5d440cd8574b492bbdbdf6d13c3",
-      "scanned_at": "2026-06-08T10:35:30.959952Z"
-    },
-    "decision": "accept",
-    "weak_dims": [],
-    "freshness_label": "active",
-    "description_zh": "AI驱动的测试生成插件，可从需求、设计、计划、Bug或代码生成测试策略、用例和代码草稿。",
-    "description_original": "AI 驱动的测试生成插件：从需求、设计、计划、bug 或代码生成测试策略、测试用例和测试代码草稿。",
-    "search_terms": [
-      "AI test generation",
-      "AI测试生成",
-      "自动测试代码",
-      "test case generator",
-      "测试策略生成"
-    ],
-    "highlights": [
-      "从多种软件制品自动生成测试",
-      "支持Go和Python测试代码生成",
-      "内嵌会话上下文管理功能"
-    ]
-  },
-  {
     "id": "anthropic-superpowers",
     "name": "superpowers",
     "type": "plugin",
@@ -2216494,5 +2214830,889 @@
       "支持多种站点类型设计"
     ],
     "freshness_label": "active"
+  },
+  {
+    "id": "cospowers-integration-verification",
+    "name": "cospowers-integration-verification",
+    "type": "plugin",
+    "description": "AI 驱动的集成验证插件：执行集成测试、回归验证、契约验证、发布前检查和分支收尾。",
+    "source_url": "https://github.com/yhangf/csc-plugins/tree/main/cospowers-integration-verification-plugin",
+    "category": "ai-ml",
+    "tags": [
+      "cospowers",
+      "ai-workers"
+    ],
+    "tech_stack": [],
+    "source": "csc-plugins",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-integration-verification",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cospowers-integration-verification",
+      "marketplace_repo": "costrict-plugins-repo/cospowers-integration-verification",
+      "marketplace_name": "ai-workers-integration-verification",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cospowers-integration-verification"
+    },
+    "bundle": {
+      "skills_count": 15,
+      "commands_count": 0,
+      "agents_count": 1,
+      "evaluators_count": 1,
+      "rules_count": 26,
+      "templates_count": 8,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cospowers-integration-verification:code-compliance-check",
+        "cospowers-integration-verification:contract-verification",
+        "cospowers-integration-verification:doc-quality-evaluator",
+        "cospowers-integration-verification:e2e-verification",
+        "cospowers-integration-verification:finishing-a-development-branch",
+        "cospowers-integration-verification:integration-test-runner",
+        "cospowers-integration-verification:integration-verification",
+        "cospowers-integration-verification:regression-verification",
+        "cospowers-integration-verification:release-readiness-check",
+        "cospowers-integration-verification:requesting-code-review",
+        "cospowers-integration-verification:session-context",
+        "cospowers-integration-verification:spec-commit",
+        "cospowers-integration-verification:systematic-debugging",
+        "cospowers-integration-verification:using-integration-verification-plugin",
+        "cospowers-integration-verification:verification-before-completion"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false,
+      "skill_paths": [
+        "cospowers-integration-verification-plugin/skills/code-compliance-check/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/contract-verification/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/doc-quality-evaluator/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/e2e-verification/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/finishing-a-development-branch/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/integration-test-runner/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/integration-verification/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/regression-verification/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/release-readiness-check/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/requesting-code-review/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/session-context/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/spec-commit/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/systematic-debugging/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/using-integration-verification-plugin/SKILL.md",
+        "cospowers-integration-verification-plugin/skills/verification-before-completion/SKILL.md"
+      ],
+      "evaluators_namespaces": [
+        "cospowers-integration-verification:doc-quality-evaluator"
+      ],
+      "evaluator_paths": [
+        "cospowers-integration-verification-plugin/evaluators/doc-quality-evaluator/SKILL.md"
+      ],
+      "commands_namespaces": [],
+      "command_paths": [],
+      "agents_namespaces": [
+        "cospowers-integration-verification:code-reviewer"
+      ],
+      "agent_paths": [
+        "cospowers-integration-verification-plugin/agents/code-reviewer.md"
+      ],
+      "rules_namespaces": [
+        "cospowers-integration-verification:code-review-rules/README",
+        "cospowers-integration-verification:coding-standards/code-review-checklist",
+        "cospowers-integration-verification:coding-standards/code-review-error-rules",
+        "cospowers-integration-verification:coding-standards/go-checklist",
+        "cospowers-integration-verification:coding-standards/python-checklist-py2-总规范",
+        "cospowers-integration-verification:coding-standards/python-checklist-py3-总规范",
+        "cospowers-integration-verification:coding-standards/shell_checklist",
+        "cospowers-integration-verification:coding-standards/通用编码checklist",
+        "cospowers-integration-verification:commit-standards/README",
+        "cospowers-integration-verification:common/README",
+        "cospowers-integration-verification:design-review/design-01-doc-writing-standards-checklist",
+        "cospowers-integration-verification:design-review/design-02-tech-requirements-design-checklist",
+        "cospowers-integration-verification:design-review/design-03-overall-design-checklist",
+        "cospowers-integration-verification:design-review/design-04-high-level-design-checklist",
+        "cospowers-integration-verification:design-review/design-05-i18n-design-checklist",
+        "cospowers-integration-verification:design-review/design-06-never-again-principles-checklist",
+        "cospowers-integration-verification:design-review/模块设计规范",
+        "cospowers-integration-verification:dfx/安全",
+        "cospowers-integration-verification:dfx/安全需求识别检视表",
+        "cospowers-integration-verification:dfx/性能",
+        "cospowers-integration-verification:process/iteration-entry-checklist",
+        "cospowers-integration-verification:process/iteration-exit-checklist",
+        "cospowers-integration-verification:testing-standards/Go单元测试规范",
+        "cospowers-integration-verification:testing-standards/Python单元测试规范",
+        "cospowers-integration-verification:testing-standards/单元测试规范",
+        "cospowers-integration-verification:testing-standards/高级代码分析规则"
+      ],
+      "rule_paths": [
+        "cospowers-integration-verification-plugin/rules/code-review-rules/README.md",
+        "cospowers-integration-verification-plugin/rules/coding-standards/code-review-checklist.md",
+        "cospowers-integration-verification-plugin/rules/coding-standards/code-review-error-rules.md",
+        "cospowers-integration-verification-plugin/rules/coding-standards/go-checklist.md",
+        "cospowers-integration-verification-plugin/rules/coding-standards/python-checklist-py2-总规范.md",
+        "cospowers-integration-verification-plugin/rules/coding-standards/python-checklist-py3-总规范.md",
+        "cospowers-integration-verification-plugin/rules/coding-standards/shell_checklist.md",
+        "cospowers-integration-verification-plugin/rules/coding-standards/通用编码checklist.md",
+        "cospowers-integration-verification-plugin/rules/commit-standards/README.md",
+        "cospowers-integration-verification-plugin/rules/common/README.md",
+        "cospowers-integration-verification-plugin/rules/design-review/design-01-doc-writing-standards-checklist.md",
+        "cospowers-integration-verification-plugin/rules/design-review/design-02-tech-requirements-design-checklist.md",
+        "cospowers-integration-verification-plugin/rules/design-review/design-03-overall-design-checklist.md",
+        "cospowers-integration-verification-plugin/rules/design-review/design-04-high-level-design-checklist.md",
+        "cospowers-integration-verification-plugin/rules/design-review/design-05-i18n-design-checklist.md",
+        "cospowers-integration-verification-plugin/rules/design-review/design-06-never-again-principles-checklist.md",
+        "cospowers-integration-verification-plugin/rules/design-review/模块设计规范.md",
+        "cospowers-integration-verification-plugin/rules/dfx/安全.md",
+        "cospowers-integration-verification-plugin/rules/dfx/安全需求识别检视表.md",
+        "cospowers-integration-verification-plugin/rules/dfx/性能.md",
+        "cospowers-integration-verification-plugin/rules/process/iteration-entry-checklist.md",
+        "cospowers-integration-verification-plugin/rules/process/iteration-exit-checklist.md",
+        "cospowers-integration-verification-plugin/rules/testing-standards/Go单元测试规范.md",
+        "cospowers-integration-verification-plugin/rules/testing-standards/Python单元测试规范.md",
+        "cospowers-integration-verification-plugin/rules/testing-standards/单元测试规范.md",
+        "cospowers-integration-verification-plugin/rules/testing-standards/高级代码分析规则.md"
+      ],
+      "templates_namespaces": [
+        "cospowers-integration-verification:branch-finish-template",
+        "cospowers-integration-verification:commit-message-examples",
+        "cospowers-integration-verification:commit-message-template",
+        "cospowers-integration-verification:contract-verification-report-template",
+        "cospowers-integration-verification:integration-test-report-template",
+        "cospowers-integration-verification:regression-report-template",
+        "cospowers-integration-verification:release-readiness-template",
+        "cospowers-integration-verification:verification-report-template"
+      ],
+      "template_paths": [
+        "cospowers-integration-verification-plugin/templates/branch-finish-template.md",
+        "cospowers-integration-verification-plugin/templates/commit-message-examples.md",
+        "cospowers-integration-verification-plugin/templates/commit-message-template.md",
+        "cospowers-integration-verification-plugin/templates/contract-verification-report-template.md",
+        "cospowers-integration-verification-plugin/templates/integration-test-report-template.md",
+        "cospowers-integration-verification-plugin/templates/regression-report-template.md",
+        "cospowers-integration-verification-plugin/templates/release-readiness-template.md",
+        "cospowers-integration-verification-plugin/templates/verification-report-template.md"
+      ],
+      "source_repo": "yhangf/csc-plugins",
+      "source_ref": "main",
+      "plugin_root": "cospowers-integration-verification-plugin"
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-06-23",
+    "stars": 0,
+    "pushed_at": "2026-06-22T11:48:51Z",
+    "version": "0.0.1",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false
+  },
+  {
+    "id": "cospowers-requirements",
+    "name": "cospowers-requirements",
+    "type": "plugin",
+    "description": "AI 驱动的需求梳理插件：将原始想法、PRD、issue、需求变更转化为结构化需求和系统需求。",
+    "source_url": "https://github.com/yhangf/csc-plugins/tree/main/cospowers-requirements-plugin",
+    "category": "ai-ml",
+    "tags": [
+      "cospowers",
+      "ai-workers"
+    ],
+    "tech_stack": [],
+    "source": "csc-plugins",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-requirements",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cospowers-requirements",
+      "marketplace_repo": "costrict-plugins-repo/cospowers-requirements",
+      "marketplace_name": "ai-workers-requirements",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cospowers-requirements"
+    },
+    "bundle": {
+      "skills_count": 9,
+      "commands_count": 0,
+      "agents_count": 0,
+      "evaluators_count": 2,
+      "rules_count": 9,
+      "templates_count": 6,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cospowers-requirements:aireq-evaluator",
+        "cospowers-requirements:requirement-analysis",
+        "cospowers-requirements:requirements-change-analysis",
+        "cospowers-requirements:requirements-intake",
+        "cospowers-requirements:requirements-review",
+        "cospowers-requirements:session-context",
+        "cospowers-requirements:sysreq-evaluator",
+        "cospowers-requirements:system-requirement-analysis",
+        "cospowers-requirements:using-requirements-plugin"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false,
+      "skill_paths": [
+        "cospowers-requirements-plugin/skills/aireq-evaluator/SKILL.md",
+        "cospowers-requirements-plugin/skills/requirement-analysis/SKILL.md",
+        "cospowers-requirements-plugin/skills/requirements-change-analysis/SKILL.md",
+        "cospowers-requirements-plugin/skills/requirements-intake/SKILL.md",
+        "cospowers-requirements-plugin/skills/requirements-review/SKILL.md",
+        "cospowers-requirements-plugin/skills/session-context/SKILL.md",
+        "cospowers-requirements-plugin/skills/sysreq-evaluator/SKILL.md",
+        "cospowers-requirements-plugin/skills/system-requirement-analysis/SKILL.md",
+        "cospowers-requirements-plugin/skills/using-requirements-plugin/SKILL.md"
+      ],
+      "evaluators_namespaces": [
+        "cospowers-requirements:aireq-evaluator",
+        "cospowers-requirements:sysreq-evaluator"
+      ],
+      "evaluator_paths": [
+        "cospowers-requirements-plugin/evaluators/aireq-evaluator/SKILL.md",
+        "cospowers-requirements-plugin/evaluators/sysreq-evaluator/SKILL.md"
+      ],
+      "commands_namespaces": [],
+      "command_paths": [],
+      "agents_namespaces": [],
+      "agent_paths": [],
+      "rules_namespaces": [
+        "cospowers-requirements:common/README",
+        "cospowers-requirements:dfx/安全",
+        "cospowers-requirements:dfx/安全需求识别检视表",
+        "cospowers-requirements:dfx/性能",
+        "cospowers-requirements:requirement-checklists/ai-native-doc-adaptation-checklist",
+        "cospowers-requirements:requirement-checklists/user-requirement-dfx-baseline-checklist",
+        "cospowers-requirements:requirement-checklists/user-requirement-experience-guide-checklist",
+        "cospowers-requirements:requirement-checklists/user-requirement-planning-principles-checklist",
+        "cospowers-requirements:requirement-checklists/user-requirement-quality-standard-checklist"
+      ],
+      "rule_paths": [
+        "cospowers-requirements-plugin/rules/common/README.md",
+        "cospowers-requirements-plugin/rules/dfx/安全.md",
+        "cospowers-requirements-plugin/rules/dfx/安全需求识别检视表.md",
+        "cospowers-requirements-plugin/rules/dfx/性能.md",
+        "cospowers-requirements-plugin/rules/requirement-checklists/ai-native-doc-adaptation-checklist.md",
+        "cospowers-requirements-plugin/rules/requirement-checklists/user-requirement-dfx-baseline-checklist.md",
+        "cospowers-requirements-plugin/rules/requirement-checklists/user-requirement-experience-guide-checklist.md",
+        "cospowers-requirements-plugin/rules/requirement-checklists/user-requirement-planning-principles-checklist.md",
+        "cospowers-requirements-plugin/rules/requirement-checklists/user-requirement-quality-standard-checklist.md"
+      ],
+      "templates_namespaces": [
+        "cospowers-requirements:init-aireq-template",
+        "cospowers-requirements:init-sysreq-template",
+        "cospowers-requirements:requirements-change-impact-template",
+        "cospowers-requirements:requirements-review-template",
+        "cospowers-requirements:system-requirement-template",
+        "cospowers-requirements:user-requirement-template"
+      ],
+      "template_paths": [
+        "cospowers-requirements-plugin/templates/init-aireq-template.md",
+        "cospowers-requirements-plugin/templates/init-sysreq-template.md",
+        "cospowers-requirements-plugin/templates/requirements-change-impact-template.md",
+        "cospowers-requirements-plugin/templates/requirements-review-template.md",
+        "cospowers-requirements-plugin/templates/system-requirement-template.md",
+        "cospowers-requirements-plugin/templates/user-requirement-template.md"
+      ],
+      "source_repo": "yhangf/csc-plugins",
+      "source_ref": "main",
+      "plugin_root": "cospowers-requirements-plugin"
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-06-23",
+    "stars": 0,
+    "pushed_at": "2026-06-22T11:48:51Z",
+    "version": "0.0.1",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false
+  },
+  {
+    "id": "cospowers-solution-design",
+    "name": "cospowers-solution-design",
+    "type": "plugin",
+    "description": "AI 驱动的方案设计插件：从需求、PRD 或现有系统上下文生成系统设计、子系统设计和 API 契约。",
+    "source_url": "https://github.com/yhangf/csc-plugins/tree/main/cospowers-solution-design-plugin",
+    "category": "ai-ml",
+    "tags": [
+      "cospowers",
+      "ai-workers"
+    ],
+    "tech_stack": [],
+    "source": "csc-plugins",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-solution-design",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cospowers-solution-design",
+      "marketplace_repo": "costrict-plugins-repo/cospowers-solution-design",
+      "marketplace_name": "ai-workers-design",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cospowers-solution-design"
+    },
+    "bundle": {
+      "skills_count": 12,
+      "commands_count": 0,
+      "agents_count": 0,
+      "evaluators_count": 3,
+      "rules_count": 18,
+      "templates_count": 28,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cospowers-solution-design:api-contract-design",
+        "cospowers-solution-design:architecture-review",
+        "cospowers-solution-design:design-change-analysis",
+        "cospowers-solution-design:design-spec",
+        "cospowers-solution-design:doc-consistency-check",
+        "cospowers-solution-design:doc-quality-evaluator",
+        "cospowers-solution-design:session-context",
+        "cospowers-solution-design:solution-design",
+        "cospowers-solution-design:subsystem-design-spec",
+        "cospowers-solution-design:subsystem-evaluator",
+        "cospowers-solution-design:sysdesign-evaluator",
+        "cospowers-solution-design:using-solution-design-plugin"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false,
+      "skill_paths": [
+        "cospowers-solution-design-plugin/skills/api-contract-design/SKILL.md",
+        "cospowers-solution-design-plugin/skills/architecture-review/SKILL.md",
+        "cospowers-solution-design-plugin/skills/design-change-analysis/SKILL.md",
+        "cospowers-solution-design-plugin/skills/design-spec/SKILL.md",
+        "cospowers-solution-design-plugin/skills/doc-consistency-check/SKILL.md",
+        "cospowers-solution-design-plugin/skills/doc-quality-evaluator/SKILL.md",
+        "cospowers-solution-design-plugin/skills/session-context/SKILL.md",
+        "cospowers-solution-design-plugin/skills/solution-design/SKILL.md",
+        "cospowers-solution-design-plugin/skills/subsystem-design-spec/SKILL.md",
+        "cospowers-solution-design-plugin/skills/subsystem-evaluator/SKILL.md",
+        "cospowers-solution-design-plugin/skills/sysdesign-evaluator/SKILL.md",
+        "cospowers-solution-design-plugin/skills/using-solution-design-plugin/SKILL.md"
+      ],
+      "evaluators_namespaces": [
+        "cospowers-solution-design:doc-quality-evaluator",
+        "cospowers-solution-design:subsystem-evaluator",
+        "cospowers-solution-design:sysdesign-evaluator"
+      ],
+      "evaluator_paths": [
+        "cospowers-solution-design-plugin/evaluators/doc-quality-evaluator/SKILL.md",
+        "cospowers-solution-design-plugin/evaluators/subsystem-evaluator/SKILL.md",
+        "cospowers-solution-design-plugin/evaluators/sysdesign-evaluator/SKILL.md"
+      ],
+      "commands_namespaces": [],
+      "command_paths": [],
+      "agents_namespaces": [],
+      "agent_paths": [],
+      "rules_namespaces": [
+        "cospowers-solution-design:business/01-OPENAPI开发规范",
+        "cospowers-solution-design:business/02-MySQL开发规范",
+        "cospowers-solution-design:business/API开发规范",
+        "cospowers-solution-design:business/I18N_规范",
+        "cospowers-solution-design:business/日志规范",
+        "cospowers-solution-design:business/错误码规范",
+        "cospowers-solution-design:common/README",
+        "cospowers-solution-design:design-methods/RESTful_API格式规范v3.0",
+        "cospowers-solution-design:design-review/design-01-doc-writing-standards-checklist",
+        "cospowers-solution-design:design-review/design-02-tech-requirements-design-checklist",
+        "cospowers-solution-design:design-review/design-03-overall-design-checklist",
+        "cospowers-solution-design:design-review/design-04-high-level-design-checklist",
+        "cospowers-solution-design:design-review/design-05-i18n-design-checklist",
+        "cospowers-solution-design:design-review/design-06-never-again-principles-checklist",
+        "cospowers-solution-design:design-review/模块设计规范",
+        "cospowers-solution-design:dfx/安全",
+        "cospowers-solution-design:dfx/安全需求识别检视表",
+        "cospowers-solution-design:dfx/性能"
+      ],
+      "rule_paths": [
+        "cospowers-solution-design-plugin/rules/business/01-OPENAPI开发规范.md",
+        "cospowers-solution-design-plugin/rules/business/02-MySQL开发规范.md",
+        "cospowers-solution-design-plugin/rules/business/API开发规范.md",
+        "cospowers-solution-design-plugin/rules/business/I18N_规范.md",
+        "cospowers-solution-design-plugin/rules/business/日志规范.md",
+        "cospowers-solution-design-plugin/rules/business/错误码规范.md",
+        "cospowers-solution-design-plugin/rules/common/README.md",
+        "cospowers-solution-design-plugin/rules/design-methods/RESTful_API格式规范v3.0.md",
+        "cospowers-solution-design-plugin/rules/design-review/design-01-doc-writing-standards-checklist.md",
+        "cospowers-solution-design-plugin/rules/design-review/design-02-tech-requirements-design-checklist.md",
+        "cospowers-solution-design-plugin/rules/design-review/design-03-overall-design-checklist.md",
+        "cospowers-solution-design-plugin/rules/design-review/design-04-high-level-design-checklist.md",
+        "cospowers-solution-design-plugin/rules/design-review/design-05-i18n-design-checklist.md",
+        "cospowers-solution-design-plugin/rules/design-review/design-06-never-again-principles-checklist.md",
+        "cospowers-solution-design-plugin/rules/design-review/模块设计规范.md",
+        "cospowers-solution-design-plugin/rules/dfx/安全.md",
+        "cospowers-solution-design-plugin/rules/dfx/安全需求识别检视表.md",
+        "cospowers-solution-design-plugin/rules/dfx/性能.md"
+      ],
+      "templates_namespaces": [
+        "cospowers-solution-design:architecture-review-template",
+        "cospowers-solution-design:design-change-impact-template",
+        "cospowers-solution-design:design/subsystem-design/ch02-responsibilities",
+        "cospowers-solution-design:design/subsystem-design/ch03-interfaces",
+        "cospowers-solution-design:design/subsystem-design/ch04-internal-design",
+        "cospowers-solution-design:design/subsystem-design/ch05-exceptions",
+        "cospowers-solution-design:design/subsystem-design/ch06-test-design",
+        "cospowers-solution-design:design/subsystem-design/ch07-dfx",
+        "cospowers-solution-design:design/subsystem-design/ch08-code-standards",
+        "cospowers-solution-design:design/subsystem-design/ch09-deployment",
+        "cospowers-solution-design:design/subsystem-design/ch10-summary",
+        "cospowers-solution-design:design/subsystem-design/ch11-appendix",
+        "cospowers-solution-design:design/subsystem-design/ch12-revision-history",
+        "cospowers-solution-design:design/system-design/ch02-system-architecture",
+        "cospowers-solution-design:design/system-design/ch03-working-principles",
+        "cospowers-solution-design:design/system-design/ch04-design-spec",
+        "cospowers-solution-design:design/system-design/ch05-dfx",
+        "cospowers-solution-design:design/system-design/ch06-architecture-impact",
+        "cospowers-solution-design:design/system-design/ch07-risk",
+        "cospowers-solution-design:design/system-design/ch08-deployment",
+        "cospowers-solution-design:design/system-design/ch09-summary",
+        "cospowers-solution-design:design/system-design/ch10-revision-history",
+        "cospowers-solution-design:fmea-template",
+        "cospowers-solution-design:init-subsystem-template",
+        "cospowers-solution-design:init-sysdesign-template",
+        "cospowers-solution-design:micro-design-template",
+        "cospowers-solution-design:subsystem-design-template",
+        "cospowers-solution-design:system-design-template"
+      ],
+      "template_paths": [
+        "cospowers-solution-design-plugin/templates/architecture-review-template.md",
+        "cospowers-solution-design-plugin/templates/design-change-impact-template.md",
+        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch02-responsibilities.md",
+        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch03-interfaces.md",
+        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch04-internal-design.md",
+        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch05-exceptions.md",
+        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch06-test-design.md",
+        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch07-dfx.md",
+        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch08-code-standards.md",
+        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch09-deployment.md",
+        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch10-summary.md",
+        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch11-appendix.md",
+        "cospowers-solution-design-plugin/templates/design/subsystem-design/ch12-revision-history.md",
+        "cospowers-solution-design-plugin/templates/design/system-design/ch02-system-architecture.md",
+        "cospowers-solution-design-plugin/templates/design/system-design/ch03-working-principles.md",
+        "cospowers-solution-design-plugin/templates/design/system-design/ch04-design-spec.md",
+        "cospowers-solution-design-plugin/templates/design/system-design/ch05-dfx.md",
+        "cospowers-solution-design-plugin/templates/design/system-design/ch06-architecture-impact.md",
+        "cospowers-solution-design-plugin/templates/design/system-design/ch07-risk.md",
+        "cospowers-solution-design-plugin/templates/design/system-design/ch08-deployment.md",
+        "cospowers-solution-design-plugin/templates/design/system-design/ch09-summary.md",
+        "cospowers-solution-design-plugin/templates/design/system-design/ch10-revision-history.md",
+        "cospowers-solution-design-plugin/templates/fmea-template.md",
+        "cospowers-solution-design-plugin/templates/init-subsystem-template.md",
+        "cospowers-solution-design-plugin/templates/init-sysdesign-template.md",
+        "cospowers-solution-design-plugin/templates/micro-design-template.md",
+        "cospowers-solution-design-plugin/templates/subsystem-design-template.md",
+        "cospowers-solution-design-plugin/templates/system-design-template.md"
+      ],
+      "source_repo": "yhangf/csc-plugins",
+      "source_ref": "main",
+      "plugin_root": "cospowers-solution-design-plugin"
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-06-23",
+    "stars": 0,
+    "pushed_at": "2026-06-22T11:48:51Z",
+    "version": "0.0.1",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false
+  },
+  {
+    "id": "cospowers-task-planning",
+    "name": "cospowers-task-planning",
+    "type": "plugin",
+    "description": "AI 驱动的任务拆解插件：将需求或设计拆解为实现计划、任务图、里程碑和执行策略。",
+    "source_url": "https://github.com/yhangf/csc-plugins/tree/main/cospowers-task-planning-plugin",
+    "category": "ai-ml",
+    "tags": [
+      "cospowers",
+      "ai-workers"
+    ],
+    "tech_stack": [],
+    "source": "csc-plugins",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-task-planning",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cospowers-task-planning",
+      "marketplace_repo": "costrict-plugins-repo/cospowers-task-planning",
+      "marketplace_name": "ai-workers-plan",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cospowers-task-planning"
+    },
+    "bundle": {
+      "skills_count": 9,
+      "commands_count": 0,
+      "agents_count": 0,
+      "evaluators_count": 0,
+      "rules_count": 3,
+      "templates_count": 6,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cospowers-task-planning:execution-strategy-selection",
+        "cospowers-task-planning:milestone-planning",
+        "cospowers-task-planning:session-context",
+        "cospowers-task-planning:subagent-dispatch-planning",
+        "cospowers-task-planning:task-graph-generation",
+        "cospowers-task-planning:task-planning",
+        "cospowers-task-planning:using-task-planning-plugin",
+        "cospowers-task-planning:worktree-planning",
+        "cospowers-task-planning:writing-plans"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false,
+      "skill_paths": [
+        "cospowers-task-planning-plugin/skills/execution-strategy-selection/SKILL.md",
+        "cospowers-task-planning-plugin/skills/milestone-planning/SKILL.md",
+        "cospowers-task-planning-plugin/skills/session-context/SKILL.md",
+        "cospowers-task-planning-plugin/skills/subagent-dispatch-planning/SKILL.md",
+        "cospowers-task-planning-plugin/skills/task-graph-generation/SKILL.md",
+        "cospowers-task-planning-plugin/skills/task-planning/SKILL.md",
+        "cospowers-task-planning-plugin/skills/using-task-planning-plugin/SKILL.md",
+        "cospowers-task-planning-plugin/skills/worktree-planning/SKILL.md",
+        "cospowers-task-planning-plugin/skills/writing-plans/SKILL.md"
+      ],
+      "evaluators_namespaces": [],
+      "evaluator_paths": [],
+      "commands_namespaces": [],
+      "command_paths": [],
+      "agents_namespaces": [],
+      "agent_paths": [],
+      "rules_namespaces": [
+        "cospowers-task-planning:common/README",
+        "cospowers-task-planning:process/iteration-entry-checklist",
+        "cospowers-task-planning:process/iteration-exit-checklist"
+      ],
+      "rule_paths": [
+        "cospowers-task-planning-plugin/rules/common/README.md",
+        "cospowers-task-planning-plugin/rules/process/iteration-entry-checklist.md",
+        "cospowers-task-planning-plugin/rules/process/iteration-exit-checklist.md"
+      ],
+      "templates_namespaces": [
+        "cospowers-task-planning:execution-strategy-template",
+        "cospowers-task-planning:implementation-plan-template",
+        "cospowers-task-planning:milestone-plan-template",
+        "cospowers-task-planning:subagent-task-template",
+        "cospowers-task-planning:task-graph-template",
+        "cospowers-task-planning:worktree-plan-template"
+      ],
+      "template_paths": [
+        "cospowers-task-planning-plugin/templates/execution-strategy-template.md",
+        "cospowers-task-planning-plugin/templates/implementation-plan-template.md",
+        "cospowers-task-planning-plugin/templates/milestone-plan-template.md",
+        "cospowers-task-planning-plugin/templates/subagent-task-template.md",
+        "cospowers-task-planning-plugin/templates/task-graph-template.md",
+        "cospowers-task-planning-plugin/templates/worktree-plan-template.md"
+      ],
+      "source_repo": "yhangf/csc-plugins",
+      "source_ref": "main",
+      "plugin_root": "cospowers-task-planning-plugin"
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-06-23",
+    "stars": 0,
+    "pushed_at": "2026-06-22T11:48:51Z",
+    "version": "0.0.1",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false
+  },
+  {
+    "id": "cospowers-tdd-development",
+    "name": "cospowers-tdd-development",
+    "type": "plugin",
+    "description": "AI 驱动的 TDD 编码插件：基于任务、测试、issue 或 bug 执行测试优先开发、调试、代码检查和提交。",
+    "source_url": "https://github.com/yhangf/csc-plugins/tree/main/cospowers-tdd-development-plugin",
+    "category": "ai-ml",
+    "tags": [
+      "cospowers",
+      "ai-workers"
+    ],
+    "tech_stack": [],
+    "source": "csc-plugins",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-tdd-development",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cospowers-tdd-development",
+      "marketplace_repo": "costrict-plugins-repo/cospowers-tdd-development",
+      "marketplace_name": "ai-workers-tdd",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cospowers-tdd-development"
+    },
+    "bundle": {
+      "skills_count": 12,
+      "commands_count": 0,
+      "agents_count": 1,
+      "evaluators_count": 0,
+      "rules_count": 16,
+      "templates_count": 6,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cospowers-tdd-development:code-compliance-check",
+        "cospowers-tdd-development:executing-plans",
+        "cospowers-tdd-development:implementation-review",
+        "cospowers-tdd-development:requesting-code-review",
+        "cospowers-tdd-development:session-context",
+        "cospowers-tdd-development:spec-commit",
+        "cospowers-tdd-development:subagent-driven-development",
+        "cospowers-tdd-development:systematic-debugging",
+        "cospowers-tdd-development:tdd-implementation",
+        "cospowers-tdd-development:test-driven-development",
+        "cospowers-tdd-development:using-git-worktrees",
+        "cospowers-tdd-development:using-tdd-development-plugin"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false,
+      "skill_paths": [
+        "cospowers-tdd-development-plugin/skills/code-compliance-check/SKILL.md",
+        "cospowers-tdd-development-plugin/skills/executing-plans/SKILL.md",
+        "cospowers-tdd-development-plugin/skills/implementation-review/SKILL.md",
+        "cospowers-tdd-development-plugin/skills/requesting-code-review/SKILL.md",
+        "cospowers-tdd-development-plugin/skills/session-context/SKILL.md",
+        "cospowers-tdd-development-plugin/skills/spec-commit/SKILL.md",
+        "cospowers-tdd-development-plugin/skills/subagent-driven-development/SKILL.md",
+        "cospowers-tdd-development-plugin/skills/systematic-debugging/SKILL.md",
+        "cospowers-tdd-development-plugin/skills/tdd-implementation/SKILL.md",
+        "cospowers-tdd-development-plugin/skills/test-driven-development/SKILL.md",
+        "cospowers-tdd-development-plugin/skills/using-git-worktrees/SKILL.md",
+        "cospowers-tdd-development-plugin/skills/using-tdd-development-plugin/SKILL.md"
+      ],
+      "evaluators_namespaces": [],
+      "evaluator_paths": [],
+      "commands_namespaces": [],
+      "command_paths": [],
+      "agents_namespaces": [
+        "cospowers-tdd-development:code-reviewer"
+      ],
+      "agent_paths": [
+        "cospowers-tdd-development-plugin/agents/code-reviewer.md"
+      ],
+      "rules_namespaces": [
+        "cospowers-tdd-development:code-review-rules/README",
+        "cospowers-tdd-development:coding-standards/code-review-checklist",
+        "cospowers-tdd-development:coding-standards/code-review-error-rules",
+        "cospowers-tdd-development:coding-standards/go-checklist",
+        "cospowers-tdd-development:coding-standards/python-checklist-py2-总规范",
+        "cospowers-tdd-development:coding-standards/python-checklist-py3-总规范",
+        "cospowers-tdd-development:coding-standards/shell_checklist",
+        "cospowers-tdd-development:coding-standards/通用编码checklist",
+        "cospowers-tdd-development:commit-standards/README",
+        "cospowers-tdd-development:common/README",
+        "cospowers-tdd-development:process/iteration-entry-checklist",
+        "cospowers-tdd-development:process/iteration-exit-checklist",
+        "cospowers-tdd-development:testing-standards/Go单元测试规范",
+        "cospowers-tdd-development:testing-standards/Python单元测试规范",
+        "cospowers-tdd-development:testing-standards/单元测试规范",
+        "cospowers-tdd-development:testing-standards/高级代码分析规则"
+      ],
+      "rule_paths": [
+        "cospowers-tdd-development-plugin/rules/code-review-rules/README.md",
+        "cospowers-tdd-development-plugin/rules/coding-standards/code-review-checklist.md",
+        "cospowers-tdd-development-plugin/rules/coding-standards/code-review-error-rules.md",
+        "cospowers-tdd-development-plugin/rules/coding-standards/go-checklist.md",
+        "cospowers-tdd-development-plugin/rules/coding-standards/python-checklist-py2-总规范.md",
+        "cospowers-tdd-development-plugin/rules/coding-standards/python-checklist-py3-总规范.md",
+        "cospowers-tdd-development-plugin/rules/coding-standards/shell_checklist.md",
+        "cospowers-tdd-development-plugin/rules/coding-standards/通用编码checklist.md",
+        "cospowers-tdd-development-plugin/rules/commit-standards/README.md",
+        "cospowers-tdd-development-plugin/rules/common/README.md",
+        "cospowers-tdd-development-plugin/rules/process/iteration-entry-checklist.md",
+        "cospowers-tdd-development-plugin/rules/process/iteration-exit-checklist.md",
+        "cospowers-tdd-development-plugin/rules/testing-standards/Go单元测试规范.md",
+        "cospowers-tdd-development-plugin/rules/testing-standards/Python单元测试规范.md",
+        "cospowers-tdd-development-plugin/rules/testing-standards/单元测试规范.md",
+        "cospowers-tdd-development-plugin/rules/testing-standards/高级代码分析规则.md"
+      ],
+      "templates_namespaces": [
+        "cospowers-tdd-development:code-compliance-report-template",
+        "cospowers-tdd-development:code-review-request-template",
+        "cospowers-tdd-development:commit-message-examples",
+        "cospowers-tdd-development:commit-message-template",
+        "cospowers-tdd-development:debugging-report-template",
+        "cospowers-tdd-development:tdd-cycle-template"
+      ],
+      "template_paths": [
+        "cospowers-tdd-development-plugin/templates/code-compliance-report-template.md",
+        "cospowers-tdd-development-plugin/templates/code-review-request-template.md",
+        "cospowers-tdd-development-plugin/templates/commit-message-examples.md",
+        "cospowers-tdd-development-plugin/templates/commit-message-template.md",
+        "cospowers-tdd-development-plugin/templates/debugging-report-template.md",
+        "cospowers-tdd-development-plugin/templates/tdd-cycle-template.md"
+      ],
+      "source_repo": "yhangf/csc-plugins",
+      "source_ref": "main",
+      "plugin_root": "cospowers-tdd-development-plugin"
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-06-23",
+    "stars": 0,
+    "pushed_at": "2026-06-22T11:48:51Z",
+    "version": "0.0.1",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false
+  },
+  {
+    "id": "cospowers-test-generation",
+    "name": "cospowers-test-generation",
+    "type": "plugin",
+    "description": "AI 驱动的测试生成插件：从需求、设计、计划、bug 或代码生成测试策略、测试用例和测试代码草稿。",
+    "source_url": "https://github.com/yhangf/csc-plugins/tree/main/cospowers-test-generation-plugin",
+    "category": "testing",
+    "tags": [
+      "cospowers",
+      "ai-workers"
+    ],
+    "tech_stack": [],
+    "source": "csc-plugins",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cospowers-test-generation",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cospowers-test-generation",
+      "marketplace_repo": "costrict-plugins-repo/cospowers-test-generation",
+      "marketplace_name": "ai-workers-test",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cospowers-test-generation"
+    },
+    "bundle": {
+      "skills_count": 10,
+      "commands_count": 0,
+      "agents_count": 0,
+      "evaluators_count": 0,
+      "rules_count": 5,
+      "templates_count": 9,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cospowers-test-generation:acceptance-test-generation",
+        "cospowers-test-generation:edge-case-test-generation",
+        "cospowers-test-generation:regression-test-generation",
+        "cospowers-test-generation:session-context",
+        "cospowers-test-generation:test-case-generation",
+        "cospowers-test-generation:test-code-generator",
+        "cospowers-test-generation:test-coverage-review",
+        "cospowers-test-generation:test-generation",
+        "cospowers-test-generation:test-strategy-generation",
+        "cospowers-test-generation:using-test-generation-plugin"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false,
+      "skill_paths": [
+        "cospowers-test-generation-plugin/skills/acceptance-test-generation/SKILL.md",
+        "cospowers-test-generation-plugin/skills/edge-case-test-generation/SKILL.md",
+        "cospowers-test-generation-plugin/skills/regression-test-generation/SKILL.md",
+        "cospowers-test-generation-plugin/skills/session-context/SKILL.md",
+        "cospowers-test-generation-plugin/skills/test-case-generation/SKILL.md",
+        "cospowers-test-generation-plugin/skills/test-code-generator/SKILL.md",
+        "cospowers-test-generation-plugin/skills/test-coverage-review/SKILL.md",
+        "cospowers-test-generation-plugin/skills/test-generation/SKILL.md",
+        "cospowers-test-generation-plugin/skills/test-strategy-generation/SKILL.md",
+        "cospowers-test-generation-plugin/skills/using-test-generation-plugin/SKILL.md"
+      ],
+      "evaluators_namespaces": [],
+      "evaluator_paths": [],
+      "commands_namespaces": [],
+      "command_paths": [],
+      "agents_namespaces": [],
+      "agent_paths": [],
+      "rules_namespaces": [
+        "cospowers-test-generation:common/README",
+        "cospowers-test-generation:testing-standards/Go单元测试规范",
+        "cospowers-test-generation:testing-standards/Python单元测试规范",
+        "cospowers-test-generation:testing-standards/单元测试规范",
+        "cospowers-test-generation:testing-standards/高级代码分析规则"
+      ],
+      "rule_paths": [
+        "cospowers-test-generation-plugin/rules/common/README.md",
+        "cospowers-test-generation-plugin/rules/testing-standards/Go单元测试规范.md",
+        "cospowers-test-generation-plugin/rules/testing-standards/Python单元测试规范.md",
+        "cospowers-test-generation-plugin/rules/testing-standards/单元测试规范.md",
+        "cospowers-test-generation-plugin/rules/testing-standards/高级代码分析规则.md"
+      ],
+      "templates_namespaces": [
+        "cospowers-test-generation:contract-test-template",
+        "cospowers-test-generation:grpc_test_template",
+        "cospowers-test-generation:integration-test-template",
+        "cospowers-test-generation:regression-test-template",
+        "cospowers-test-generation:test-case-template",
+        "cospowers-test-generation:test-coverage-review-template",
+        "cospowers-test-generation:test-strategy-template",
+        "cospowers-test-generation:unit-test-template",
+        "cospowers-test-generation:universal_test_template"
+      ],
+      "template_paths": [
+        "cospowers-test-generation-plugin/templates/contract-test-template.md",
+        "cospowers-test-generation-plugin/templates/grpc_test_template.md",
+        "cospowers-test-generation-plugin/templates/integration-test-template.md",
+        "cospowers-test-generation-plugin/templates/regression-test-template.md",
+        "cospowers-test-generation-plugin/templates/test-case-template.md",
+        "cospowers-test-generation-plugin/templates/test-coverage-review-template.md",
+        "cospowers-test-generation-plugin/templates/test-strategy-template.md",
+        "cospowers-test-generation-plugin/templates/unit-test-template.md",
+        "cospowers-test-generation-plugin/templates/universal_test_template.md"
+      ],
+      "source_repo": "yhangf/csc-plugins",
+      "source_ref": "main",
+      "plugin_root": "cospowers-test-generation-plugin"
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-06-23",
+    "stars": 0,
+    "pushed_at": "2026-06-22T11:48:51Z",
+    "version": "0.0.1",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false
   }
 ]
