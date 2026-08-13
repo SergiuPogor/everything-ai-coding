@@ -1,158 +1,5 @@
 [
   {
-    "id": "cosknow",
-    "name": "cosknow",
-    "type": "plugin",
-    "description": "AI-driven knowledge base plugin to init, publish, sync, and query knowledge repos for any codebase.",
-    "source_url": "https://github.com/costrict-plugins-repo/cosknow/tree/master/cosknow-plugin",
-    "category": "ai-ml",
-    "tags": [
-      "knowledge-base",
-      "code-analysis",
-      "rag",
-      "plugin",
-      "cosknow"
-    ],
-    "tech_stack": [
-      "rag",
-      "graphify",
-      "cosknow",
-      "knowledge-base"
-    ],
-    "source": "cosknow",
-    "source_priority": 1000,
-    "marketplace_url": "https://github.com/costrict-plugins-repo/cosknow",
-    "platforms": [
-      "claude-code"
-    ],
-    "install": {
-      "method": "plugin_marketplace",
-      "plugin_name": "cosknow",
-      "marketplace_repo": "costrict-plugins-repo/cosknow",
-      "marketplace_name": "cos-know",
-      "marketplace_verified": true,
-      "marketplace": "costrict-plugins-repo/cosknow"
-    },
-    "bundle": {
-      "skills_count": 10,
-      "commands_count": 0,
-      "agents_count": 0,
-      "evaluators_count": 0,
-      "rules_count": 0,
-      "templates_count": 0,
-      "mcp_servers_count": 0,
-      "skills_namespaces": [
-        "cosknow:kb-eval",
-        "cosknow:kb-graph",
-        "cosknow:kb-init",
-        "cosknow:kb-optimize",
-        "cosknow:kb-pre",
-        "cosknow:kb-publish",
-        "cosknow:kb-pull",
-        "cosknow:kb-query",
-        "cosknow:kb-status",
-        "cosknow:kb-update"
-      ],
-      "hooks_count": 0,
-      "hook_events": [],
-      "mcp_server_names": [],
-      "is_marketplace_repo": false,
-      "skill_paths": [
-        "skills/kb-eval/SKILL.md",
-        "skills/kb-graph/SKILL.md",
-        "skills/kb-init/SKILL.md",
-        "skills/kb-optimize/SKILL.md",
-        "skills/kb-pre/SKILL.md",
-        "skills/kb-publish/SKILL.md",
-        "skills/kb-pull/SKILL.md",
-        "skills/kb-query/SKILL.md",
-        "skills/kb-status/SKILL.md",
-        "skills/kb-update/SKILL.md"
-      ],
-      "evaluators_namespaces": [],
-      "evaluator_paths": [],
-      "commands_namespaces": [],
-      "command_paths": [],
-      "agents_namespaces": [],
-      "agent_paths": [],
-      "rules_namespaces": [],
-      "rule_paths": [],
-      "templates_namespaces": [],
-      "template_paths": [],
-      "source_repo": "costrict-plugins-repo/cosknow",
-      "source_ref": "v2",
-      "plugin_root": "",
-      "bundled_skill_ids": [
-        "cosknow-kb-eval",
-        "cosknow-kb-graph",
-        "cosknow-kb-init",
-        "cosknow-kb-optimize",
-        "cosknow-kb-pre",
-        "cosknow-kb-publish",
-        "cosknow-kb-pull",
-        "cosknow-kb-query",
-        "cosknow-kb-status",
-        "cosknow-kb-update"
-      ]
-    },
-    "manifest_completeness": 1.0,
-    "last_synced": "2026-08-10",
-    "stars": 2,
-    "pushed_at": "2026-08-04T07:33:46Z",
-    "version": "2.0.4",
-    "final_score": 56,
-    "health": {
-      "score": 49,
-      "effective_score": 54,
-      "excluded_signals": [],
-      "freshness_label": "active",
-      "last_commit": "2026-08-04T07:33:46Z",
-      "signals": {
-        "freshness": 99,
-        "popularity": 8,
-        "source_trust": 40,
-        "install_popularity": 0,
-        "manifest_completeness": 100
-      }
-    },
-    "verified": true,
-    "prune_content": false,
-    "external_mirror": true,
-    "evaluation": {
-      "coding_relevance": 4,
-      "desc_accuracy": 5,
-      "doc_completeness": 1,
-      "specificity": 4,
-      "writing_quality": 1,
-      "final_score": 56,
-      "decision": "review",
-      "model_id": "deepseek-v4-flash",
-      "rubric_version": "2.85974ec3",
-      "evaluated_at": "2026-08-10T06:21:55.727438Z",
-      "content_quality": 56
-    },
-    "decision": "review",
-    "weak_dims": [
-      "doc_completeness",
-      "writing_quality"
-    ],
-    "freshness_label": "active",
-    "description_zh": "面向任意代码库的AI知识库管理插件，支持初始化、发布、同步和查询知识仓库。",
-    "search_terms": [
-      "knowledge base management",
-      "知识库管理",
-      "code analysis",
-      "代码分析",
-      "rag plugin"
-    ],
-    "highlights": [
-      "面向任意代码库",
-      "支持初始化、发布、同步",
-      "RAG 与代码分析"
-    ],
-    "description_original": "AI-driven knowledge base management — init, publish, sync, and query knowledge repos for any codebase"
-  },
-  {
     "id": "cospowers-integration-verification",
     "name": "cospowers-integration-verification",
     "type": "plugin",
@@ -2580441,5 +2580288,187 @@
       "支持多类型网站模板"
     ],
     "freshness_label": "active"
+  },
+  {
+    "id": "cosknow",
+    "name": "cosknow",
+    "type": "plugin",
+    "description": "AI-driven knowledge base management — init, publish, sync, and query knowledge repos for any codebase",
+    "source_url": "https://github.com/costrict-plugins-repo/cosknow/tree/v2",
+    "category": "ai-ml",
+    "tags": [
+      "cosknow",
+      "knowledge-base"
+    ],
+    "tech_stack": [],
+    "source": "cosknow",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cosknow",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cosknow",
+      "marketplace_repo": "costrict-plugins-repo/cosknow",
+      "marketplace_name": "cos-know",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cosknow"
+    },
+    "bundle": {
+      "skills_count": 10,
+      "commands_count": 0,
+      "agents_count": 0,
+      "evaluators_count": 0,
+      "rules_count": 0,
+      "templates_count": 0,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cosknow:kb-eval",
+        "cosknow:kb-graph",
+        "cosknow:kb-init",
+        "cosknow:kb-optimize",
+        "cosknow:kb-pre",
+        "cosknow:kb-publish",
+        "cosknow:kb-pull",
+        "cosknow:kb-query",
+        "cosknow:kb-status",
+        "cosknow:kb-update"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false,
+      "skill_paths": [
+        "skills/kb-eval/SKILL.md",
+        "skills/kb-graph/SKILL.md",
+        "skills/kb-init/SKILL.md",
+        "skills/kb-optimize/SKILL.md",
+        "skills/kb-pre/SKILL.md",
+        "skills/kb-publish/SKILL.md",
+        "skills/kb-pull/SKILL.md",
+        "skills/kb-query/SKILL.md",
+        "skills/kb-status/SKILL.md",
+        "skills/kb-update/SKILL.md"
+      ],
+      "evaluators_namespaces": [],
+      "evaluator_paths": [],
+      "commands_namespaces": [],
+      "command_paths": [],
+      "agents_namespaces": [],
+      "agent_paths": [],
+      "rules_namespaces": [],
+      "rule_paths": [],
+      "templates_namespaces": [],
+      "template_paths": [],
+      "source_repo": "costrict-plugins-repo/cosknow",
+      "source_ref": "v2",
+      "plugin_root": ""
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-08-13",
+    "stars": 2,
+    "pushed_at": "2026-08-13T11:12:13Z",
+    "version": "2.0.5",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false,
+    "external_mirror": true
+  },
+  {
+    "id": "cosknow",
+    "name": "cosknow",
+    "type": "plugin",
+    "description": "AI-driven knowledge base management — init, publish, sync, and query knowledge repos for any codebase",
+    "source_url": "https://github.com/costrict-plugins-repo/cosknow/tree/v2/cosknow-plugin",
+    "category": "ai-ml",
+    "tags": [
+      "cosknow",
+      "knowledge-base"
+    ],
+    "tech_stack": [],
+    "source": "cosknow",
+    "source_priority": 1000,
+    "marketplace_url": "https://github.com/costrict-plugins-repo/cosknow",
+    "platforms": [
+      "claude-code"
+    ],
+    "install": {
+      "method": "plugin_marketplace",
+      "plugin_name": "cosknow",
+      "marketplace_repo": "costrict-plugins-repo/cosknow",
+      "marketplace_name": "cosknow",
+      "marketplace_verified": true,
+      "marketplace": "costrict-plugins-repo/cosknow"
+    },
+    "bundle": {
+      "skills_count": 10,
+      "commands_count": 0,
+      "agents_count": 0,
+      "evaluators_count": 0,
+      "rules_count": 0,
+      "templates_count": 0,
+      "mcp_servers_count": 0,
+      "skills_namespaces": [
+        "cosknow:kb-eval",
+        "cosknow:kb-graph",
+        "cosknow:kb-init",
+        "cosknow:kb-optimize",
+        "cosknow:kb-pre",
+        "cosknow:kb-publish",
+        "cosknow:kb-pull",
+        "cosknow:kb-query",
+        "cosknow:kb-status",
+        "cosknow:kb-update"
+      ],
+      "hooks_count": 0,
+      "hook_events": [],
+      "mcp_server_names": [],
+      "is_marketplace_repo": false,
+      "skill_paths": [
+        "cosknow-plugin/skills/kb-eval/SKILL.md",
+        "cosknow-plugin/skills/kb-graph/SKILL.md",
+        "cosknow-plugin/skills/kb-init/SKILL.md",
+        "cosknow-plugin/skills/kb-optimize/SKILL.md",
+        "cosknow-plugin/skills/kb-pre/SKILL.md",
+        "cosknow-plugin/skills/kb-publish/SKILL.md",
+        "cosknow-plugin/skills/kb-pull/SKILL.md",
+        "cosknow-plugin/skills/kb-query/SKILL.md",
+        "cosknow-plugin/skills/kb-status/SKILL.md",
+        "cosknow-plugin/skills/kb-update/SKILL.md"
+      ],
+      "evaluators_namespaces": [],
+      "evaluator_paths": [],
+      "commands_namespaces": [],
+      "command_paths": [],
+      "agents_namespaces": [],
+      "agent_paths": [],
+      "rules_namespaces": [],
+      "rule_paths": [],
+      "templates_namespaces": [],
+      "template_paths": [],
+      "source_repo": "costrict-plugins-repo/cosknow",
+      "source_ref": "v2",
+      "plugin_root": "cosknow-plugin"
+    },
+    "manifest_completeness": 1.0,
+    "last_synced": "2026-08-13",
+    "stars": 2,
+    "pushed_at": "2026-08-13T11:12:13Z",
+    "version": "2.0.5",
+    "final_score": 100,
+    "health": {
+      "score": 100,
+      "freshness_label": "active",
+      "signals": {}
+    },
+    "verified": true,
+    "prune_content": false,
+    "external_mirror": true
   }
 ]
